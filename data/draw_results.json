@@ -1,0 +1,465 @@
+{
+  "people": [
+    {
+      "name": "Aaron Healy",
+      "group1": {
+        "name": "Ivory Coast",
+        "fifaName": "Côte d'Ivoire",
+        "fifaId": "43854",
+        "idCountry": "CIV",
+        "iso2": "ci",
+        "flag": "🇨🇮"
+      },
+      "group2": {
+        "name": "Qatar",
+        "fifaName": "Qatar",
+        "fifaId": "43834",
+        "idCountry": "QAT",
+        "iso2": "qa",
+        "flag": "🇶🇦"
+      }
+    },
+    {
+      "name": "Amy Healy",
+      "group1": {
+        "name": "Türkiye",
+        "fifaName": "Türkiye",
+        "fifaId": "43972",
+        "idCountry": "TUR",
+        "iso2": "tr",
+        "flag": "🇹🇷"
+      },
+      "group2": {
+        "name": "Paraguay",
+        "fifaName": "Paraguay",
+        "fifaId": "43928",
+        "idCountry": "PAR",
+        "iso2": "py",
+        "flag": "🇵🇾"
+      }
+    },
+    {
+      "name": "Christobel Johnson",
+      "group1": {
+        "name": "Colombia",
+        "fifaName": "Colombia",
+        "fifaId": "43926",
+        "idCountry": "COL",
+        "iso2": "co",
+        "flag": "🇨🇴"
+      },
+      "group2": {
+        "name": "Egypt",
+        "fifaName": "Egypt",
+        "fifaId": "43855",
+        "idCountry": "EGY",
+        "iso2": "eg",
+        "flag": "🇪🇬"
+      }
+    },
+    {
+      "name": "Cousin David",
+      "group1": {
+        "name": "Brazil",
+        "fifaName": "Brazil",
+        "fifaId": "43924",
+        "idCountry": "BRA",
+        "iso2": "br",
+        "flag": "🇧🇷"
+      },
+      "group2": {
+        "name": "Australia",
+        "fifaName": "Australia",
+        "fifaId": "43976",
+        "idCountry": "AUS",
+        "iso2": "au",
+        "flag": "🇦🇺"
+      }
+    },
+    {
+      "name": "Deirdre",
+      "group1": {
+        "name": "Uruguay",
+        "fifaName": "Uruguay",
+        "fifaId": "43930",
+        "idCountry": "URU",
+        "iso2": "uy",
+        "flag": "🇺🇾"
+      },
+      "group2": {
+        "name": "Tunisia",
+        "fifaName": "Tunisia",
+        "fifaId": "43888",
+        "idCountry": "TUN",
+        "iso2": "tn",
+        "flag": "🇹🇳"
+      }
+    },
+    {
+      "name": "Enda",
+      "group1": {
+        "name": "Japan",
+        "fifaName": "Japan",
+        "fifaId": "43819",
+        "idCountry": "JPN",
+        "iso2": "jp",
+        "flag": "🇯🇵"
+      },
+      "group2": {
+        "name": "Uzbekistan",
+        "fifaName": "Uzbekistan",
+        "fifaId": "44005",
+        "idCountry": "UZB",
+        "iso2": "uz",
+        "flag": "🇺🇿"
+      }
+    },
+    {
+      "name": "Eoin",
+      "group1": {
+        "name": "Mexico",
+        "fifaName": "Mexico",
+        "fifaId": "43911",
+        "idCountry": "MEX",
+        "iso2": "mx",
+        "flag": "🇲🇽"
+      },
+      "group2": {
+        "name": "DR Congo",
+        "fifaName": "Congo DR",
+        "fifaId": "20014",
+        "idCountry": "COD",
+        "iso2": "cd",
+        "flag": "🇨🇩"
+      }
+    },
+    {
+      "name": "Gareth",
+      "group1": {
+        "name": "Morocco",
+        "fifaName": "Morocco",
+        "fifaId": "43872",
+        "idCountry": "MAR",
+        "iso2": "ma",
+        "flag": "🇲🇦"
+      },
+      "group2": {
+        "name": "New Zealand",
+        "fifaName": "New Zealand",
+        "fifaId": "43978",
+        "idCountry": "NZL",
+        "iso2": "nz",
+        "flag": "🇳🇿"
+      }
+    },
+    {
+      "name": "Hannah",
+      "group1": {
+        "name": "Germany",
+        "fifaName": "Germany",
+        "fifaId": "43948",
+        "idCountry": "GER",
+        "iso2": "de",
+        "flag": "🇩🇪"
+      },
+      "group2": {
+        "name": "Scotland",
+        "fifaName": "Scotland",
+        "fifaId": "43967",
+        "idCountry": "SCO",
+        "iso2": "gb-sct",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      }
+    },
+    {
+      "name": "Josh",
+      "group1": {
+        "name": "Spain",
+        "fifaName": "Spain",
+        "fifaId": "43969",
+        "idCountry": "ESP",
+        "iso2": "es",
+        "flag": "🇪🇸"
+      },
+      "group2": {
+        "name": "Curaçao",
+        "fifaName": "Curaçao",
+        "fifaId": "1895293",
+        "idCountry": "CUW",
+        "iso2": "cw",
+        "flag": "🇨🇼"
+      }
+    },
+    {
+      "name": "Rónán",
+      "group1": {
+        "name": "Croatia",
+        "fifaName": "Croatia",
+        "fifaId": "43938",
+        "idCountry": "CRO",
+        "iso2": "hr",
+        "flag": "🇭🇷"
+      },
+      "group2": {
+        "name": "Czechia",
+        "fifaName": "Czechia",
+        "fifaId": "43995",
+        "idCountry": "CZE",
+        "iso2": "cz",
+        "flag": "🇨🇿"
+      }
+    },
+    {
+      "name": "Maeve",
+      "group1": {
+        "name": "France",
+        "fifaName": "France",
+        "fifaId": "43946",
+        "idCountry": "FRA",
+        "iso2": "fr",
+        "flag": "🇫🇷"
+      },
+      "group2": {
+        "name": "Jordan",
+        "fifaName": "Jordan",
+        "fifaId": "43820",
+        "idCountry": "JOR",
+        "iso2": "jo",
+        "flag": "🇯🇴"
+      }
+    },
+    {
+      "name": "Maria",
+      "group1": {
+        "name": "USA",
+        "fifaName": "USA",
+        "fifaId": "43921",
+        "idCountry": "USA",
+        "iso2": "us",
+        "flag": "🇺🇸"
+      },
+      "group2": {
+        "name": "Bosnia & Herzegovina",
+        "fifaName": "Bosnia and Herzegovina",
+        "fifaId": "44037",
+        "idCountry": "BIH",
+        "iso2": "ba",
+        "flag": "🇧🇦"
+      }
+    },
+    {
+      "name": "Matthew Healy",
+      "group1": {
+        "name": "Belgium",
+        "fifaName": "Belgium",
+        "fifaId": "43935",
+        "idCountry": "BEL",
+        "iso2": "be",
+        "flag": "🇧🇪"
+      },
+      "group2": {
+        "name": "Saudi Arabia",
+        "fifaName": "Saudi Arabia",
+        "fifaId": "43835",
+        "idCountry": "KSA",
+        "iso2": "sa",
+        "flag": "🇸🇦"
+      }
+    },
+    {
+      "name": "Matthew Sloan",
+      "group1": {
+        "name": "Austria",
+        "fifaName": "Austria",
+        "fifaId": "43934",
+        "idCountry": "AUT",
+        "iso2": "at",
+        "flag": "🇦🇹"
+      },
+      "group2": {
+        "name": "Haiti",
+        "fifaName": "Haiti",
+        "fifaId": "43908",
+        "idCountry": "HAI",
+        "iso2": "ht",
+        "flag": "🇭🇹"
+      }
+    },
+    {
+      "name": "Niamh",
+      "group1": {
+        "name": "Argentina",
+        "fifaName": "Argentina",
+        "fifaId": "43922",
+        "idCountry": "ARG",
+        "iso2": "ar",
+        "flag": "🇦🇷"
+      },
+      "group2": {
+        "name": "Iraq",
+        "fifaName": "Iraq",
+        "fifaId": "43818",
+        "idCountry": "IRQ",
+        "iso2": "iq",
+        "flag": "🇮🇶"
+      }
+    },
+    {
+      "name": "Rakelle",
+      "group1": {
+        "name": "Netherlands",
+        "fifaName": "Netherlands",
+        "fifaId": "43960",
+        "idCountry": "NED",
+        "iso2": "nl",
+        "flag": "🇳🇱"
+      },
+      "group2": {
+        "name": "Panama",
+        "fifaName": "Panama",
+        "fifaId": "43914",
+        "idCountry": "PAN",
+        "iso2": "pa",
+        "flag": "🇵🇦"
+      }
+    },
+    {
+      "name": "Rory",
+      "group1": {
+        "name": "Ecuador",
+        "fifaName": "Ecuador",
+        "fifaId": "43927",
+        "idCountry": "ECU",
+        "iso2": "ec",
+        "flag": "🇪🇨"
+      },
+      "group2": {
+        "name": "Ghana",
+        "fifaName": "Ghana",
+        "fifaId": "43860",
+        "idCountry": "GHA",
+        "iso2": "gh",
+        "flag": "🇬🇭"
+      }
+    },
+    {
+      "name": "Sarah Healy",
+      "group1": {
+        "name": "Portugal",
+        "fifaName": "Portugal",
+        "fifaId": "43963",
+        "idCountry": "POR",
+        "iso2": "pt",
+        "flag": "🇵🇹"
+      },
+      "group2": {
+        "name": "South Africa",
+        "fifaName": "South Africa",
+        "fifaId": "43883",
+        "idCountry": "RSA",
+        "iso2": "za",
+        "flag": "🇿🇦"
+      }
+    },
+    {
+      "name": "Suzoveld",
+      "group1": {
+        "name": "Norway",
+        "fifaName": "Norway",
+        "fifaId": "43961",
+        "idCountry": "NOR",
+        "iso2": "no",
+        "flag": "🇳🇴"
+      },
+      "group2": {
+        "name": "South Korea",
+        "fifaName": "Korea Republic",
+        "fifaId": "43822",
+        "idCountry": "KOR",
+        "iso2": "kr",
+        "flag": "🇰🇷"
+      }
+    },
+    {
+      "name": "Teresa",
+      "group1": {
+        "name": "Sweden",
+        "fifaName": "Sweden",
+        "fifaId": "43970",
+        "idCountry": "SWE",
+        "iso2": "se",
+        "flag": "🇸🇪"
+      },
+      "group2": {
+        "name": "Iran",
+        "fifaName": "IR Iran",
+        "fifaId": "43817",
+        "idCountry": "IRN",
+        "iso2": "ir",
+        "flag": "🇮🇷"
+      }
+    },
+    {
+      "name": "Thomas McQuitty",
+      "group1": {
+        "name": "Senegal",
+        "fifaName": "Senegal",
+        "fifaId": "43879",
+        "idCountry": "SEN",
+        "iso2": "sn",
+        "flag": "🇸🇳"
+      },
+      "group2": {
+        "name": "Canada",
+        "fifaName": "Canada",
+        "fifaId": "43899",
+        "idCountry": "CAN",
+        "iso2": "ca",
+        "flag": "🇨🇦"
+      }
+    },
+    {
+      "name": "Thomas Sloan",
+      "group1": {
+        "name": "Switzerland",
+        "fifaName": "Switzerland",
+        "fifaId": "43971",
+        "idCountry": "SUI",
+        "iso2": "ch",
+        "flag": "🇨🇭"
+      },
+      "group2": {
+        "name": "Cape Verde",
+        "fifaName": "Cabo Verde",
+        "fifaId": "43850",
+        "idCountry": "CPV",
+        "iso2": "cv",
+        "flag": "🇨🇻"
+      }
+    },
+    {
+      "name": "Wendy Johnson",
+      "group1": {
+        "name": "England",
+        "fifaName": "England",
+        "fifaId": "43942",
+        "idCountry": "ENG",
+        "iso2": "gb-eng",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "group2": {
+        "name": "Algeria",
+        "fifaName": "Algeria",
+        "fifaId": "43843",
+        "idCountry": "ALG",
+        "iso2": "dz",
+        "flag": "🇩🇿"
+      }
+    }
+  ],
+  "meta": {
+    "idCompetition": "17",
+    "idSeason": "285023",
+    "source": "https://api.fifa.com/api/v3/calendar/matches"
+  }
+}
