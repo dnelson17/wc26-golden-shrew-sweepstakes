@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updatedAt": "2026-06-08T22:34:18.125Z",
+    "updatedAt": "2026-06-08T22:36:28.027Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
-    "playedMatches": 999,
+    "playedMatches": 0,
     "groupComplete": false,
     "tournamentOver": false,
     "source": "https://api.fifa.com/api/v3/calendar/matches"
