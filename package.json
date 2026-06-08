@@ -11,6 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "fetch": "node scripts/fetch.mjs",
+    "simulate": "node scripts/simulate.mjs",
+    "snapshot": "node scripts/use-snapshot.mjs",
     "test:compute": "node scripts/test-compute.mjs"
   },
   "dependencies": {
