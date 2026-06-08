@@ -1,0 +1,290 @@
+[
+  {
+    "team": "Spain",
+    "decimal": 6,
+    "fractional": "5/1",
+    "bookmakers": "AKB|WA|PUP"
+  },
+  {
+    "team": "France",
+    "decimal": 7,
+    "fractional": "6/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "England",
+    "decimal": 9,
+    "fractional": "8/1",
+    "bookmakers": "BRS|S6|AKB"
+  },
+  {
+    "team": "Portugal",
+    "decimal": 10,
+    "fractional": "9/1",
+    "bookmakers": "PP|AKB|SK|PUP"
+  },
+  {
+    "team": "Brazil",
+    "decimal": 11,
+    "fractional": "10/1",
+    "bookmakers": "SX|SI|AKB|PUP"
+  },
+  {
+    "team": "Argentina",
+    "decimal": 11,
+    "fractional": "10/1",
+    "bookmakers": "PP|SK|AKB|PUP|VC"
+  },
+  {
+    "team": "Germany",
+    "decimal": 16,
+    "fractional": "15/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Netherlands",
+    "decimal": 23,
+    "fractional": "22/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Belgium",
+    "decimal": 46,
+    "fractional": "45/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Mexico",
+    "decimal": 71,
+    "fractional": "70/1",
+    "bookmakers": "AKB|UN|PUP"
+  },
+  {
+    "team": "Japan",
+    "decimal": 82,
+    "fractional": "81/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "USA",
+    "decimal": 86,
+    "fractional": "85/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Uruguay",
+    "decimal": 91,
+    "fractional": "90/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Ecuador",
+    "decimal": 101,
+    "fractional": "100/1",
+    "bookmakers": "PP|EE|WH|B3|KN|BY|AKB|SK|UN|VE"
+  },
+  {
+    "team": "Croatia",
+    "decimal": 116,
+    "fractional": "115/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Senegal",
+    "decimal": 151,
+    "fractional": "150/1",
+    "bookmakers": "PP|BY|SK"
+  },
+  {
+    "team": "Switzerland",
+    "decimal": 151,
+    "fractional": "150/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "Norway",
+    "decimal": 151,
+    "fractional": "150/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "Morocco",
+    "decimal": 151,
+    "fractional": "150/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "Sweden",
+    "decimal": 176,
+    "fractional": "175/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Austria",
+    "decimal": 176,
+    "fractional": "175/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Canada",
+    "decimal": 201,
+    "fractional": "200/1",
+    "bookmakers": "SX|SI"
+  },
+  {
+    "team": "Scotland",
+    "decimal": 251,
+    "fractional": "250/1",
+    "bookmakers": "B3|BRS|S6|KN|SX|SI|BY|AKB|PUP|QN|VE"
+  },
+  {
+    "team": "Turkey",
+    "decimal": 251,
+    "fractional": "250/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "Colombia",
+    "decimal": 251,
+    "fractional": "250/1",
+    "bookmakers": "RM"
+  },
+  {
+    "team": "Ivory Coast",
+    "decimal": 301,
+    "fractional": "300/1",
+    "bookmakers": "B3|KN|BY|PUP|QN|VE"
+  },
+  {
+    "team": "Paraguay",
+    "decimal": 326,
+    "fractional": "325/1",
+    "bookmakers": "AKB"
+  },
+  {
+    "team": "Algeria",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "AKB|PUP"
+  },
+  {
+    "team": "Czech Republic",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|SK"
+  },
+  {
+    "team": "Australia",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|EE|BRS|S6|KN|SX|PUP|FR|VC|VE|WH|B3|SI|OE|BY|SK|UN|QN"
+  },
+  {
+    "team": "South Korea",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|SK|AKB"
+  },
+  {
+    "team": "Bosnia and Herzegovina",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|SX|SI|AKB|SK|PUP"
+  },
+  {
+    "team": "Ghana",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|BRS|S6|SX|SI|AKB|SK|PUP"
+  },
+  {
+    "team": "Egypt",
+    "decimal": 501,
+    "fractional": "500/1",
+    "bookmakers": "PP|SK"
+  },
+  {
+    "team": "Tunisia",
+    "decimal": 751,
+    "fractional": "750/1",
+    "bookmakers": "AKB|WA"
+  },
+  {
+    "team": "South Africa",
+    "decimal": 1001,
+    "fractional": "1000/1",
+    "bookmakers": "B3|BRS|S6|KN|AKB|UN|PUP|RM|FR|QN|VE"
+  },
+  {
+    "team": "Iran",
+    "decimal": 1001,
+    "fractional": "1000/1",
+    "bookmakers": "PUP"
+  },
+  {
+    "team": "DR Congo",
+    "decimal": 1001,
+    "fractional": "1000/1",
+    "bookmakers": "AKB|PUP|VC"
+  },
+  {
+    "team": "Saudi Arabia",
+    "decimal": 1001,
+    "fractional": "1000/1",
+    "bookmakers": "EE|BRS|S6|KN|SX|PUP|FR|VC|VE|WH|B3|OE|SI|BY|AKB|UN|QN"
+  },
+  {
+    "team": "Panama",
+    "decimal": 1501,
+    "fractional": "1500/1",
+    "bookmakers": "B3|BRS|S6|KN|AKB|WA|PUP|QN|VE"
+  },
+  {
+    "team": "Qatar",
+    "decimal": 2001,
+    "fractional": "2000/1",
+    "bookmakers": "B3|AKB"
+  },
+  {
+    "team": "Cape Verde",
+    "decimal": 2001,
+    "fractional": "2000/1",
+    "bookmakers": "B3|KN|AKB|PUP|VE"
+  },
+  {
+    "team": "Iraq",
+    "decimal": 2001,
+    "fractional": "2000/1",
+    "bookmakers": "AKB|VC"
+  },
+  {
+    "team": "Uzbekistan",
+    "decimal": 2001,
+    "fractional": "2000/1",
+    "bookmakers": "BRS|S6|KN|AKB|PUP|VC|VE"
+  },
+  {
+    "team": "Jordan",
+    "decimal": 2501,
+    "fractional": "2500/1",
+    "bookmakers": "B3|BRS|S6|KN|AKB|PUP|VE"
+  },
+  {
+    "team": "New Zealand",
+    "decimal": 2501,
+    "fractional": "2500/1",
+    "bookmakers": "B3|AKB"
+  },
+  {
+    "team": "Curacao",
+    "decimal": 5001,
+    "fractional": "5000/1",
+    "bookmakers": "AKB|PUP"
+  },
+  {
+    "team": "Haiti",
+    "decimal": 5001,
+    "fractional": "5000/1",
+    "bookmakers": "AKB|PUP"
+  }
+]
