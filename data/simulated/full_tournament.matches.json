@@ -1,0 +1,3850 @@
+[
+  {
+    "IdMatch": "400021443",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-11T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43911",
+      "Abbreviation": "mx",
+      "TeamName": [
+        {
+          "Description": "Mexico"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43883",
+      "Abbreviation": "za",
+      "TeamName": [
+        {
+          "Description": "South Africa"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43911"
+  },
+  {
+    "IdMatch": "400021441",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-12T02:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43822",
+      "Abbreviation": "kr",
+      "TeamName": [
+        {
+          "Description": "South Korea"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43995",
+      "Abbreviation": "cz",
+      "TeamName": [
+        {
+          "Description": "Czechia"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021449",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-12T19:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43899",
+      "Abbreviation": "ca",
+      "TeamName": [
+        {
+          "Description": "Canada"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "44037",
+      "Abbreviation": "ba",
+      "TeamName": [
+        {
+          "Description": "Bosnia & Herzegovina"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43899"
+  },
+  {
+    "IdMatch": "400021458",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-13T01:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43921",
+      "Abbreviation": "us",
+      "TeamName": [
+        {
+          "Description": "USA"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43928",
+      "Abbreviation": "py",
+      "TeamName": [
+        {
+          "Description": "Paraguay"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021447",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-13T19:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43834",
+      "Abbreviation": "qa",
+      "TeamName": [
+        {
+          "Description": "Qatar"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43971",
+      "Abbreviation": "ch",
+      "TeamName": [
+        {
+          "Description": "Switzerland"
+        }
+      ],
+      "Score": 4
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43971"
+  },
+  {
+    "IdMatch": "400021456",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-13T22:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43872",
+      "Abbreviation": "ma",
+      "TeamName": [
+        {
+          "Description": "Morocco"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43924"
+  },
+  {
+    "IdMatch": "400021453",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-14T01:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43908",
+      "Abbreviation": "ht",
+      "TeamName": [
+        {
+          "Description": "Haiti"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43967",
+      "Abbreviation": "gb-sct",
+      "TeamName": [
+        {
+          "Description": "Scotland"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43967"
+  },
+  {
+    "IdMatch": "400021463",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-14T04:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43976",
+      "Abbreviation": "au",
+      "TeamName": [
+        {
+          "Description": "Australia"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43972",
+      "Abbreviation": "tr",
+      "TeamName": [
+        {
+          "Description": "Türkiye"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43972"
+  },
+  {
+    "IdMatch": "400021464",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-14T17:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "1895293",
+      "Abbreviation": "cw",
+      "TeamName": [
+        {
+          "Description": "Curaçao"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43948"
+  },
+  {
+    "IdMatch": "400021470",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-14T20:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43960",
+      "Abbreviation": "nl",
+      "TeamName": [
+        {
+          "Description": "Netherlands"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43819",
+      "Abbreviation": "jp",
+      "TeamName": [
+        {
+          "Description": "Japan"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43960"
+  },
+  {
+    "IdMatch": "400021467",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-14T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43854",
+      "Abbreviation": "ci",
+      "TeamName": [
+        {
+          "Description": "Ivory Coast"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43927",
+      "Abbreviation": "ec",
+      "TeamName": [
+        {
+          "Description": "Ecuador"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021474",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-15T02:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43970",
+      "Abbreviation": "se",
+      "TeamName": [
+        {
+          "Description": "Sweden"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43888",
+      "Abbreviation": "tn",
+      "TeamName": [
+        {
+          "Description": "Tunisia"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021482",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-15T16:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43850",
+      "Abbreviation": "cv",
+      "TeamName": [
+        {
+          "Description": "Cape Verde"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021478",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-15T19:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43855",
+      "Abbreviation": "eg",
+      "TeamName": [
+        {
+          "Description": "Egypt"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43935"
+  },
+  {
+    "IdMatch": "400021486",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-15T22:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43835",
+      "Abbreviation": "sa",
+      "TeamName": [
+        {
+          "Description": "Saudi Arabia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43930",
+      "Abbreviation": "uy",
+      "TeamName": [
+        {
+          "Description": "Uruguay"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43930"
+  },
+  {
+    "IdMatch": "400021476",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-16T01:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43817",
+      "Abbreviation": "ir",
+      "TeamName": [
+        {
+          "Description": "Iran"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43978",
+      "Abbreviation": "nz",
+      "TeamName": [
+        {
+          "Description": "New Zealand"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021490",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-16T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43879",
+      "Abbreviation": "sn",
+      "TeamName": [
+        {
+          "Description": "Senegal"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021488",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-16T22:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43818",
+      "Abbreviation": "iq",
+      "TeamName": [
+        {
+          "Description": "Iraq"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43961",
+      "Abbreviation": "no",
+      "TeamName": [
+        {
+          "Description": "Norway"
+        }
+      ],
+      "Score": 4
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43961"
+  },
+  {
+    "IdMatch": "400021496",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-17T01:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43843",
+      "Abbreviation": "dz",
+      "TeamName": [
+        {
+          "Description": "Algeria"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021498",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-17T04:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43934",
+      "Abbreviation": "at",
+      "TeamName": [
+        {
+          "Description": "Austria"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43820",
+      "Abbreviation": "jo",
+      "TeamName": [
+        {
+          "Description": "Jordan"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43934"
+  },
+  {
+    "IdMatch": "400021502",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-17T17:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "20014",
+      "Abbreviation": "cd",
+      "TeamName": [
+        {
+          "Description": "DR Congo"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43963"
+  },
+  {
+    "IdMatch": "400021507",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-17T20:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43938",
+      "Abbreviation": "hr",
+      "TeamName": [
+        {
+          "Description": "Croatia"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021510",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-17T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43860",
+      "Abbreviation": "gh",
+      "TeamName": [
+        {
+          "Description": "Ghana"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43914",
+      "Abbreviation": "pa",
+      "TeamName": [
+        {
+          "Description": "Panama"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021504",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-18T02:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "44005",
+      "Abbreviation": "uz",
+      "TeamName": [
+        {
+          "Description": "Uzbekistan"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43926",
+      "Abbreviation": "co",
+      "TeamName": [
+        {
+          "Description": "Colombia"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43926"
+  },
+  {
+    "IdMatch": "400021440",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-18T16:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43995",
+      "Abbreviation": "cz",
+      "TeamName": [
+        {
+          "Description": "Czechia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43883",
+      "Abbreviation": "za",
+      "TeamName": [
+        {
+          "Description": "South Africa"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021446",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-18T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43971",
+      "Abbreviation": "ch",
+      "TeamName": [
+        {
+          "Description": "Switzerland"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "44037",
+      "Abbreviation": "ba",
+      "TeamName": [
+        {
+          "Description": "Bosnia & Herzegovina"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43971"
+  },
+  {
+    "IdMatch": "400021450",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-18T22:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43899",
+      "Abbreviation": "ca",
+      "TeamName": [
+        {
+          "Description": "Canada"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43834",
+      "Abbreviation": "qa",
+      "TeamName": [
+        {
+          "Description": "Qatar"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43899"
+  },
+  {
+    "IdMatch": "400021442",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-19T01:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43911",
+      "Abbreviation": "mx",
+      "TeamName": [
+        {
+          "Description": "Mexico"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43822",
+      "Abbreviation": "kr",
+      "TeamName": [
+        {
+          "Description": "South Korea"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43911"
+  },
+  {
+    "IdMatch": "400021462",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-19T19:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43921",
+      "Abbreviation": "us",
+      "TeamName": [
+        {
+          "Description": "USA"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43976",
+      "Abbreviation": "au",
+      "TeamName": [
+        {
+          "Description": "Australia"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43921"
+  },
+  {
+    "IdMatch": "400021454",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-19T22:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43967",
+      "Abbreviation": "gb-sct",
+      "TeamName": [
+        {
+          "Description": "Scotland"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43872",
+      "Abbreviation": "ma",
+      "TeamName": [
+        {
+          "Description": "Morocco"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021457",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-20T00:30:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43908",
+      "Abbreviation": "ht",
+      "TeamName": [
+        {
+          "Description": "Haiti"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43924"
+  },
+  {
+    "IdMatch": "400021460",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-20T03:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43972",
+      "Abbreviation": "tr",
+      "TeamName": [
+        {
+          "Description": "Türkiye"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43928",
+      "Abbreviation": "py",
+      "TeamName": [
+        {
+          "Description": "Paraguay"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021472",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-20T17:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43960",
+      "Abbreviation": "nl",
+      "TeamName": [
+        {
+          "Description": "Netherlands"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43970",
+      "Abbreviation": "se",
+      "TeamName": [
+        {
+          "Description": "Sweden"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43960"
+  },
+  {
+    "IdMatch": "400021469",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-20T20:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43854",
+      "Abbreviation": "ci",
+      "TeamName": [
+        {
+          "Description": "Ivory Coast"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43948"
+  },
+  {
+    "IdMatch": "400021465",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-21T00:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43927",
+      "Abbreviation": "ec",
+      "TeamName": [
+        {
+          "Description": "Ecuador"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "1895293",
+      "Abbreviation": "cw",
+      "TeamName": [
+        {
+          "Description": "Curaçao"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43927"
+  },
+  {
+    "IdMatch": "400021475",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-21T04:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43888",
+      "Abbreviation": "tn",
+      "TeamName": [
+        {
+          "Description": "Tunisia"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43819",
+      "Abbreviation": "jp",
+      "TeamName": [
+        {
+          "Description": "Japan"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43819"
+  },
+  {
+    "IdMatch": "400021483",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-21T16:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43835",
+      "Abbreviation": "sa",
+      "TeamName": [
+        {
+          "Description": "Saudi Arabia"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021477",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-21T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43817",
+      "Abbreviation": "ir",
+      "TeamName": [
+        {
+          "Description": "Iran"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43935"
+  },
+  {
+    "IdMatch": "400021487",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-21T22:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43930",
+      "Abbreviation": "uy",
+      "TeamName": [
+        {
+          "Description": "Uruguay"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43850",
+      "Abbreviation": "cv",
+      "TeamName": [
+        {
+          "Description": "Cape Verde"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43930"
+  },
+  {
+    "IdMatch": "400021480",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-22T01:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43978",
+      "Abbreviation": "nz",
+      "TeamName": [
+        {
+          "Description": "New Zealand"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43855",
+      "Abbreviation": "eg",
+      "TeamName": [
+        {
+          "Description": "Egypt"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43855"
+  },
+  {
+    "IdMatch": "400021494",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-22T17:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43934",
+      "Abbreviation": "at",
+      "TeamName": [
+        {
+          "Description": "Austria"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021492",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-22T21:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43818",
+      "Abbreviation": "iq",
+      "TeamName": [
+        {
+          "Description": "Iraq"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021491",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-23T00:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43961",
+      "Abbreviation": "no",
+      "TeamName": [
+        {
+          "Description": "Norway"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43879",
+      "Abbreviation": "sn",
+      "TeamName": [
+        {
+          "Description": "Senegal"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021499",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-23T03:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43820",
+      "Abbreviation": "jo",
+      "TeamName": [
+        {
+          "Description": "Jordan"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43843",
+      "Abbreviation": "dz",
+      "TeamName": [
+        {
+          "Description": "Algeria"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43843"
+  },
+  {
+    "IdMatch": "400021503",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-23T17:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "44005",
+      "Abbreviation": "uz",
+      "TeamName": [
+        {
+          "Description": "Uzbekistan"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43963"
+  },
+  {
+    "IdMatch": "400021506",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-23T20:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43860",
+      "Abbreviation": "gh",
+      "TeamName": [
+        {
+          "Description": "Ghana"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021511",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-23T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43914",
+      "Abbreviation": "pa",
+      "TeamName": [
+        {
+          "Description": "Panama"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43938",
+      "Abbreviation": "hr",
+      "TeamName": [
+        {
+          "Description": "Croatia"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43938"
+  },
+  {
+    "IdMatch": "400021501",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-24T02:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43926",
+      "Abbreviation": "co",
+      "TeamName": [
+        {
+          "Description": "Colombia"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "20014",
+      "Abbreviation": "cd",
+      "TeamName": [
+        {
+          "Description": "DR Congo"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43926"
+  },
+  {
+    "IdMatch": "400021448",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-24T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "44037",
+      "Abbreviation": "ba",
+      "TeamName": [
+        {
+          "Description": "Bosnia & Herzegovina"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43834",
+      "Abbreviation": "qa",
+      "TeamName": [
+        {
+          "Description": "Qatar"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "44037"
+  },
+  {
+    "IdMatch": "400021451",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-24T19:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43971",
+      "Abbreviation": "ch",
+      "TeamName": [
+        {
+          "Description": "Switzerland"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43899",
+      "Abbreviation": "ca",
+      "TeamName": [
+        {
+          "Description": "Canada"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021452",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-24T22:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43872",
+      "Abbreviation": "ma",
+      "TeamName": [
+        {
+          "Description": "Morocco"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43908",
+      "Abbreviation": "ht",
+      "TeamName": [
+        {
+          "Description": "Haiti"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43872"
+  },
+  {
+    "IdMatch": "400021455",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-24T22:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43967",
+      "Abbreviation": "gb-sct",
+      "TeamName": [
+        {
+          "Description": "Scotland"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43924"
+  },
+  {
+    "IdMatch": "400021445",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T01:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43883",
+      "Abbreviation": "za",
+      "TeamName": [
+        {
+          "Description": "South Africa"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43822",
+      "Abbreviation": "kr",
+      "TeamName": [
+        {
+          "Description": "South Korea"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021444",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T01:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43995",
+      "Abbreviation": "cz",
+      "TeamName": [
+        {
+          "Description": "Czechia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43911",
+      "Abbreviation": "mx",
+      "TeamName": [
+        {
+          "Description": "Mexico"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021468",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T20:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "1895293",
+      "Abbreviation": "cw",
+      "TeamName": [
+        {
+          "Description": "Curaçao"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43854",
+      "Abbreviation": "ci",
+      "TeamName": [
+        {
+          "Description": "Ivory Coast"
+        }
+      ],
+      "Score": 4
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43854"
+  },
+  {
+    "IdMatch": "400021466",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T20:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43927",
+      "Abbreviation": "ec",
+      "TeamName": [
+        {
+          "Description": "Ecuador"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43948"
+  },
+  {
+    "IdMatch": "400021473",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43888",
+      "Abbreviation": "tn",
+      "TeamName": [
+        {
+          "Description": "Tunisia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43960",
+      "Abbreviation": "nl",
+      "TeamName": [
+        {
+          "Description": "Netherlands"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43960"
+  },
+  {
+    "IdMatch": "400021471",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-25T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43819",
+      "Abbreviation": "jp",
+      "TeamName": [
+        {
+          "Description": "Japan"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43970",
+      "Abbreviation": "se",
+      "TeamName": [
+        {
+          "Description": "Sweden"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021461",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-26T02:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43928",
+      "Abbreviation": "py",
+      "TeamName": [
+        {
+          "Description": "Paraguay"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43976",
+      "Abbreviation": "au",
+      "TeamName": [
+        {
+          "Description": "Australia"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021459",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-26T02:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43972",
+      "Abbreviation": "tr",
+      "TeamName": [
+        {
+          "Description": "Türkiye"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43921",
+      "Abbreviation": "us",
+      "TeamName": [
+        {
+          "Description": "USA"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021493",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-26T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43879",
+      "Abbreviation": "sn",
+      "TeamName": [
+        {
+          "Description": "Senegal"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43818",
+      "Abbreviation": "iq",
+      "TeamName": [
+        {
+          "Description": "Iraq"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43879"
+  },
+  {
+    "IdMatch": "400021489",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-26T19:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43961",
+      "Abbreviation": "no",
+      "TeamName": [
+        {
+          "Description": "Norway"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021484",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T00:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43930",
+      "Abbreviation": "uy",
+      "TeamName": [
+        {
+          "Description": "Uruguay"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021485",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T00:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43850",
+      "Abbreviation": "cv",
+      "TeamName": [
+        {
+          "Description": "Cape Verde"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43835",
+      "Abbreviation": "sa",
+      "TeamName": [
+        {
+          "Description": "Saudi Arabia"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021481",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T03:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43978",
+      "Abbreviation": "nz",
+      "TeamName": [
+        {
+          "Description": "New Zealand"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43935"
+  },
+  {
+    "IdMatch": "400021479",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T03:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43855",
+      "Abbreviation": "eg",
+      "TeamName": [
+        {
+          "Description": "Egypt"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43817",
+      "Abbreviation": "ir",
+      "TeamName": [
+        {
+          "Description": "Iran"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021508",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T21:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43914",
+      "Abbreviation": "pa",
+      "TeamName": [
+        {
+          "Description": "Panama"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 3
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021509",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T21:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43938",
+      "Abbreviation": "hr",
+      "TeamName": [
+        {
+          "Description": "Croatia"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43860",
+      "Abbreviation": "gh",
+      "TeamName": [
+        {
+          "Description": "Ghana"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43938"
+  },
+  {
+    "IdMatch": "400021500",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T23:30:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "20014",
+      "Abbreviation": "cd",
+      "TeamName": [
+        {
+          "Description": "DR Congo"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "44005",
+      "Abbreviation": "uz",
+      "TeamName": [
+        {
+          "Description": "Uzbekistan"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021505",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-27T23:30:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43926",
+      "Abbreviation": "co",
+      "TeamName": [
+        {
+          "Description": "Colombia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021497",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-28T02:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43843",
+      "Abbreviation": "dz",
+      "TeamName": [
+        {
+          "Description": "Algeria"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43934",
+      "Abbreviation": "at",
+      "TeamName": [
+        {
+          "Description": "Austria"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": null
+  },
+  {
+    "IdMatch": "400021495",
+    "IdStage": "289273",
+    "StageName": [
+      {
+        "Description": "First Stage"
+      }
+    ],
+    "Date": "2026-06-28T02:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43820",
+      "Abbreviation": "jo",
+      "TeamName": [
+        {
+          "Description": "Jordan"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 4
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021518",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-28T19:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43970",
+      "Abbreviation": "se",
+      "TeamName": [
+        {
+          "Description": "Sweden"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021516",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-29T17:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43921",
+      "Abbreviation": "us",
+      "TeamName": [
+        {
+          "Description": "USA"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43972",
+      "Abbreviation": "tr",
+      "TeamName": [
+        {
+          "Description": "Türkiye"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43921"
+  },
+  {
+    "IdMatch": "400021513",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-29T20:30:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43960",
+      "Abbreviation": "nl",
+      "TeamName": [
+        {
+          "Description": "Netherlands"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43855",
+      "Abbreviation": "eg",
+      "TeamName": [
+        {
+          "Description": "Egypt"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43960"
+  },
+  {
+    "IdMatch": "400021522",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-30T01:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43879",
+      "Abbreviation": "sn",
+      "TeamName": [
+        {
+          "Description": "Senegal"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43963"
+  },
+  {
+    "IdMatch": "400021514",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-30T17:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43995",
+      "Abbreviation": "cz",
+      "TeamName": [
+        {
+          "Description": "Czechia"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021523",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-06-30T21:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43899",
+      "Abbreviation": "ca",
+      "TeamName": [
+        {
+          "Description": "Canada"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43961",
+      "Abbreviation": "no",
+      "TeamName": [
+        {
+          "Description": "Norway"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43961"
+  },
+  {
+    "IdMatch": "400021520",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-01T01:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43928",
+      "Abbreviation": "py",
+      "TeamName": [
+        {
+          "Description": "Paraguay"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43948"
+  },
+  {
+    "IdMatch": "400021512",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-01T16:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": 4,
+    "AwayTeamPenaltyScore": 2,
+    "Home": {
+      "IdTeam": "43911",
+      "Abbreviation": "mx",
+      "TeamName": [
+        {
+          "Description": "Mexico"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43819",
+      "Abbreviation": "jp",
+      "TeamName": [
+        {
+          "Description": "Japan"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43911"
+  },
+  {
+    "IdMatch": "400021525",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-01T20:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43817",
+      "Abbreviation": "ir",
+      "TeamName": [
+        {
+          "Description": "Iran"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021524",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-02T00:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43938",
+      "Abbreviation": "hr",
+      "TeamName": [
+        {
+          "Description": "Croatia"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43854",
+      "Abbreviation": "ci",
+      "TeamName": [
+        {
+          "Description": "Ivory Coast"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43938"
+  },
+  {
+    "IdMatch": "400021519",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-02T19:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43967",
+      "Abbreviation": "gb-sct",
+      "TeamName": [
+        {
+          "Description": "Scotland"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43935"
+  },
+  {
+    "IdMatch": "400021526",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-02T23:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": 4,
+    "AwayTeamPenaltyScore": 2,
+    "Home": {
+      "IdTeam": "43971",
+      "Abbreviation": "ch",
+      "TeamName": [
+        {
+          "Description": "Switzerland"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43934",
+      "Abbreviation": "at",
+      "TeamName": [
+        {
+          "Description": "Austria"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43971"
+  },
+  {
+    "IdMatch": "400021527",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-03T03:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "44037",
+      "Abbreviation": "ba",
+      "TeamName": [
+        {
+          "Description": "Bosnia & Herzegovina"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43924"
+  },
+  {
+    "IdMatch": "400021515",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-03T18:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": 4,
+    "AwayTeamPenaltyScore": 2,
+    "Home": {
+      "IdTeam": "43930",
+      "Abbreviation": "uy",
+      "TeamName": [
+        {
+          "Description": "Uruguay"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43927",
+      "Abbreviation": "ec",
+      "TeamName": [
+        {
+          "Description": "Ecuador"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43930"
+  },
+  {
+    "IdMatch": "400021521",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-03T22:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43843",
+      "Abbreviation": "dz",
+      "TeamName": [
+        {
+          "Description": "Algeria"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021517",
+    "IdStage": "289287",
+    "StageName": [
+      {
+        "Description": "Round of 32"
+      }
+    ],
+    "Date": "2026-07-04T01:30:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43926",
+      "Abbreviation": "co",
+      "TeamName": [
+        {
+          "Description": "Colombia"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43872",
+      "Abbreviation": "ma",
+      "TeamName": [
+        {
+          "Description": "Morocco"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43872"
+  },
+  {
+    "IdMatch": "400021530",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-04T17:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43921",
+      "Abbreviation": "us",
+      "TeamName": [
+        {
+          "Description": "USA"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021533",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-04T21:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 2,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43960",
+      "Abbreviation": "nl",
+      "TeamName": [
+        {
+          "Description": "Netherlands"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 2
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43963"
+  },
+  {
+    "IdMatch": "400021532",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-05T20:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43961",
+      "Abbreviation": "no",
+      "TeamName": [
+        {
+          "Description": "Norway"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021531",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-06T00:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43911",
+      "Abbreviation": "mx",
+      "TeamName": [
+        {
+          "Description": "Mexico"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43948"
+  },
+  {
+    "IdMatch": "400021529",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-06T19:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43938",
+      "Abbreviation": "hr",
+      "TeamName": [
+        {
+          "Description": "Croatia"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021534",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-07T00:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43971",
+      "Abbreviation": "ch",
+      "TeamName": [
+        {
+          "Description": "Switzerland"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43935"
+  },
+  {
+    "IdMatch": "400021528",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-07T16:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43930",
+      "Abbreviation": "uy",
+      "TeamName": [
+        {
+          "Description": "Uruguay"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43924"
+  },
+  {
+    "IdMatch": "400021535",
+    "IdStage": "289288",
+    "StageName": [
+      {
+        "Description": "Round of 16"
+      }
+    ],
+    "Date": "2026-07-07T20:00:00Z",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 4
+    },
+    "Away": {
+      "IdTeam": "43872",
+      "Abbreviation": "ma",
+      "TeamName": [
+        {
+          "Description": "Morocco"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021536",
+    "IdStage": "289289",
+    "StageName": [
+      {
+        "Description": "Quarter-final"
+      }
+    ],
+    "Date": "2026-07-09T20:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43963",
+      "Abbreviation": "pt",
+      "TeamName": [
+        {
+          "Description": "Portugal"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021538",
+    "IdStage": "289289",
+    "StageName": [
+      {
+        "Description": "Quarter-final"
+      }
+    ],
+    "Date": "2026-07-10T19:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43948",
+      "Abbreviation": "de",
+      "TeamName": [
+        {
+          "Description": "Germany"
+        }
+      ],
+      "Score": 0
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021539",
+    "IdStage": "289289",
+    "StageName": [
+      {
+        "Description": "Quarter-final"
+      }
+    ],
+    "Date": "2026-07-11T21:00:00Z",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 3
+    },
+    "Away": {
+      "IdTeam": "43935",
+      "Abbreviation": "be",
+      "TeamName": [
+        {
+          "Description": "Belgium"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43922"
+  },
+  {
+    "IdMatch": "400021537",
+    "IdStage": "289289",
+    "StageName": [
+      {
+        "Description": "Quarter-final"
+      }
+    ],
+    "Date": "2026-07-12T01:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43924",
+      "Abbreviation": "br",
+      "TeamName": [
+        {
+          "Description": "Brazil"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021541",
+    "IdStage": "289290",
+    "StageName": [
+      {
+        "Description": "Semi-final"
+      }
+    ],
+    "Date": "2026-07-14T19:00:00Z",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": 4,
+    "AwayTeamPenaltyScore": 2,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 1
+    },
+    "Away": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  },
+  {
+    "IdMatch": "400021540",
+    "IdStage": "289290",
+    "StageName": [
+      {
+        "Description": "Semi-final"
+      }
+    ],
+    "Date": "2026-07-15T19:00:00Z",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 0
+    },
+    "Away": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43942"
+  },
+  {
+    "IdMatch": "400021542",
+    "IdStage": "289291",
+    "StageName": [
+      {
+        "Description": "Play-off for third place"
+      }
+    ],
+    "Date": "2026-07-18T21:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43946",
+      "Abbreviation": "fr",
+      "TeamName": [
+        {
+          "Description": "France"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43922",
+      "Abbreviation": "ar",
+      "TeamName": [
+        {
+          "Description": "Argentina"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43946"
+  },
+  {
+    "IdMatch": "400021543",
+    "IdStage": "289292",
+    "StageName": [
+      {
+        "Description": "Final"
+      }
+    ],
+    "Date": "2026-07-19T19:00:00Z",
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+    "HomeTeamPenaltyScore": null,
+    "AwayTeamPenaltyScore": null,
+    "Home": {
+      "IdTeam": "43969",
+      "Abbreviation": "es",
+      "TeamName": [
+        {
+          "Description": "Spain"
+        }
+      ],
+      "Score": 2
+    },
+    "Away": {
+      "IdTeam": "43942",
+      "Abbreviation": "gb-eng",
+      "TeamName": [
+        {
+          "Description": "England"
+        }
+      ],
+      "Score": 1
+    },
+    "PlaceHolderA": null,
+    "PlaceHolderB": null,
+    "Winner": "43969"
+  }
+]
