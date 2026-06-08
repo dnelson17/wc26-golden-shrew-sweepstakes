@@ -26,6 +26,9 @@ jobs:
           node-version: '22'
 
       - name: Compute standings from FIFA
+        # Manual runs bypass the tournament-window guard.
+        env:
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: node scripts/fetch.mjs
 
       - name: Commit results if changed

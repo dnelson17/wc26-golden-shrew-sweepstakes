@@ -29,7 +29,17 @@ async function discoverSeason() {
   return { idCompetition: wc.IdCompetition, idSeason: wc.IdSeason };
 }
 
+// Tournament window (UTC). Outside it, scores never change — skip the call.
+// Override with FORCE=1 (e.g. manual workflow_dispatch).
+const WINDOW_START = Date.parse('2026-06-11T00:00:00Z');
+const WINDOW_END = Date.parse('2026-07-20T23:59:59Z');
+
 async function main() {
+  const now = Date.now();
+  if (!process.env.FORCE && (now < WINDOW_START || now > WINDOW_END)) {
+    console.log('Outside tournament window (11 Jun – 20 Jul 2026 UTC); skipping. Set FORCE=1 to override.');
+    return;
+  }
   const draw = JSON.parse(await readFile(DRAW_PATH, 'utf8'));
   let { idCompetition, idSeason } = draw.meta ?? {};
 
