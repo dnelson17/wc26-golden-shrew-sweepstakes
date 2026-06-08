@@ -1,0 +1,41 @@
+name: Update results
+
+on:
+  schedule:
+    # Hourly during the tournament window (11 Jun – 20 Jul 2026, UTC).
+    # fetch.mjs no-ops when nothing changed, so most runs commit nothing.
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+# Only one update at a time; let an in-progress run finish.
+concurrency:
+  group: update-results
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Compute standings from FIFA
+        run: node scripts/fetch.mjs
+
+      - name: Commit results if changed
+        run: |
+          if git diff --quiet -- data/results.json; then
+            echo "No change in results.json"
+            exit 0
+          fi
+          git config user.name "results-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/results.json
+          git commit -m "data: update results $(date -u +'%Y-%m-%dT%H:%MZ')"
+          git push
