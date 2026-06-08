@@ -147,6 +147,9 @@ export function compute(draw, rawMatches, nowIso) {
     if (deepest.depth === 0) {
       // group casualty: out once groups complete and they didn't make the knockouts
       t.eliminated = groupComplete && !inKnockout.has(t.fifaId);
+    } else if (deepest.depth === 5) {
+      // third-place playoff is terminal for both teams (title comes from the final)
+      t.eliminated = true;
     } else {
       // lost a knockout tie (Winner set to the other team)
       t.eliminated = deepest.winner != null && deepest.winner !== t.fifaId;
