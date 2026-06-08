@@ -7,16 +7,14 @@
         "fifaName": "Côte d'Ivoire",
         "fifaId": "43854",
         "idCountry": "CIV",
-        "iso2": "ci",
-        "flag": "🇨🇮"
+        "iso2": "ci"
       },
       "group2": {
         "name": "Qatar",
         "fifaName": "Qatar",
         "fifaId": "43834",
         "idCountry": "QAT",
-        "iso2": "qa",
-        "flag": "🇶🇦"
+        "iso2": "qa"
       }
     },
     {
@@ -26,16 +24,14 @@
         "fifaName": "Türkiye",
         "fifaId": "43972",
         "idCountry": "TUR",
-        "iso2": "tr",
-        "flag": "🇹🇷"
+        "iso2": "tr"
       },
       "group2": {
         "name": "Paraguay",
         "fifaName": "Paraguay",
         "fifaId": "43928",
         "idCountry": "PAR",
-        "iso2": "py",
-        "flag": "🇵🇾"
+        "iso2": "py"
       }
     },
     {
@@ -45,16 +41,14 @@
         "fifaName": "Colombia",
         "fifaId": "43926",
         "idCountry": "COL",
-        "iso2": "co",
-        "flag": "🇨🇴"
+        "iso2": "co"
       },
       "group2": {
         "name": "Egypt",
         "fifaName": "Egypt",
         "fifaId": "43855",
         "idCountry": "EGY",
-        "iso2": "eg",
-        "flag": "🇪🇬"
+        "iso2": "eg"
       }
     },
     {
@@ -64,16 +58,14 @@
         "fifaName": "Brazil",
         "fifaId": "43924",
         "idCountry": "BRA",
-        "iso2": "br",
-        "flag": "🇧🇷"
+        "iso2": "br"
       },
       "group2": {
         "name": "Australia",
         "fifaName": "Australia",
         "fifaId": "43976",
         "idCountry": "AUS",
-        "iso2": "au",
-        "flag": "🇦🇺"
+        "iso2": "au"
       }
     },
     {
@@ -83,16 +75,14 @@
         "fifaName": "Uruguay",
         "fifaId": "43930",
         "idCountry": "URU",
-        "iso2": "uy",
-        "flag": "🇺🇾"
+        "iso2": "uy"
       },
       "group2": {
         "name": "Tunisia",
         "fifaName": "Tunisia",
         "fifaId": "43888",
         "idCountry": "TUN",
-        "iso2": "tn",
-        "flag": "🇹🇳"
+        "iso2": "tn"
       }
     },
     {
@@ -102,16 +92,14 @@
         "fifaName": "Japan",
         "fifaId": "43819",
         "idCountry": "JPN",
-        "iso2": "jp",
-        "flag": "🇯🇵"
+        "iso2": "jp"
       },
       "group2": {
         "name": "Uzbekistan",
         "fifaName": "Uzbekistan",
         "fifaId": "44005",
         "idCountry": "UZB",
-        "iso2": "uz",
-        "flag": "🇺🇿"
+        "iso2": "uz"
       }
     },
     {
@@ -121,16 +109,14 @@
         "fifaName": "Mexico",
         "fifaId": "43911",
         "idCountry": "MEX",
-        "iso2": "mx",
-        "flag": "🇲🇽"
+        "iso2": "mx"
       },
       "group2": {
         "name": "DR Congo",
         "fifaName": "Congo DR",
         "fifaId": "20014",
         "idCountry": "COD",
-        "iso2": "cd",
-        "flag": "🇨🇩"
+        "iso2": "cd"
       }
     },
     {
@@ -140,16 +126,14 @@
         "fifaName": "Morocco",
         "fifaId": "43872",
         "idCountry": "MAR",
-        "iso2": "ma",
-        "flag": "🇲🇦"
+        "iso2": "ma"
       },
       "group2": {
         "name": "New Zealand",
         "fifaName": "New Zealand",
         "fifaId": "43978",
         "idCountry": "NZL",
-        "iso2": "nz",
-        "flag": "🇳🇿"
+        "iso2": "nz"
       }
     },
     {
@@ -159,16 +143,14 @@
         "fifaName": "Germany",
         "fifaId": "43948",
         "idCountry": "GER",
-        "iso2": "de",
-        "flag": "🇩🇪"
+        "iso2": "de"
       },
       "group2": {
         "name": "Scotland",
         "fifaName": "Scotland",
         "fifaId": "43967",
         "idCountry": "SCO",
-        "iso2": "gb-sct",
-        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+        "iso2": "gb-sct"
       }
     },
     {
@@ -178,16 +160,14 @@
         "fifaName": "Spain",
         "fifaId": "43969",
         "idCountry": "ESP",
-        "iso2": "es",
-        "flag": "🇪🇸"
+        "iso2": "es"
       },
       "group2": {
         "name": "Curaçao",
         "fifaName": "Curaçao",
         "fifaId": "1895293",
         "idCountry": "CUW",
-        "iso2": "cw",
-        "flag": "🇨🇼"
+        "iso2": "cw"
       }
     },
     {
@@ -197,16 +177,14 @@
         "fifaName": "Croatia",
         "fifaId": "43938",
         "idCountry": "CRO",
-        "iso2": "hr",
-        "flag": "🇭🇷"
+        "iso2": "hr"
       },
       "group2": {
         "name": "Czechia",
         "fifaName": "Czechia",
         "fifaId": "43995",
         "idCountry": "CZE",
-        "iso2": "cz",
-        "flag": "🇨🇿"
+        "iso2": "cz"
       }
     },
     {
@@ -216,16 +194,14 @@
         "fifaName": "France",
         "fifaId": "43946",
         "idCountry": "FRA",
-        "iso2": "fr",
-        "flag": "🇫🇷"
+        "iso2": "fr"
       },
       "group2": {
         "name": "Jordan",
         "fifaName": "Jordan",
         "fifaId": "43820",
         "idCountry": "JOR",
-        "iso2": "jo",
-        "flag": "🇯🇴"
+        "iso2": "jo"
       }
     },
     {
@@ -235,16 +211,14 @@
         "fifaName": "USA",
         "fifaId": "43921",
         "idCountry": "USA",
-        "iso2": "us",
-        "flag": "🇺🇸"
+        "iso2": "us"
       },
       "group2": {
         "name": "Bosnia & Herzegovina",
         "fifaName": "Bosnia and Herzegovina",
         "fifaId": "44037",
         "idCountry": "BIH",
-        "iso2": "ba",
-        "flag": "🇧🇦"
+        "iso2": "ba"
       }
     },
     {
@@ -254,16 +228,14 @@
         "fifaName": "Belgium",
         "fifaId": "43935",
         "idCountry": "BEL",
-        "iso2": "be",
-        "flag": "🇧🇪"
+        "iso2": "be"
       },
       "group2": {
         "name": "Saudi Arabia",
         "fifaName": "Saudi Arabia",
         "fifaId": "43835",
         "idCountry": "KSA",
-        "iso2": "sa",
-        "flag": "🇸🇦"
+        "iso2": "sa"
       }
     },
     {
@@ -273,16 +245,14 @@
         "fifaName": "Austria",
         "fifaId": "43934",
         "idCountry": "AUT",
-        "iso2": "at",
-        "flag": "🇦🇹"
+        "iso2": "at"
       },
       "group2": {
         "name": "Haiti",
         "fifaName": "Haiti",
         "fifaId": "43908",
         "idCountry": "HAI",
-        "iso2": "ht",
-        "flag": "🇭🇹"
+        "iso2": "ht"
       }
     },
     {
@@ -292,16 +262,14 @@
         "fifaName": "Argentina",
         "fifaId": "43922",
         "idCountry": "ARG",
-        "iso2": "ar",
-        "flag": "🇦🇷"
+        "iso2": "ar"
       },
       "group2": {
         "name": "Iraq",
         "fifaName": "Iraq",
         "fifaId": "43818",
         "idCountry": "IRQ",
-        "iso2": "iq",
-        "flag": "🇮🇶"
+        "iso2": "iq"
       }
     },
     {
@@ -311,16 +279,14 @@
         "fifaName": "Netherlands",
         "fifaId": "43960",
         "idCountry": "NED",
-        "iso2": "nl",
-        "flag": "🇳🇱"
+        "iso2": "nl"
       },
       "group2": {
         "name": "Panama",
         "fifaName": "Panama",
         "fifaId": "43914",
         "idCountry": "PAN",
-        "iso2": "pa",
-        "flag": "🇵🇦"
+        "iso2": "pa"
       }
     },
     {
@@ -330,16 +296,14 @@
         "fifaName": "Ecuador",
         "fifaId": "43927",
         "idCountry": "ECU",
-        "iso2": "ec",
-        "flag": "🇪🇨"
+        "iso2": "ec"
       },
       "group2": {
         "name": "Ghana",
         "fifaName": "Ghana",
         "fifaId": "43860",
         "idCountry": "GHA",
-        "iso2": "gh",
-        "flag": "🇬🇭"
+        "iso2": "gh"
       }
     },
     {
@@ -349,16 +313,14 @@
         "fifaName": "Portugal",
         "fifaId": "43963",
         "idCountry": "POR",
-        "iso2": "pt",
-        "flag": "🇵🇹"
+        "iso2": "pt"
       },
       "group2": {
         "name": "South Africa",
         "fifaName": "South Africa",
         "fifaId": "43883",
         "idCountry": "RSA",
-        "iso2": "za",
-        "flag": "🇿🇦"
+        "iso2": "za"
       }
     },
     {
@@ -368,16 +330,14 @@
         "fifaName": "Norway",
         "fifaId": "43961",
         "idCountry": "NOR",
-        "iso2": "no",
-        "flag": "🇳🇴"
+        "iso2": "no"
       },
       "group2": {
         "name": "South Korea",
         "fifaName": "Korea Republic",
         "fifaId": "43822",
         "idCountry": "KOR",
-        "iso2": "kr",
-        "flag": "🇰🇷"
+        "iso2": "kr"
       }
     },
     {
@@ -387,16 +347,14 @@
         "fifaName": "Sweden",
         "fifaId": "43970",
         "idCountry": "SWE",
-        "iso2": "se",
-        "flag": "🇸🇪"
+        "iso2": "se"
       },
       "group2": {
         "name": "Iran",
         "fifaName": "IR Iran",
         "fifaId": "43817",
         "idCountry": "IRN",
-        "iso2": "ir",
-        "flag": "🇮🇷"
+        "iso2": "ir"
       }
     },
     {
@@ -406,16 +364,14 @@
         "fifaName": "Senegal",
         "fifaId": "43879",
         "idCountry": "SEN",
-        "iso2": "sn",
-        "flag": "🇸🇳"
+        "iso2": "sn"
       },
       "group2": {
         "name": "Canada",
         "fifaName": "Canada",
         "fifaId": "43899",
         "idCountry": "CAN",
-        "iso2": "ca",
-        "flag": "🇨🇦"
+        "iso2": "ca"
       }
     },
     {
@@ -425,16 +381,14 @@
         "fifaName": "Switzerland",
         "fifaId": "43971",
         "idCountry": "SUI",
-        "iso2": "ch",
-        "flag": "🇨🇭"
+        "iso2": "ch"
       },
       "group2": {
         "name": "Cape Verde",
         "fifaName": "Cabo Verde",
         "fifaId": "43850",
         "idCountry": "CPV",
-        "iso2": "cv",
-        "flag": "🇨🇻"
+        "iso2": "cv"
       }
     },
     {
@@ -444,16 +398,14 @@
         "fifaName": "England",
         "fifaId": "43942",
         "idCountry": "ENG",
-        "iso2": "gb-eng",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+        "iso2": "gb-eng"
       },
       "group2": {
         "name": "Algeria",
         "fifaName": "Algeria",
         "fifaId": "43843",
         "idCountry": "ALG",
-        "iso2": "dz",
-        "flag": "🇩🇿"
+        "iso2": "dz"
       }
     }
   ],

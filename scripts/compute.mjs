@@ -72,7 +72,6 @@ function buildRegistry(draw) {
         fifaName: t.fifaName,
         abbr: null,
         iso2: t.iso2,
-        flag: t.flag,
         idCountry: t.idCountry,
         owner: person.name,
         tier,
@@ -169,7 +168,7 @@ export function compute(draw, rawMatches, nowIso) {
   const teams = [...reg.values()];
   const ref = (t) => t && {
     fifaId: t.fifaId, name: t.name, owner: t.owner, tier: t.tier,
-    flag: t.flag, iso2: t.iso2, furthestDepth: t.furthestDepth,
+    iso2: t.iso2, furthestDepth: t.furthestDepth,
     furthestLabel: DEPTH_LABEL[t.furthestDepth],
     pts: t.pts, gd: t.gd, gf: t.gf, ga: t.ga, ogf: t.ogf, oga: t.oga,
   };
