@@ -4,7 +4,7 @@
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
-    "playedMatches": 0,
+    "playedMatches": 999,
     "groupComplete": false,
     "tournamentOver": false,
     "source": "https://api.fifa.com/api/v3/calendar/matches"
