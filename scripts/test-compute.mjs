@@ -88,6 +88,24 @@ assert.equal(byName('Spain').eliminated, false);
 assert.equal(byName('Iraq').eliminated, false);
 assert.equal(byName('Iraq').furthestDepth, 0);
 
+// Prize status: champion won winner; France (3rd-place winner) won third, lost winner
+assert.equal(byName('Spain').status.winner, 'won');
+assert.equal(byName('France').status.third, 'won');
+assert.equal(byName('France').status.winner, 'lost');
+assert.equal(byName('Portugal').status.third, 'lost');   // runner-up: reached final, can't be 3rd
+// Best group-2 decided to Curaçao at tournament end
+assert.equal(byName('Curaçao').status.bestGroup2, 'won');
+assert.equal(byName('Spain').status.bestGroup2, 'na');   // tier-1 ineligible
+// Shrew decided (groups complete in this sim) — Qatar won it, others lost (safe)
+assert.equal(byName('Qatar').status.shrew, 'won');
+assert.equal(byName('Spain').status.shrew, 'lost');
+// Person rollup: Josh owns Spain (champion) + Curaçao (best group-2)
+const josh = r.people.find((p) => p.name === 'Josh');
+assert.equal(josh.status.winner, 'won');
+assert.equal(josh.status.bestGroup2, 'won');
+// Bracket + league table present
+assert.ok(r.knockout.length >= 1 && r.leagueTable.length === 48);
+
 console.log('All assertions passed.');
 console.log('  champion:', r.prizes.first.winner.name);
 console.log('  3rd place:', r.prizes.second.winner.name);

@@ -169,12 +169,7 @@ export function compute(draw, rawMatches, nowIso) {
   if (third) reg.get(third) && (reg.get(third).thirdPlace = true);
 
   const teams = [...reg.values()];
-  const ref = (t) => t && {
-    fifaId: t.fifaId, name: t.name, owner: t.owner, tier: t.tier,
-    iso2: t.iso2, furthestDepth: t.furthestDepth,
-    furthestLabel: DEPTH_LABEL[t.furthestDepth],
-    pts: t.pts, gd: t.gd, gf: t.gf, ga: t.ga, ogf: t.ogf, oga: t.oga,
-  };
+  for (const t of teams) t.qualified = inKnockout.has(t.fifaId);
 
   // Prize 3: best group-2 team. Furthest depth, then most goals, then fewest conceded.
   const tier2 = teams.filter((t) => t.tier === 2)
@@ -193,6 +188,68 @@ export function compute(draw, rawMatches, nowIso) {
   const playedCount = matches.filter((m) => m.played).length;
   const tournamentOver = !!champion;
 
+  // --- Per-team prize status: won | lost | ongoing | na ---
+  const tier2Leaders = new Set(t3Shared.map((t) => t.fifaId));
+  const shrewLeaders = new Set(t4Shared.map((t) => t.fifaId));
+  const thirdLoserId = thirdM?.played
+    ? [thirdM.home?.id, thirdM.away?.id].find((id) => id && id !== third) : null;
+
+  const statusFor = (t) => {
+    // 🏆 Winner
+    const winner = t.champion ? 'won' : t.eliminated ? 'lost' : 'ongoing';
+    // 🥉 Third place (win the 3rd-place playoff)
+    let third_;
+    if (t.thirdPlace) third_ = 'won';
+    else if (t.furthestDepth === 6) third_ = 'lost';        // reached the final → can't be 3rd
+    else if (thirdLoserId === t.fifaId) third_ = 'lost';    // lost the 3rd-place playoff
+    else if (t.eliminated && t.furthestDepth <= 3) third_ = 'lost'; // out in QF or earlier
+    else third_ = 'ongoing';                                 // alive, in SF, or 3rd-place game pending
+    // 🪖 Best group-2 (only group-2 teams are eligible)
+    let bestGroup2;
+    if (t.tier === 1) bestGroup2 = 'na';
+    else if (tournamentOver) bestGroup2 = tier2Leaders.has(t.fifaId) ? 'won' : 'lost';
+    else if (tier2Leaders.has(t.fifaId)) bestGroup2 = 'ongoing'; // currently leading
+    else if (t.eliminated) bestGroup2 = 'lost';                  // out and behind the leader
+    else bestGroup2 = 'ongoing';
+    // 🪵 Wooden shrew (decided once the group stage is complete)
+    const shrew = groupComplete ? (shrewLeaders.has(t.fifaId) ? 'won' : 'lost') : 'ongoing';
+    return { winner, third: third_, bestGroup2, shrew };
+  };
+  for (const t of teams) t.status = statusFor(t);
+
+  // won beats ongoing beats lost; 'na' ignored. Used to roll a player's two teams up.
+  const combine = (...ss) => {
+    const f = ss.filter((s) => s && s !== 'na');
+    if (!f.length) return 'na';
+    if (f.includes('won')) return 'won';
+    if (f.includes('ongoing')) return 'ongoing';
+    return 'lost';
+  };
+
+  const ref = (t) => t && {
+    fifaId: t.fifaId, name: t.name, owner: t.owner, tier: t.tier, iso2: t.iso2,
+    furthestDepth: t.furthestDepth, furthestLabel: DEPTH_LABEL[t.furthestDepth],
+    pts: t.pts, w: t.w, d: t.d, l: t.l, gf: t.gf, ga: t.ga, gd: t.gd, ogf: t.ogf, oga: t.oga,
+    eliminated: t.eliminated, qualified: t.qualified, champion: t.champion,
+    runnerUp: t.runnerUp, thirdPlace: t.thirdPlace, status: t.status,
+  };
+
+  // Knockout matches for the bracket view. Unrevealed rounds keep their placeholders.
+  const knockout = matches.filter((m) => m.depth >= 1)
+    .sort((a, b) => a.depth - b.depth || (a.date ?? '').localeCompare(b.date ?? ''))
+    .map((m) => ({
+      matchId: m.id, depth: m.depth, stage: DEPTH_LABEL[m.depth], date: m.date, played: m.played,
+      home: m.home?.id ? ref(reg.get(m.home.id)) : null,
+      away: m.away?.id ? ref(reg.get(m.away.id)) : null,
+      homePlaceholder: m.placeholderA, awayPlaceholder: m.placeholderB,
+      homeScore: m.home?.score ?? null, awayScore: m.away?.score ?? null,
+      homePen: m.homePen, awayPen: m.awayPen, winnerId: m.winner,
+    }));
+
+  // Full combined table in wooden-shrew order; `qualified` marks knockout teams so
+  // the shrew view can isolate the 16 non-qualifiers.
+  const leagueTable = spoon.map((t, i) => ({ rank: i + 1, ...ref(t) }));
+
   return {
     meta: {
       updatedAt: nowIso,
@@ -205,26 +262,38 @@ export function compute(draw, rawMatches, nowIso) {
       source: 'https://api.fifa.com/api/v3/calendar/matches',
     },
     prizes: {
-      first: { label: 'Winner — £120', status: champion ? 'decided' : 'pending', winner: ref(reg.get(champion)) },
-      second: { label: '3rd place — £40', status: third ? 'decided' : 'pending', winner: ref(reg.get(third)) },
+      first: { label: 'Winner — £120', emoji: '🏆', status: champion ? 'decided' : 'pending', winner: ref(reg.get(champion)) },
+      second: { label: '3rd place — £40', emoji: '🥉', status: third ? 'decided' : 'pending', winner: ref(reg.get(third)) },
       third: {
-        label: 'Best group-2 side — £40',
+        label: 'Best group-2 side — £40', emoji: '🪖',
         status: tournamentOver ? 'decided' : 'leading',
         leaders: t3Shared.map(ref),
         standings: tier2.map(ref),
       },
       fourth: {
-        label: 'Wooden shrew — £40',
+        label: 'Wooden shrew — £40', emoji: '🪵',
         status: groupComplete ? 'decided' : 'leading',
         leaders: t4Shared.map(ref),
         standings: spoon.slice(0, 6).map(ref),
       },
     },
-    teams: teams.sort((a, b) => a.tier - b.tier || a.owner.localeCompare(b.owner)),
-    people: draw.people.map((p) => ({
-      name: p.name,
-      group1: ref(reg.get(p.group1.fifaId)),
-      group2: ref(reg.get(p.group2.fifaId)),
-    })),
+    knockout,
+    leagueTable,
+    teams: teams.sort((a, b) => a.tier - b.tier || a.owner.localeCompare(b.owner)).map(ref),
+    people: draw.people.map((p) => {
+      const g1 = reg.get(p.group1.fifaId);
+      const g2 = reg.get(p.group2.fifaId);
+      return {
+        name: p.name,
+        group1: ref(g1),
+        group2: ref(g2),
+        status: {
+          winner: combine(g1.status.winner, g2.status.winner),
+          third: combine(g1.status.third, g2.status.third),
+          bestGroup2: g2.status.bestGroup2, // only the group-2 team is eligible
+          shrew: combine(g1.status.shrew, g2.status.shrew),
+        },
+      };
+    }),
   };
 }
