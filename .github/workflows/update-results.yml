@@ -40,5 +40,7 @@ jobs:
           git config user.name "results-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/results.json
-          git commit -m "data: update results $(date -u +'%Y-%m-%dT%H:%MZ')"
+          # [skip ci] stops Cloudflare Pages rebuilding on every data commit — the site
+          # fetches results.json from the CDN at runtime, so no rebuild is needed.
+          git commit -m "data: update results $(date -u +'%Y-%m-%dT%H:%MZ') [skip ci]"
           git push
