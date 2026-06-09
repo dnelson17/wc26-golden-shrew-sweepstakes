@@ -4,6 +4,7 @@ import results from '../../data/results.json';
 
 const NAV = [
   { view: 'prizes', icon: '🏆', label: 'Prizes' },
+  { view: 'fixtures', icon: '📅', label: 'Fixtures' },
   { view: 'me', icon: '👤', label: 'My teams' },
   { view: 'players', icon: '👥', label: 'Players' },
   { view: 'teams', icon: '🌍', label: 'Teams' },
@@ -70,6 +71,12 @@ const SUBTABS = [
         <div id="prize-body"></div>
       </section>
 
+      <!-- ===== Fixtures ===== -->
+      <section data-section="fixtures">
+        <div class="mb-4 flex gap-2 overflow-x-auto no-scrollbar" id="fixtures-filter"></div>
+        <div id="fixtures-body"></div>
+      </section>
+
       <!-- ===== My teams ===== -->
       <section data-section="me">
         <div class="mb-4">
@@ -98,7 +105,7 @@ const SUBTABS = [
 
     <!-- Mobile bottom nav -->
     <nav
-      class="fixed inset-x-0 bottom-0 z-20 grid grid-cols-4 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden dark:border-slate-800 dark:bg-slate-900/95"
+      class="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden dark:border-slate-800 dark:bg-slate-900/95"
       style="padding-bottom: env(safe-area-inset-bottom);"
       aria-label="Views"
     >

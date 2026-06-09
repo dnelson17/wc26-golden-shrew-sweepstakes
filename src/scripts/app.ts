@@ -20,6 +20,7 @@ let view = 'prizes';
 let subtab = 'winner';
 let me: string | null = null;
 let teamFilter = 'all';
+let fixtureFilter = 'all';
 
 // ---------- helpers ----------
 const $ = (sel: string) => document.querySelector(sel) as HTMLElement;
@@ -107,43 +108,65 @@ function prizeBanner() {
 }
 
 // ---------- bracket (winner / third / best-group-2 tabs) ----------
-function matchCard(m: any, highlightTier2: boolean) {
-  const row = (team: any, ph: string, score: any, pen: any, win: boolean) => {
-    if (!team) {
-      return `<div class="flex items-center gap-2 px-2.5 py-2 text-slate-400"><span class="text-xs italic">${esc(ph || 'TBD')}</span></div>`;
-    }
-    const dim = highlightTier2 && team.tier !== 2 ? 'opacity-25' : '';
-    const bold = win ? 'font-extrabold' : 'font-medium';
-    const g2 = team.tier === 2 ? ' <span class="text-[9px] font-bold text-violet-500">G2</span>' : '';
-    return `<div class="flex items-center gap-2 px-2.5 py-2 ${dim}">
-      ${flagImg(team)}
-      <span class="flex-1 truncate text-sm ${bold}">${esc(team.name)}${g2}</span>
-      <span class="text-sm tabular-nums ${bold}">${score ?? ''}${pen != null ? ` <span class='text-[10px] text-slate-400'>(${pen})</span>` : ''}</span>
-    </div>`;
-  };
-  const homeWin = m.winnerId && m.home && m.winnerId === m.home.fifaId;
-  const awayWin = m.winnerId && m.away && m.winnerId === m.away.fifaId;
-  return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
-    ${row(m.home, m.homePlaceholder, m.homeScore, m.homePen, homeWin)}
-    <div class="border-t border-slate-100 dark:border-slate-700/70"></div>
-    ${row(m.away, m.awayPlaceholder, m.awayScore, m.awayPen, awayWin)}
+function bracketRow(team: any, ph: string, score: any, pen: any, win: boolean, dim: boolean) {
+  if (!team) {
+    return `<div class="flex items-center gap-2 px-2.5 py-2"><span class="text-xs italic text-slate-400">${esc(ph || 'TBD')}</span></div>`;
+  }
+  const bold = win ? 'font-extrabold' : 'font-medium';
+  return `<div class="flex items-center gap-2 px-2.5 py-2 ${dim ? 'opacity-25' : ''} ${win ? 'bg-amber-400/15' : ''}">
+    ${flagImg(team, 'h-4 w-6')}
+    <span class="min-w-0 flex-1 truncate text-sm ${bold}">${esc(team.name)}<span class="ml-1 text-[10px] font-normal text-slate-400">${esc(team.owner)}</span></span>
+    ${win ? '<span class="text-amber-500">▸</span>' : ''}
+    <span class="w-4 text-right text-sm tabular-nums ${bold}">${score ?? '–'}</span>
+    ${pen != null ? `<span class="text-[10px] text-slate-400">(${pen})</span>` : ''}
   </div>`;
 }
 
-function renderBracket(highlightTier2 = false) {
+function matchCard(m: any, highlightTier2: boolean) {
+  const hw = !!(m.winnerId && m.home && m.winnerId === m.home.fifaId);
+  const aw = !!(m.winnerId && m.away && m.winnerId === m.away.fifaId);
+  const dim = (t: any) => highlightTier2 && t && t.tier !== 2;
+  return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+    ${bracketRow(m.home, m.homePlaceholder, m.homeScore, m.homePen, hw, dim(m.home))}
+    <div class="h-px bg-slate-100 dark:bg-slate-700/70"></div>
+    ${bracketRow(m.away, m.awayPlaceholder, m.awayScore, m.awayPen, aw, dim(m.away))}
+  </div>`;
+}
+
+function capstoneCard(kind: 'winner' | 'third') {
+  const p = kind === 'winner' ? data.prizes.first : data.prizes.second;
+  const w = p.winner;
+  const emoji = kind === 'winner' ? '🏆' : '🥉';
+  const title = kind === 'winner' ? 'Champions' : '3rd place';
+  const inner = w
+    ? `<div class="mt-2 flex items-center justify-center gap-2">${flagImg(w, 'h-5 w-7')}<span class="text-lg font-extrabold">${esc(w.name)}</span></div>
+       <div class="text-xs font-medium opacity-90">${esc(w.owner)}</div>`
+    : '<div class="mt-2 text-base font-bold opacity-90">To be decided</div>';
+  return `<div class="flex shrink-0 flex-col justify-center">
+    <div class="w-44 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 p-4 text-center text-white shadow-lg">
+      <div class="text-5xl leading-none">${emoji}</div>
+      <div class="mt-1 text-[11px] font-bold uppercase tracking-wide opacity-90">${title}</div>
+      ${inner}
+    </div>
+  </div>`;
+}
+
+function renderBracket(highlightTier2 = false, capstone: 'winner' | 'third' | null = null) {
   const byDepth: Record<number, any[]> = {};
   for (const m of data.knockout) (byDepth[m.depth] ??= []).push(m);
   const cols = [1, 2, 3, 4, 5, 6].filter((d) => byDepth[d]);
   const note = highlightTier2
     ? '<p class="mb-3 text-sm text-slate-500 dark:text-slate-400">Group-2 sides highlighted; the prize goes to whichever gets furthest (then most goals).</p>'
     : '';
-  return `${note}<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
-    ${cols.map((d) => `
-      <div class="w-56 shrink-0 sm:w-60">
-        <h3 class="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">${esc(byDepth[d][0].stage)}</h3>
-        <div class="space-y-2">${byDepth[d].map((m) => matchCard(m, highlightTier2)).join('')}</div>
-      </div>`).join('')}
-  </div>`;
+  const columns = cols.map((d) => `
+    <div class="flex w-52 shrink-0 flex-col sm:w-56">
+      <div class="mb-2 text-center">
+        <span class="rounded-full bg-slate-200 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-slate-600 dark:bg-slate-700 dark:text-slate-200">${esc(byDepth[d][0].stage)}</span>
+      </div>
+      <div class="flex flex-1 flex-col justify-center gap-2.5">${byDepth[d].map((m) => matchCard(m, highlightTier2)).join('')}</div>
+    </div>`).join('');
+  const cap = capstone ? capstoneCard(capstone) : '';
+  return `${note}<div class="flex items-stretch gap-3 overflow-x-auto no-scrollbar pb-2">${columns}${cap}</div>`;
 }
 
 // ---------- wooden-shrew league table ----------
@@ -187,7 +210,9 @@ function renderShrew() {
 function renderPrizes() {
   $('#prize-banner').innerHTML = prizeBanner();
   $('#prize-body').innerHTML =
-    subtab === 'shrew' ? renderShrew() : renderBracket(subtab === 'bestGroup2');
+    subtab === 'shrew' ? renderShrew()
+    : subtab === 'bestGroup2' ? renderBracket(true, null)
+    : renderBracket(false, subtab === 'third' ? 'third' : 'winner');
   document.querySelectorAll('[data-subtab]').forEach((b) => {
     const active = (b as HTMLElement).dataset.subtab === subtab;
     b.className = `flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-semibold transition ${
@@ -317,9 +342,83 @@ function renderTeams() {
     b.addEventListener('click', () => { teamFilter = (b as HTMLElement).dataset.teamfilter!; renderTeams(); }));
 }
 
+// ---------- Fixtures (schedule) ----------
+const LONDON = 'Europe/London';
+const dayLabel = (iso: string) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: LONDON });
+const timeLabel = (iso: string) => new Date(iso).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: LONDON });
+
+function fixtureSide(team: any, ph: string, side: 'home' | 'away') {
+  if (!team) return `<div class="text-xs italic text-slate-400 ${side === 'home' ? 'text-right' : ''}">${esc(ph || 'TBD')}</div>`;
+  const order = side === 'home' ? 'flex-row-reverse text-right' : '';
+  return `<div class="flex min-w-0 items-center gap-2 ${order}">
+    ${flagImg(team, 'h-6 w-8')}
+    <div class="min-w-0">
+      <div class="truncate text-sm font-semibold">${esc(team.name)}</div>
+      <div class="truncate text-[11px] text-slate-400">${esc(team.owner)}</div>
+    </div>
+  </div>`;
+}
+
+function fixtureCentre(f: any) {
+  if (f.played) {
+    const pens = f.homePen != null ? `<div class="text-[10px] text-slate-400">pens ${f.homePen}–${f.awayPen}</div>` : '';
+    return `<div class="px-2 text-center"><div class="text-lg font-extrabold tabular-nums">${f.homeScore}–${f.awayScore}</div>${pens}</div>`;
+  }
+  return `<div class="px-2 text-center"><div class="text-sm font-bold tabular-nums text-slate-500 dark:text-slate-400">${timeLabel(f.date)}</div><div class="text-[10px] text-slate-400">BST</div></div>`;
+}
+
+function renderFixtures() {
+  const filters = [
+    { key: 'all', label: 'All' },
+    { key: 'group', label: 'Group stage' },
+    { key: 'ko', label: 'Knockouts' },
+  ];
+  $('#fixtures-filter').innerHTML = filters.map((f) => {
+    const active = fixtureFilter === f.key;
+    return `<button data-fixfilter="${f.key}" class="shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold transition ${
+      active ? 'border-amber-500 bg-amber-500 text-white shadow' : 'border-slate-200 text-slate-600 dark:border-slate-700 dark:text-slate-300'
+    }">${f.label}</button>`;
+  }).join('');
+
+  const list = data.fixtures.filter((f: any) =>
+    fixtureFilter === 'all' || (fixtureFilter === 'group' ? f.depth === 0 : f.depth >= 1));
+
+  // group by London day, preserving chronological order
+  const days: { key: string; items: any[] }[] = [];
+  for (const f of list) {
+    const key = f.date ? dayLabel(f.date) : 'TBD';
+    let bucket = days[days.length - 1];
+    if (!bucket || bucket.key !== key) { bucket = { key, items: [] }; days.push(bucket); }
+    bucket.items.push(f);
+  }
+
+  $('#fixtures-body').innerHTML = days.map((day) => `
+    <div class="mb-5">
+      <h3 class="sticky top-[57px] z-10 mb-2 bg-slate-100/90 py-1 text-sm font-bold text-slate-500 backdrop-blur dark:bg-slate-950/90 dark:text-slate-400">${esc(day.key)}</h3>
+      <div class="space-y-2">
+        ${day.items.map((f: any) => `
+          <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+            <div class="mb-1.5 flex items-center justify-between text-[11px] font-medium text-slate-400">
+              <span>${f.date ? timeLabel(f.date) + ' BST' : ''}</span>
+              <span class="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-700/60">${esc(f.stage)}</span>
+            </div>
+            <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-1">
+              ${fixtureSide(f.home, f.homePlaceholder, 'home')}
+              ${fixtureCentre(f)}
+              ${fixtureSide(f.away, f.awayPlaceholder, 'away')}
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
+
+  document.querySelectorAll('[data-fixfilter]').forEach((b) =>
+    b.addEventListener('click', () => { fixtureFilter = (b as HTMLElement).dataset.fixfilter!; renderFixtures(); }));
+}
+
 // ---------- view orchestration ----------
 function renderCurrent() {
   if (view === 'prizes') renderPrizes();
+  else if (view === 'fixtures') renderFixtures();
   else if (view === 'me') renderMe();
   else if (view === 'players') renderPlayers();
   else if (view === 'teams') renderTeams();
@@ -376,7 +475,7 @@ export function init() {
     }));
 
   applyData(data);
-  showView(['prizes', 'me', 'players', 'teams'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'prizes');
+  showView(['prizes', 'fixtures', 'me', 'players', 'teams'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'prizes');
 
   // In production, pull fresh data and re-render if it changed. In dev we keep the
   // baked seed so `yarn snapshot <name>` previews work without the CDN overriding them.
