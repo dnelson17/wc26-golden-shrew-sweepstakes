@@ -234,17 +234,20 @@ export function compute(draw, rawMatches, nowIso) {
     runnerUp: t.runnerUp, thirdPlace: t.thirdPlace, status: t.status,
   };
 
-  // Knockout matches for the bracket view. Unrevealed rounds keep their placeholders.
-  const knockout = matches.filter((m) => m.depth >= 1)
-    .sort((a, b) => a.depth - b.depth || (a.date ?? '').localeCompare(b.date ?? ''))
-    .map((m) => ({
-      matchId: m.id, depth: m.depth, stage: DEPTH_LABEL[m.depth], date: m.date, played: m.played,
-      home: m.home?.id ? ref(reg.get(m.home.id)) : null,
-      away: m.away?.id ? ref(reg.get(m.away.id)) : null,
-      homePlaceholder: m.placeholderA, awayPlaceholder: m.placeholderB,
-      homeScore: m.home?.score ?? null, awayScore: m.away?.score ?? null,
-      homePen: m.homePen, awayPen: m.awayPen, winnerId: m.winner,
-    }));
+  // All matches as flat fixtures (for the schedule view); knockout is the depth>=1 subset
+  // used by the bracket. Unrevealed rounds keep their placeholders. Times are UTC —
+  // the client formats them to Europe/London (BST during the tournament).
+  const toFixture = (m) => ({
+    matchId: m.id, depth: m.depth, stage: m.depth === 0 ? 'Group stage' : DEPTH_LABEL[m.depth],
+    date: m.date, played: m.played,
+    home: m.home?.id ? ref(reg.get(m.home.id)) : null,
+    away: m.away?.id ? ref(reg.get(m.away.id)) : null,
+    homePlaceholder: m.placeholderA, awayPlaceholder: m.placeholderB,
+    homeScore: m.home?.score ?? null, awayScore: m.away?.score ?? null,
+    homePen: m.homePen, awayPen: m.awayPen, winnerId: m.winner,
+  });
+  const fixtures = matches.map(toFixture).sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
+  const knockout = fixtures.filter((f) => f.depth >= 1);
 
   // Full combined table in wooden-shrew order; `qualified` marks knockout teams so
   // the shrew view can isolate the 16 non-qualifiers.
@@ -277,6 +280,7 @@ export function compute(draw, rawMatches, nowIso) {
         standings: spoon.slice(0, 6).map(ref),
       },
     },
+    fixtures,
     knockout,
     leagueTable,
     teams: teams.sort((a, b) => a.tier - b.tier || a.owner.localeCompare(b.owner)).map(ref),
