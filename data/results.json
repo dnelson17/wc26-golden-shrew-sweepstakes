@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-11T20:56:14.516Z",
+    "updatedAt": "2026-06-11T21:47:28.816Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -1676,7 +1676,7 @@
       "awayScore": 0,
       "homePen": null,
       "awayPen": null,
-      "winnerId": null
+      "winnerId": "43911"
     },
     {
       "matchId": "400021441",
