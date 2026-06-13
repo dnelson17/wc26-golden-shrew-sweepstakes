@@ -8,7 +8,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = join(ROOT, 'data', 'snapshots');
 const name = process.argv[2];
 
-const available = (await readdir(DIR)).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, ''));
+const available = (await readdir(DIR))
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => f.replace(/\.json$/, ''));
 if (!name || !available.includes(name)) {
   console.error(`Usage: node scripts/use-snapshot.mjs <name>\nAvailable: ${available.join(', ')}`);
   process.exit(1);

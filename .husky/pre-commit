@@ -1,0 +1,5 @@
+# Format + lint only the staged files...
+npx lint-staged
+
+# ...then type-check the whole project (astro check can't run per-file).
+npm run check

@@ -1,5 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    // Type-check the plain-JS data pipeline (scripts/*.mjs) too, not just src/.
+    "checkJs": true,
+    // Force bracket access on index signatures so declared properties and
+    // dynamic keys read differently (e.g. dataset['nav'], process.env['FORCE']).
+    "noPropertyAccessFromIndexSignature": true
+  },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "exclude": ["dist", "eslint.config.js", "commitlint.config.js"]
 }
