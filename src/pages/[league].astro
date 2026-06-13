@@ -1,0 +1,195 @@
+---
+import '../styles/global.css';
+import { LEAGUES, type LeagueConfig } from '../leagues';
+// Per-league baked seed (instant first paint). Each league's results file is
+// imported statically and selected by slug; the client then re-fetches live
+// data from the league's CDN URL.
+import goldenShrewSeed from '../../data/results.json';
+
+const SEEDS: Record<string, unknown> = {
+  'golden-shrew': goldenShrewSeed,
+};
+
+export function getStaticPaths() {
+  return Object.values(LEAGUES).map((cfg) => ({
+    params: { league: cfg.slug },
+    props: { cfg },
+  }));
+}
+
+interface Props {
+  cfg: LeagueConfig;
+}
+const { cfg } = Astro.props;
+const seed = SEEDS[cfg.slug] ?? {};
+
+interface NavItem {
+  view: string;
+  icon: string;
+  label: string;
+}
+
+const NAV: NavItem[] = [
+  { view: 'prizes', icon: '🏆', label: 'Prizes' },
+  { view: 'fixtures', icon: '📅', label: 'Fixtures' },
+  { view: 'me', icon: '👤', label: 'My teams' },
+  { view: 'players', icon: '👥', label: 'Players' },
+  { view: 'teams', icon: '🌍', label: 'Teams' },
+];
+---
+
+<!doctype html>
+<html lang="en" class="bg-slate-100 dark:bg-slate-950">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content={cfg.themeColor} />
+    <title>{cfg.name} · 2026 World Cup</title>
+    <meta
+      name="description"
+      content={`Live prize tracker for the 2026 World Cup ${cfg.name} sweepstake.`}
+    />
+  </head>
+  <body class="min-h-dvh text-slate-900 dark:text-slate-100">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-20 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80"
+    >
+      <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
+        <div class="min-w-0">
+          <h1 class="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl">
+            <span>{cfg.headerEmojis[0]}</span>
+            <span
+              class="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent"
+              >{cfg.name}</span
+            >
+            <span>{cfg.headerEmojis[1]}</span>
+          </h1>
+          <p class="truncate text-xs text-slate-500 dark:text-slate-400">
+            {cfg.tagline}
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a
+            href="/?pick=1"
+            title="Switch league"
+            class="shrink-0 rounded-full border border-slate-200 px-2.5 py-1.5 text-sm font-semibold text-slate-500 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800"
+            >⇄ <span class="hidden sm:inline">Switch</span></a
+          >
+          <!-- Desktop top tabs -->
+          <nav class="hidden gap-1 md:flex" aria-label="Views" data-navbar="top">
+            {
+              NAV.map((n) => (
+                <button
+                  data-nav={n.view}
+                  class="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-500 transition hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800"
+                >
+                  <span class="mr-1">{n.icon}</span>
+                  {n.label}
+                </button>
+              ))
+            }
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-4 pt-5 pb-28 md:pb-10">
+      <!-- ===== Prizes ===== -->
+      <section data-section="prizes">
+        <div class="no-scrollbar mb-4 flex gap-2 overflow-x-auto">
+          {
+            cfg.prizes.map((t) => (
+              <button
+                data-subtab={t.key}
+                class="flex shrink-0 items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-600 transition dark:border-slate-700 dark:text-slate-300"
+              >
+                <span>{t.emoji}</span>
+                {t.label}
+              </button>
+            ))
+          }
+        </div>
+        <div id="prize-banner"></div>
+        <div id="prize-body"></div>
+      </section>
+
+      <!-- ===== Fixtures ===== -->
+      <section data-section="fixtures">
+        <div class="mb-4 flex items-center gap-2">
+          <div class="no-scrollbar flex gap-2 overflow-x-auto" id="fixtures-filter"></div>
+          <button
+            id="jump-next"
+            class="ml-auto inline-flex shrink-0 items-center gap-1 rounded-full border border-amber-500 px-3 py-1.5 text-sm font-semibold text-amber-600 transition hover:bg-amber-500 hover:text-white dark:text-amber-400"
+            >⏭️ Next game</button
+          >
+        </div>
+        <div id="fixtures-body"></div>
+      </section>
+
+      <!-- ===== My teams ===== -->
+      <section data-section="me">
+        <div class="mb-4">
+          <label
+            for="me-select"
+            class="mb-1 block text-sm font-semibold text-slate-600 dark:text-slate-300"
+            >Who are you?</label
+          >
+          <select
+            id="me-select"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-base font-medium shadow-sm dark:border-slate-700 dark:bg-slate-900"
+          ></select>
+        </div>
+        <div id="me-body"></div>
+      </section>
+
+      <!-- ===== Players ===== -->
+      <section data-section="players">
+        <div id="players-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </section>
+
+      <!-- ===== Teams ===== -->
+      <section data-section="teams">
+        <div class="no-scrollbar mb-4 flex gap-2 overflow-x-auto" id="teams-filter"></div>
+        <div id="teams-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </section>
+
+      <p id="updated" class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500"></p>
+    </main>
+
+    <!-- Mobile bottom nav -->
+    <nav
+      class="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden dark:border-slate-800 dark:bg-slate-900/95"
+      style="padding-bottom: env(safe-area-inset-bottom);"
+      aria-label="Views"
+      data-navbar="bottom"
+    >
+      {
+        NAV.map((n) => (
+          <button data-nav={n.view} class="flex flex-col items-center gap-1 py-1.5">
+            <span
+              data-navpill
+              class="flex h-8 w-14 items-center justify-center rounded-full text-xl leading-none transition"
+            >
+              {n.icon}
+            </span>
+            <span
+              data-navlabel
+              class="text-[11px] font-semibold text-slate-500 dark:text-slate-400"
+            >
+              {n.label}
+            </span>
+          </button>
+        ))
+      }
+    </nav>
+
+    <script id="seed" is:inline type="application/json" set:html={JSON.stringify(seed)} />
+    <script id="league" is:inline type="application/json" set:html={JSON.stringify(cfg)} />
+    <script>
+      import { init } from '../scripts/app';
+      init();
+    </script>
+  </body>
+</html>

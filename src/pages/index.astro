@@ -1,33 +1,14 @@
 ---
 import '../styles/global.css';
-import results from '../../data/results.json';
-import type { PrizeKey } from '../types';
+import { leagueList } from '../leagues';
 
-interface NavItem {
-  view: string;
-  icon: string;
-  label: string;
-}
-interface SubTab {
-  key: PrizeKey;
-  icon: string;
-  label: string;
-}
-
-const NAV: NavItem[] = [
-  { view: 'prizes', icon: '🏆', label: 'Prizes' },
-  { view: 'fixtures', icon: '📅', label: 'Fixtures' },
-  { view: 'me', icon: '👤', label: 'My teams' },
-  { view: 'players', icon: '👥', label: 'Players' },
-  { view: 'teams', icon: '🌍', label: 'Teams' },
-];
-
-const SUBTABS: SubTab[] = [
-  { key: 'winner', icon: '🏆', label: 'Winner' },
-  { key: 'third', icon: '🥉', label: '3rd place' },
-  { key: 'bestGroup2', icon: '🪖', label: 'Best group-2' },
-  { key: 'shrew', icon: '🪵', label: 'Wooden shrew' },
-];
+const leagues = leagueList();
+const slugs = leagues.map((l) => l.slug);
+// Returning visitors skip the picker and go straight to their last league.
+// `?pick=1` (the header "Switch" link) forces the picker to show.
+const redirect = `(function(){var p=new URLSearchParams(location.search);if(p.has('pick'))return;var last=localStorage.getItem('league:last');var valid=${JSON.stringify(
+  slugs,
+)};if(last&&valid.indexOf(last)>-1)location.replace('/'+last);})();`;
 ---
 
 <!doctype html>
@@ -37,142 +18,45 @@ const SUBTABS: SubTab[] = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f59e0b" />
-    <title>Golden Shrew Sweepstake · 2026 World Cup</title>
-    <meta
-      name="description"
-      content="Live prize tracker for the 2026 World Cup Golden Shrew sweepstake."
-    />
+    <title>World Cup Sweepstakes</title>
+    <meta name="description" content="Live 2026 World Cup sweepstake prize trackers." />
+    <script is:inline set:html={redirect} />
   </head>
-  <body class="min-h-dvh text-slate-900 dark:text-slate-100">
-    <!-- Header -->
-    <header
-      class="sticky top-0 z-20 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80"
-    >
-      <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
-        <div class="min-w-0">
-          <h1 class="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl">
-            <span>🪵</span>
-            <span
-              class="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent"
-              >Golden Shrew</span
-            >
-            <span>🏆</span>
-          </h1>
-          <p class="truncate text-xs text-slate-500 dark:text-slate-400">
-            2026 World Cup sweepstake
-          </p>
-        </div>
-        <!-- Desktop top tabs -->
-        <nav class="hidden gap-1 md:flex" aria-label="Views" data-navbar="top">
-          {
-            NAV.map((n) => (
-              <button
-                data-nav={n.view}
-                class="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-500 transition hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800"
-              >
-                <span class="mr-1">{n.icon}</span>
-                {n.label}
-              </button>
-            ))
-          }
-        </nav>
+  <body
+    class="flex min-h-dvh flex-col items-center justify-center px-4 py-10 text-slate-900 dark:text-slate-100"
+  >
+    <main class="w-full max-w-md">
+      <div class="mb-8 text-center">
+        <h1 class="text-2xl font-extrabold tracking-tight sm:text-3xl">
+          <span class="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent"
+            >World Cup Sweepstakes</span
+          >
+        </h1>
+        <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Pick your league</p>
       </div>
-    </header>
 
-    <main class="mx-auto max-w-5xl px-4 pt-5 pb-28 md:pb-10">
-      <!-- ===== Prizes ===== -->
-      <section data-section="prizes">
-        <div class="no-scrollbar mb-4 flex gap-2 overflow-x-auto">
-          {
-            SUBTABS.map((t) => (
-              <button
-                data-subtab={t.key}
-                class="flex shrink-0 items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-600 transition dark:border-slate-700 dark:text-slate-300"
-              >
-                <span>{t.icon}</span>
-                {t.label}
-              </button>
-            ))
-          }
-        </div>
-        <div id="prize-banner"></div>
-        <div id="prize-body"></div>
-      </section>
-
-      <!-- ===== Fixtures ===== -->
-      <section data-section="fixtures">
-        <div class="mb-4 flex items-center gap-2">
-          <div class="no-scrollbar flex gap-2 overflow-x-auto" id="fixtures-filter"></div>
-          <button
-            id="jump-next"
-            class="ml-auto inline-flex shrink-0 items-center gap-1 rounded-full border border-amber-500 px-3 py-1.5 text-sm font-semibold text-amber-600 transition hover:bg-amber-500 hover:text-white dark:text-amber-400"
-            >⏭️ Next game</button
-          >
-        </div>
-        <div id="fixtures-body"></div>
-      </section>
-
-      <!-- ===== My teams ===== -->
-      <section data-section="me">
-        <div class="mb-4">
-          <label
-            for="me-select"
-            class="mb-1 block text-sm font-semibold text-slate-600 dark:text-slate-300"
-            >Who are you?</label
-          >
-          <select
-            id="me-select"
-            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-base font-medium shadow-sm dark:border-slate-700 dark:bg-slate-900"
-          ></select>
-        </div>
-        <div id="me-body"></div>
-      </section>
-
-      <!-- ===== Players ===== -->
-      <section data-section="players">
-        <div id="players-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
-      </section>
-
-      <!-- ===== Teams ===== -->
-      <section data-section="teams">
-        <div class="no-scrollbar mb-4 flex gap-2 overflow-x-auto" id="teams-filter"></div>
-        <div id="teams-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
-      </section>
-
-      <p id="updated" class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500"></p>
+      <div class="space-y-3">
+        {
+          leagues.map((l) => (
+            <a
+              href={`/${l.slug}`}
+              class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-amber-400 hover:shadow-md dark:border-slate-700 dark:bg-slate-800"
+            >
+              <span class="text-3xl leading-none">
+                {l.headerEmojis[0]}
+                {l.headerEmojis[1]}
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block truncate font-bold">{l.name}</span>
+                <span class="block truncate text-xs text-slate-500 dark:text-slate-400">
+                  {l.tagline}
+                </span>
+              </span>
+              <span class="text-slate-300 dark:text-slate-600">→</span>
+            </a>
+          ))
+        }
+      </div>
     </main>
-
-    <!-- Mobile bottom nav -->
-    <nav
-      class="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden dark:border-slate-800 dark:bg-slate-900/95"
-      style="padding-bottom: env(safe-area-inset-bottom);"
-      aria-label="Views"
-      data-navbar="bottom"
-    >
-      {
-        NAV.map((n) => (
-          <button data-nav={n.view} class="flex flex-col items-center gap-1 py-1.5">
-            <span
-              data-navpill
-              class="flex h-8 w-14 items-center justify-center rounded-full text-xl leading-none transition"
-            >
-              {n.icon}
-            </span>
-            <span
-              data-navlabel
-              class="text-[11px] font-semibold text-slate-500 dark:text-slate-400"
-            >
-              {n.label}
-            </span>
-          </button>
-        ))
-      }
-    </nav>
-
-    <script id="seed" is:inline type="application/json" set:html={JSON.stringify(results)} />
-    <script>
-      import { init } from '../scripts/app';
-      init();
-    </script>
   </body>
 </html>

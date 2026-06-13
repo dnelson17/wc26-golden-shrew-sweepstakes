@@ -11,16 +11,12 @@ import type {
   TeamRef,
   Tier,
 } from '../types';
+import type { LeagueConfig, PrizeDef } from '../leagues';
 
-const RESULTS_URL =
-  'https://raw.githubusercontent.com/dnelson17/wc26-golden-shrew-sweepstakes/main/data/results.json';
-
-const PRIZES = [
-  { key: 'winner', emoji: '🏆', label: 'Winner', amount: '£120' },
-  { key: 'third', emoji: '🥉', label: '3rd place', amount: '£40' },
-  { key: 'bestGroup2', emoji: '🪖', label: 'Best group-2', amount: '£40' },
-  { key: 'shrew', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
-] as const satisfies readonly { key: PrizeKey; emoji: string; label: string; amount: string }[];
+// Active league config + its prize set. Baked into the page as
+// <script id="league"> and assigned by init() before any render runs.
+let league!: LeagueConfig;
+let prizes!: readonly PrizeDef[];
 
 const STATUS_WORD: Record<Status, string> = {
   won: 'Won',
@@ -67,10 +63,12 @@ function ringFor(status: Status): string {
 
 // Row of the four prize emojis, ringed by status. Used on player + team cards.
 function prizeChips(st: PrizeStatus): string {
-  return `<div class="flex gap-1.5">${PRIZES.map((p) => {
-    const status = st[p.key];
-    return `<span title="${p.label}: ${STATUS_WORD[status]}" class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 text-lg ring-2 ${ringFor(status)} dark:bg-slate-800">${p.emoji}</span>`;
-  }).join('')}</div>`;
+  return `<div class="flex gap-1.5">${prizes
+    .map((p) => {
+      const status = st[p.key];
+      return `<span title="${p.label}: ${STATUS_WORD[status]}" class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 text-lg ring-2 ${ringFor(status)} dark:bg-slate-800">${p.emoji}</span>`;
+    })
+    .join('')}</div>`;
 }
 
 function tierBadge(tier: Tier): string {
@@ -336,16 +334,17 @@ function renderMe(): void {
   // keep the games team-filter valid when the selected player changes
   if (meTeam !== 'both' && meTeam !== p.group1.fifaId && meTeam !== p.group2.fifaId)
     meTeam = 'both';
-  const wins = PRIZES.filter((pr) => p.status[pr.key] === 'won');
+  const wins = prizes.filter((pr) => p.status[pr.key] === 'won');
   const header = wins.length
     ? `<div class="mb-4 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 p-4 text-white shadow animate-pop">
         <div class="text-sm font-bold uppercase tracking-wide opacity-90">You're winning</div>
         <div class="text-2xl font-extrabold">${wins.map((w) => w.emoji).join(' ')} ${wins.map((w) => w.label).join(' + ')}</div>
        </div>`
     : '';
-  const prizeList = PRIZES.map((pr) => {
-    const status = p.status[pr.key];
-    return `<div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+  const prizeList = prizes
+    .map((pr) => {
+      const status = p.status[pr.key];
+      return `<div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
       <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-slate-50 text-2xl ring-2 ${ringFor(status)} dark:bg-slate-900">${pr.emoji}</span>
       <div class="min-w-0 flex-1">
         <div class="flex items-center gap-2"><span class="font-bold">${pr.label}</span><span class="text-xs text-slate-400">${pr.amount}</span></div>
@@ -353,7 +352,8 @@ function renderMe(): void {
       </div>
       ${statusPill(status)}
     </div>`;
-  }).join('');
+    })
+    .join('');
   $('#me-body').innerHTML = `${header}
     <div class="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">${teamCardBig(p.group1)}${teamCardBig(p.group2)}</div>
     <div class="mb-6 space-y-2">${prizeList}</div>
@@ -707,13 +707,13 @@ function applyData(d: Results): void {
       .map((p) => `<option value="${esc(p.name)}">${esc(p.name)}</option>`)
       .join('');
     const fromUrl = new URLSearchParams(location.search).get('me');
-    const stored = localStorage.getItem('shrew:me');
+    const stored = localStorage.getItem(`${league.slug}:me`);
     const fallback = data.people[0]?.name ?? '';
     me = [fromUrl, stored].find((n) => n && data.people.some((p) => p.name === n)) ?? fallback;
     sel.value = me;
     sel.addEventListener('change', () => {
       me = sel.value;
-      localStorage.setItem('shrew:me', me);
+      localStorage.setItem(`${league.slug}:me`, me);
       const url = new URL(location.href);
       url.searchParams.set('me', me);
       history.replaceState(null, '', url);
@@ -728,6 +728,9 @@ function applyData(d: Results): void {
 
 export function init(): void {
   data = JSON.parse($('#seed').textContent || '{}') as Results;
+  league = JSON.parse(document.getElementById('league')?.textContent || '{}') as LeagueConfig;
+  prizes = league.prizes;
+  if (league.slug) localStorage.setItem('league:last', league.slug);
 
   // nav + subtab wiring
   document.querySelectorAll<HTMLElement>('[data-nav]').forEach((b) => {
@@ -737,7 +740,7 @@ export function init(): void {
     });
   });
   const wantTab = new URLSearchParams(location.search).get('prize');
-  if (wantTab && PRIZES.some((p) => p.key === wantTab)) subtab = wantTab;
+  if (wantTab && prizes.some((p) => p.key === wantTab)) subtab = wantTab;
   document.querySelectorAll<HTMLElement>('[data-subtab]').forEach((b) => {
     b.addEventListener('click', () => {
       const v = b.dataset['subtab'];
@@ -769,7 +772,7 @@ export function init(): void {
   if (import.meta.env.PROD) {
     void (async () => {
       try {
-        const r = await fetch(`${RESULTS_URL}?t=${Date.now().toString()}`);
+        const r = await fetch(`${league.resultsUrl}?t=${Date.now().toString()}`);
         if (!r.ok) return;
         const fresh = (await r.json()) as Results;
         if (fresh.meta.updatedAt !== data.meta.updatedAt) applyData(fresh);
