@@ -58,9 +58,8 @@ export const LEAGUES: Record<string, LeagueConfig> = {
       { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
     ],
   },
-  // 12-person draw: each player owns a whole FIFA group (A–L). No tiered teams,
-  // so there's no "best group-2" prize — three prizes instead of four.
-  // TODO: confirm display name + prize amounts with the group.
+  // 12-person draw (£10 each → £120 pot): each player owns a whole FIFA group
+  // (A–L). No tiered teams, so there's no "best group-2" prize — three prizes.
   nelson: {
     slug: 'nelson',
     name: 'Nelson Sweepstake',
@@ -70,9 +69,9 @@ export const LEAGUES: Record<string, LeagueConfig> = {
     ownershipMode: 'full-group',
     resultsUrl: `${RAW_BASE}/results.nelson.json`,
     prizes: [
-      { key: 'winner', slot: 'first', emoji: '🏆', label: 'Winner', amount: '£120' },
-      { key: 'third', slot: 'second', emoji: '🥉', label: '3rd place', amount: '£40' },
-      { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
+      { key: 'winner', slot: 'first', emoji: '🏆', label: 'Winner', amount: '£80' },
+      { key: 'third', slot: 'second', emoji: '🥉', label: '3rd place', amount: '£20' },
+      { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£20' },
     ],
   },
 };
