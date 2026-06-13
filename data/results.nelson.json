@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-13T22:46:40.459Z",
+    "updatedAt": "2026-06-13T23:30:34.500Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -665,7 +665,7 @@
       "date": "2026-06-13T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "42'",
+      "matchTime": "65'",
       "group": "C",
       "venue": {
         "name": "New York/New Jersey Stadium",
