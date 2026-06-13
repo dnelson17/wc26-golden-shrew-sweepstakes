@@ -67,18 +67,40 @@
  */
 
 /**
- * A sweepstake participant in the draw and their two drawn teams.
+ * A sweepstake participant in a tiered-pair draw and their two drawn teams.
  * @typedef {object} DrawPerson
  * @property {string} name
  * @property {DrawTeam} group1
  * @property {DrawTeam} group2
  */
 
+/** How a league assigns teams to players. @typedef {'tiered-pair' | 'full-group'} OwnershipMode */
+
+/** Optional pinned FIFA identifiers carried by a draw. @typedef {{ idCompetition?: string, idSeason?: string }} DrawMeta */
+
 /**
- * The full `data/draw_results.json` payload.
- * @typedef {object} Draw
+ * A tiered-pair draw (the Golden Shrew shape): every player owns one strong
+ * (`group1`) and one weak (`group2`) team, with all 48 teams enumerated.
+ * @typedef {object} TieredDraw
+ * @property {'tiered-pair'} [ownershipMode]
  * @property {DrawPerson[]} people
- * @property {{ idCompetition?: string, idSeason?: string }} [meta]
+ * @property {DrawMeta} [meta]
+ */
+
+/**
+ * A full-group draw: every player owns a whole FIFA group (A–L). Teams are
+ * listed once in `teams`; ownership is resolved at compute time from each
+ * team's live group letter via `groupOwners` (e.g. `{ A: "David", … }`).
+ * @typedef {object} FullGroupDraw
+ * @property {'full-group'} ownershipMode
+ * @property {Record<string, string>} groupOwners
+ * @property {DrawTeam[]} teams
+ * @property {DrawMeta} [meta]
+ */
+
+/**
+ * The full `data/draw_results.json` payload — either ownership shape.
+ * @typedef {TieredDraw | FullGroupDraw} Draw
  */
 
 // --- Internal working shapes --------------------------------------------
@@ -128,7 +150,7 @@
  * @property {string} iso2
  * @property {string} idCountry
  * @property {string} owner
- * @property {import('../src/types').Tier} tier
+ * @property {import('../src/types').Tier | null} tier
  * @property {string | null} group
  * @property {number} p
  * @property {number} w
@@ -241,7 +263,47 @@ export function normalizeMatch(m) {
   };
 }
 
-// Flatten the draw into a per-team registry keyed by fifaId.
+// One zeroed registry entry from a drawn team.
+/**
+ * @param {DrawTeam} t
+ * @param {string} owner
+ * @param {import('../src/types').Tier | null} tier
+ * @returns {RegTeam}
+ */
+function makeRegTeam(t, owner, tier) {
+  return {
+    fifaId: t.fifaId,
+    name: t.name,
+    fifaName: t.fifaName,
+    abbr: null,
+    iso2: t.iso2,
+    idCountry: t.idCountry,
+    owner,
+    tier,
+    group: null,
+    // group-stage table
+    p: 0,
+    w: 0,
+    d: 0,
+    l: 0,
+    gf: 0,
+    ga: 0,
+    gd: 0,
+    pts: 0,
+    // whole-tournament goals (prize-3 tiebreak)
+    ogf: 0,
+    oga: 0,
+    furthestDepth: 0,
+    eliminated: false,
+    champion: false,
+    runnerUp: false,
+    thirdPlace: false,
+  };
+}
+
+// Flatten the draw into a per-team registry keyed by fifaId. Tiered-pair draws
+// carry owner + tier directly; full-group draws list every team once with
+// ownership resolved later (in `compute`) from each team's live group letter.
 /**
  * @param {Draw} draw
  * @returns {Map<string, RegTeam>}
@@ -249,37 +311,14 @@ export function normalizeMatch(m) {
 function buildRegistry(draw) {
   /** @type {Map<string, RegTeam>} */
   const reg = new Map();
-  for (const person of draw.people) {
-    for (const tier of /** @type {const} */ ([1, 2])) {
-      const t = person[`group${tier}`];
-      reg.set(t.fifaId, {
-        fifaId: t.fifaId,
-        name: t.name,
-        fifaName: t.fifaName,
-        abbr: null,
-        iso2: t.iso2,
-        idCountry: t.idCountry,
-        owner: person.name,
-        tier,
-        group: null,
-        // group-stage table
-        p: 0,
-        w: 0,
-        d: 0,
-        l: 0,
-        gf: 0,
-        ga: 0,
-        gd: 0,
-        pts: 0,
-        // whole-tournament goals (prize-3 tiebreak)
-        ogf: 0,
-        oga: 0,
-        furthestDepth: 0,
-        eliminated: false,
-        champion: false,
-        runnerUp: false,
-        thirdPlace: false,
-      });
+  if (draw.ownershipMode === 'full-group') {
+    for (const t of draw.teams) reg.set(t.fifaId, makeRegTeam(t, '', null));
+  } else {
+    for (const person of draw.people) {
+      for (const tier of /** @type {const} */ ([1, 2])) {
+        const t = person[`group${tier}`];
+        reg.set(t.fifaId, makeRegTeam(t, person.name, tier));
+      }
     }
   }
   return reg;
@@ -360,6 +399,14 @@ export function compute(draw, rawMatches, nowIso) {
     t.ogd = t.ogf - t.oga;
   }
 
+  // Full-group leagues resolve ownership now that each team's group letter is
+  // known (from the group-stage fixtures). Teams whose group isn't published
+  // yet stay unowned and simply don't roll up to a player until it is.
+  if (draw.ownershipMode === 'full-group') {
+    const owners = draw.groupOwners;
+    for (const t of reg.values()) t.owner = (t.group && owners[t.group]) || '';
+  }
+
   // Eliminations: derive from the bracket rather than computing group standings.
   for (const t of reg.values()) {
     const teamMatches = matches.filter((m) => m.home?.id === t.fifaId || m.away?.id === t.fifaId);
@@ -405,13 +452,17 @@ export function compute(draw, rawMatches, nowIso) {
   for (const t of teams) t.qualified = inKnockout.has(t.fifaId);
 
   // Prize 3: best group-2 team. Furthest depth, then most goals, then fewest conceded.
+  // Leagues without tiered teams (full-group) have no tier-2 pool, so this is empty.
   const tier2 = teams
     .filter((t) => t.tier === 2)
     .sort((x, y) => y.furthestDepth - x.furthestDepth || y.ogf - x.ogf || x.oga - y.oga);
-  const bestT2 = /** @type {RegTeam} */ (tier2[0]); // 24 tier-2 teams; always present
-  const t3Shared = tier2.filter(
-    (t) => t.furthestDepth === bestT2.furthestDepth && t.ogf === bestT2.ogf && t.oga === bestT2.oga,
-  );
+  const bestT2 = tier2[0]; // undefined when a league doesn't tier teams
+  const t3Shared = bestT2
+    ? tier2.filter(
+        (t) =>
+          t.furthestDepth === bestT2.furthestDepth && t.ogf === bestT2.ogf && t.oga === bestT2.oga,
+      )
+    : [];
 
   // Prize 4: wooden shrew. Least pts, worst GD, most conceded, fewest scored.
   const spoon = [...teams].sort(
@@ -451,10 +502,10 @@ export function compute(draw, rawMatches, nowIso) {
     else if (t.eliminated && t.furthestDepth <= 3)
       third_ = 'lost'; // out in QF or earlier
     else third_ = 'ongoing'; // alive, in SF, or 3rd-place game pending
-    // 🪖 Best group-2 (only group-2 teams are eligible)
+    // 🪖 Best group-2 (only group-2 teams are eligible; 'na' when untiered)
     /** @type {import('../src/types').Status} */
     let bestGroup2;
-    if (t.tier === 1) bestGroup2 = 'na';
+    if (t.tier !== 2) bestGroup2 = 'na';
     else if (tournamentOver) bestGroup2 = tier2Leaders.has(t.fifaId) ? 'won' : 'lost';
     else if (tier2Leaders.has(t.fifaId))
       bestGroup2 = 'ongoing'; // currently leading
@@ -566,6 +617,45 @@ export function compute(draw, rawMatches, nowIso) {
     .../** @type {import('../src/types').TeamRef} */ (ref(t)),
   }));
 
+  // --- Per-player rollup: group each owner's teams, combine their statuses ---
+  // Uniform across ownership modes: `combine` ignores 'na', so a tiered player's
+  // best-group-2 falls through to their group-2 team, and an untiered player's
+  // is simply 'na' across the board.
+  /** @type {Map<string, RegTeam[]>} */
+  const teamsByOwner = new Map();
+  for (const t of teams) {
+    const owned = teamsByOwner.get(t.owner);
+    if (owned) owned.push(t);
+    else teamsByOwner.set(t.owner, [t]);
+  }
+  const ownerOrder =
+    draw.ownershipMode === 'full-group'
+      ? Object.values(draw.groupOwners)
+      : draw.people.map((person) => person.name);
+  /** @type {string[]} */
+  const orderedOwners = [];
+  const seenOwner = new Set();
+  for (const name of ownerOrder) {
+    if (name && !seenOwner.has(name)) {
+      seenOwner.add(name);
+      orderedOwners.push(name);
+    }
+  }
+  const people = orderedOwners.map((name) => {
+    const owned = teamsByOwner.get(name) ?? [];
+    const ss = owned.map((t) => /** @type {import('../src/types').PrizeStatus} */ (t.status));
+    return {
+      name,
+      teams: /** @type {import('../src/types').TeamRef[]} */ (owned.map(ref)),
+      status: {
+        winner: combine(...ss.map((s) => s.winner)),
+        third: combine(...ss.map((s) => s.third)),
+        bestGroup2: combine(...ss.map((s) => s.bestGroup2)),
+        shrew: combine(...ss.map((s) => s.shrew)),
+      },
+    };
+  });
+
   return {
     meta: {
       updatedAt: nowIso,
@@ -609,25 +699,8 @@ export function compute(draw, rawMatches, nowIso) {
     knockout,
     leagueTable,
     teams: /** @type {import('../src/types').TeamRef[]} */ (
-      teams.sort((a, b) => a.tier - b.tier || a.owner.localeCompare(b.owner)).map(ref)
+      teams.sort((a, b) => (a.tier ?? 9) - (b.tier ?? 9) || a.owner.localeCompare(b.owner)).map(ref)
     ),
-    people: draw.people.map((p) => {
-      // Both drawn teams are always in the registry (buildRegistry adds all 96).
-      const g1 = /** @type {RegTeam} */ (reg.get(p.group1.fifaId));
-      const g2 = /** @type {RegTeam} */ (reg.get(p.group2.fifaId));
-      const g1s = /** @type {import('../src/types').PrizeStatus} */ (g1.status);
-      const g2s = /** @type {import('../src/types').PrizeStatus} */ (g2.status);
-      return {
-        name: p.name,
-        group1: /** @type {import('../src/types').TeamRef} */ (ref(g1)),
-        group2: /** @type {import('../src/types').TeamRef} */ (ref(g2)),
-        status: {
-          winner: combine(g1s.winner, g2s.winner),
-          third: combine(g1s.third, g2s.third),
-          bestGroup2: g2s.bestGroup2, // only the group-2 team is eligible
-          shrew: combine(g1s.shrew, g2s.shrew),
-        },
-      };
-    }),
+    people,
   };
 }

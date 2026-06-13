@@ -71,7 +71,8 @@ function prizeChips(st: PrizeStatus): string {
     .join('')}</div>`;
 }
 
-function tierBadge(tier: Tier): string {
+function tierBadge(tier: Tier | null): string {
+  if (tier == null) return '';
   return tier === 1
     ? '<span class="rounded-full bg-emerald-500/15 px-1.5 py-0.5 text-[10px] font-bold text-emerald-700 dark:text-emerald-400">GROUP 1</span>'
     : '<span class="rounded-full bg-violet-500/15 px-1.5 py-0.5 text-[10px] font-bold text-violet-700 dark:text-violet-400">GROUP 2</span>';
@@ -275,14 +276,15 @@ function renderPrizes(): void {
 
 // ---------- My teams ----------
 const RANK: Record<Status, number> = { won: 3, ongoing: 2, lost: 1, na: 0 };
-function bestTeam(g1: TeamRef | null, g2: TeamRef | null, key: PrizeKey): TeamRef | undefined {
-  const cands = [g1, g2].filter((t): t is TeamRef => t != null && t.status[key] !== 'na');
+function bestTeam(teams: TeamRef[], key: PrizeKey): TeamRef | undefined {
+  const cands = teams.filter((t) => t.status[key] !== 'na');
   return cands.sort((a, b) => RANK[b.status[key]] - RANK[a.status[key]])[0];
 }
 
 function myPrizeLine(p: Person, key: PrizeKey, status: Status): string {
   if (key === 'bestGroup2') {
-    const g2 = p.group2;
+    const g2 = p.teams.find((t) => t.status.bestGroup2 !== 'na');
+    if (!g2) return '';
     if (status === 'won') return `${esc(g2.name)} is the best group-2 side!`;
     if (status === 'ongoing') {
       return data.prizes.third.leaders.some((x) => x.fifaId === g2.fifaId)
@@ -291,12 +293,12 @@ function myPrizeLine(p: Person, key: PrizeKey, status: Status): string {
     }
     return `${esc(g2.name)} can't win this one`;
   }
-  const t = bestTeam(p.group1, p.group2, key);
+  const t = bestTeam(p.teams, key);
   const name = esc(t?.name);
   if (key === 'winner') {
     if (status === 'won') return `${name} are world champions! 🎉`;
     if (status === 'ongoing') return `Still alive — ${name} in the ${esc(t?.furthestLabel)}`;
-    return 'Both your teams are out';
+    return 'All your teams are out';
   }
   if (key === 'third') {
     if (status === 'won') return `${name} finished 3rd!`;
@@ -332,8 +334,7 @@ function renderMe(): void {
   if (!p) return;
   me = p.name;
   // keep the games team-filter valid when the selected player changes
-  if (meTeam !== 'both' && meTeam !== p.group1.fifaId && meTeam !== p.group2.fifaId)
-    meTeam = 'both';
+  if (meTeam !== 'both' && !p.teams.some((t) => t.fifaId === meTeam)) meTeam = 'both';
   const wins = prizes.filter((pr) => p.status[pr.key] === 'won');
   const header = wins.length
     ? `<div class="mb-4 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 p-4 text-white shadow animate-pop">
@@ -355,7 +356,7 @@ function renderMe(): void {
     })
     .join('');
   $('#me-body').innerHTML = `${header}
-    <div class="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">${teamCardBig(p.group1)}${teamCardBig(p.group2)}</div>
+    <div class="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">${p.teams.map(teamCardBig).join('')}</div>
     <div class="mb-6 space-y-2">${prizeList}</div>
     <div id="me-fixtures"></div>`;
   renderMeFixtures();
@@ -365,9 +366,7 @@ function renderMe(): void {
 function renderMeFixtures(): void {
   const p = data.people.find((x) => x.name === me) ?? data.people[0];
   if (!p) return;
-  const g1 = p.group1;
-  const g2 = p.group2;
-  const idSet = new Set(meTeam === 'both' ? [g1.fifaId, g2.fifaId] : [meTeam]);
+  const idSet = new Set(meTeam === 'both' ? p.teams.map((t) => t.fifaId) : [meTeam]);
   const list = data.fixtures.filter((f) => {
     const involved =
       (f.home != null && idSet.has(f.home.fifaId)) || (f.away != null && idSet.has(f.away.fifaId));
@@ -389,9 +388,8 @@ function renderMeFixtures(): void {
     )
     .join('');
   const teamRow = [
-    { key: 'both', label: 'Both teams' },
-    { key: g1.fifaId, label: g1.name },
-    { key: g2.fifaId, label: g2.name },
+    { key: 'both', label: 'All teams' },
+    ...p.teams.map((t) => ({ key: t.fifaId, label: t.name })),
   ]
     .map(
       (b) =>
@@ -443,7 +441,7 @@ function renderPlayers(): void {
       (p) => `
     <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
       <div class="mb-2 font-bold">${esc(p.name)}</div>
-      <div class="mb-3 grid grid-cols-2 gap-1">${miniTeam(p.group1)}${miniTeam(p.group2)}</div>
+      <div class="mb-3 grid grid-cols-2 gap-1">${p.teams.map(miniTeam).join('')}</div>
       ${prizeChips(p.status)}
     </div>`,
     )

@@ -17,7 +17,10 @@ export interface PrizeStatus {
 /** One of the four prize keys. */
 export type PrizeKey = keyof PrizeStatus;
 
-/** Which sweepstake group a team was drawn into. */
+/**
+ * In a tiered-pair league, which pool a team was drawn into (1 = strong,
+ * 2 = weak). `null` in leagues that don't tier teams (e.g. full-group).
+ */
 export type Tier = 1 | 2;
 
 /**
@@ -29,7 +32,7 @@ export interface TeamRef {
   fifaId: string;
   name: string;
   owner: string;
-  tier: Tier;
+  tier: Tier | null;
   group: string | null;
   iso2: string;
   furthestDepth: number;
@@ -123,11 +126,14 @@ export interface Meta {
   source: string;
 }
 
-/** A sweepstake participant and their two drawn teams. */
+/** A sweepstake participant and the teams they own. */
 export interface Person {
   name: string;
-  group1: TeamRef;
-  group2: TeamRef;
+  /**
+   * The teams this player owns. Tiered-pair leagues list two (strong then
+   * weak); full-group leagues list a whole FIFA group's sides.
+   */
+  teams: TeamRef[];
   status: PrizeStatus;
 }
 

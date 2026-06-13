@@ -15,7 +15,8 @@ import { compute, STAGE_DEPTH } from './compute.mjs';
 
 /** @typedef {import('./compute.mjs').RawMatch} RawMatch */
 /** @typedef {import('./compute.mjs').RawTeam} RawTeam */
-/** @typedef {import('./compute.mjs').Draw} Draw */
+// The simulator only drives the tiered-pair draw (Golden Shrew).
+/** @typedef {import('./compute.mjs').TieredDraw} Draw */
 /** @typedef {import('./compute.mjs').DrawTeam} DrawTeam */
 
 /**

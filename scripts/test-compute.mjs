@@ -7,7 +7,7 @@ import { dirname, join } from 'node:path';
 import { compute } from './compute.mjs';
 
 /** @typedef {import('./compute.mjs').RawMatch} RawMatch */
-/** @typedef {import('./compute.mjs').Draw} Draw */
+/** @typedef {import('./compute.mjs').TieredDraw} Draw */
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const draw = /** @type {Draw} */ (
@@ -152,6 +152,11 @@ assert.equal(byName('Spain').status.shrew, 'lost');
 const josh = r.people.find((p) => p.name === 'Josh');
 assert.equal(josh?.status.winner, 'won');
 assert.equal(josh.status.bestGroup2, 'won');
+// teams[] carries both owned sides in [group1, group2] order
+assert.deepEqual(
+  josh.teams.map((t) => t.name),
+  ['Spain', 'Curaçao'],
+);
 // Bracket + league table present
 assert.ok(r.knockout.length >= 1 && r.leagueTable.length === 48);
 
