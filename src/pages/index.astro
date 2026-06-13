@@ -73,7 +73,13 @@ const SUBTABS = [
 
       <!-- ===== Fixtures ===== -->
       <section data-section="fixtures">
-        <div class="mb-4 flex gap-2 overflow-x-auto no-scrollbar" id="fixtures-filter"></div>
+        <div class="mb-4 flex items-center gap-2">
+          <div class="flex gap-2 overflow-x-auto no-scrollbar" id="fixtures-filter"></div>
+          <button
+            id="jump-next"
+            class="ml-auto inline-flex shrink-0 items-center gap-1 rounded-full border border-amber-500 px-3 py-1.5 text-sm font-semibold text-amber-600 transition hover:bg-amber-500 hover:text-white dark:text-amber-400"
+          >⏭️ Next game</button>
+        </div>
         <div id="fixtures-body"></div>
       </section>
 

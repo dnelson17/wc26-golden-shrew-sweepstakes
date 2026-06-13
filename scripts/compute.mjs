@@ -41,7 +41,11 @@ export function normalizeMatch(m) {
   const depth = depthOf(m);
   const hs = m.HomeTeamScore ?? m.Home?.Score ?? null;
   const as = m.AwayTeamScore ?? m.Away?.Score ?? null;
-  const played = hs !== null && as !== null;
+  // FIFA MatchStatus: 0 = finished, 1 = not started, 3 = live (in progress).
+  // A live match already carries a running score, so a result is only final when it
+  // is NOT live — otherwise an in-play scoreline would leak into the standings.
+  const live = m.MatchStatus === 3;
+  const played = hs !== null && as !== null && !live;
   return {
     id: m.IdMatch,
     stageId: m.IdStage,
@@ -50,6 +54,11 @@ export function normalizeMatch(m) {
     isKnockout: depth >= 1,
     date: m.Date ?? null,
     played,
+    live,
+    matchTime: m.MatchTime ?? null,
+    group: (txt(m.GroupName) || '').replace(/^Group\s+/i, '') || null,
+    venue: m.Stadium ? { name: txt(m.Stadium.Name), city: txt(m.Stadium.CityName) } : null,
+    resultType: m.ResultType ?? null,
     home: m.Home?.IdTeam ? { id: m.Home.IdTeam, name: txt(m.Home.TeamName), abbr: m.Home.Abbreviation, score: hs } : null,
     away: m.Away?.IdTeam ? { id: m.Away.IdTeam, name: txt(m.Away.TeamName), abbr: m.Away.Abbreviation, score: as } : null,
     placeholderA: m.PlaceHolderA ?? null,
@@ -75,6 +84,7 @@ function buildRegistry(draw) {
         idCountry: t.idCountry,
         owner: person.name,
         tier,
+        group: null,
         // group-stage table
         p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0,
         // whole-tournament goals (prize-3 tiebreak)
@@ -114,6 +124,7 @@ export function compute(draw, rawMatches, nowIso) {
       if (!t) continue; // team not in our sweepstake (shouldn't happen — all 48 are)
       if (m.depth > t.furthestDepth) t.furthestDepth = m.depth;
       if (s.abbr && !t.abbr) t.abbr = s.abbr;
+      if (m.depth === 0 && m.group && !t.group) t.group = m.group;
     }
     if (!m.played || !m.home?.id || !m.away?.id) continue;
     const h = reg.get(m.home.id);
@@ -227,7 +238,7 @@ export function compute(draw, rawMatches, nowIso) {
   };
 
   const ref = (t) => t && {
-    fifaId: t.fifaId, name: t.name, owner: t.owner, tier: t.tier, iso2: t.iso2,
+    fifaId: t.fifaId, name: t.name, owner: t.owner, tier: t.tier, group: t.group, iso2: t.iso2,
     furthestDepth: t.furthestDepth, furthestLabel: DEPTH_LABEL[t.furthestDepth],
     pts: t.pts, w: t.w, d: t.d, l: t.l, gf: t.gf, ga: t.ga, gd: t.gd, ogf: t.ogf, oga: t.oga,
     eliminated: t.eliminated, qualified: t.qualified, champion: t.champion,
@@ -237,15 +248,25 @@ export function compute(draw, rawMatches, nowIso) {
   // All matches as flat fixtures (for the schedule view); knockout is the depth>=1 subset
   // used by the bracket. Unrevealed rounds keep their placeholders. Times are UTC —
   // the client formats them to Europe/London (BST during the tournament).
-  const toFixture = (m) => ({
-    matchId: m.id, depth: m.depth, stage: m.depth === 0 ? 'Group stage' : DEPTH_LABEL[m.depth],
-    date: m.date, played: m.played,
-    home: m.home?.id ? ref(reg.get(m.home.id)) : null,
-    away: m.away?.id ? ref(reg.get(m.away.id)) : null,
-    homePlaceholder: m.placeholderA, awayPlaceholder: m.placeholderB,
-    homeScore: m.home?.score ?? null, awayScore: m.away?.score ?? null,
-    homePen: m.homePen, awayPen: m.awayPen, winnerId: m.winner,
-  });
+  const toFixture = (m) => {
+    // Result note for finished games. Penalties are reliable (pen score present);
+    // 'a.e.t.' is inferred from ResultType beyond regular time (1) — provisional until
+    // the first extra-time match confirms the enum.
+    const result = !m.played ? null
+      : m.homePen != null ? 'on penalties'
+      : m.resultType > 1 ? 'a.e.t.'
+      : null;
+    return {
+      matchId: m.id, depth: m.depth, stage: m.depth === 0 ? 'Group stage' : DEPTH_LABEL[m.depth],
+      date: m.date, played: m.played, live: m.live, matchTime: m.live ? m.matchTime : null,
+      group: m.group, venue: m.venue, result,
+      home: m.home?.id ? ref(reg.get(m.home.id)) : null,
+      away: m.away?.id ? ref(reg.get(m.away.id)) : null,
+      homePlaceholder: m.placeholderA, awayPlaceholder: m.placeholderB,
+      homeScore: m.home?.score ?? null, awayScore: m.away?.score ?? null,
+      homePen: m.homePen, awayPen: m.awayPen, winnerId: m.winner,
+    };
+  };
   const fixtures = matches.map(toFixture).sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
   const knockout = fixtures.filter((f) => f.depth >= 1);
 

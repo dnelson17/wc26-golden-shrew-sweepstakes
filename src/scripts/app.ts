@@ -21,6 +21,8 @@ let subtab = 'winner';
 let me: string | null = null;
 let teamFilter = 'all';
 let fixtureFilter = 'all';
+let meTime = 'all'; // My-teams games: 'all' | 'upcoming'
+let meTeam = 'both'; // My-teams games: 'both' | a team's fifaId
 
 // ---------- helpers ----------
 const $ = (sel: string) => document.querySelector(sel) as HTMLElement;
@@ -264,7 +266,7 @@ function teamCardBig(t: any) {
     ${flagImg(t, 'h-10 w-14')}
     <div class="min-w-0 flex-1">
       <div class="flex items-center gap-2"><span class="truncate font-bold">${esc(t.name)}</span>${tierBadge(t.tier)}</div>
-      <div class="text-xs text-slate-500 dark:text-slate-400">${esc(state)}</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400">${t.group ? 'Group ' + esc(t.group) + ' · ' : ''}${esc(state)}</div>
     </div>
     <div class="text-right text-sm tabular-nums text-slate-500 dark:text-slate-400">
       <div>${t.pts} pts</div><div class="text-xs">${t.gf}-${t.ga}</div>
@@ -275,6 +277,8 @@ function teamCardBig(t: any) {
 function renderMe() {
   const p = data.people.find((x: any) => x.name === me) ?? data.people[0];
   me = p.name;
+  // keep the games team-filter valid when the selected player changes
+  if (meTeam !== 'both' && meTeam !== p.group1.fifaId && meTeam !== p.group2.fifaId) meTeam = 'both';
   const wins = PRIZES.filter((pr) => p.status[pr.key] === 'won');
   const header = wins.length
     ? `<div class="mb-4 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 p-4 text-white shadow animate-pop">
@@ -295,7 +299,49 @@ function renderMe() {
   }).join('');
   $('#me-body').innerHTML = `${header}
     <div class="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">${teamCardBig(p.group1)}${teamCardBig(p.group2)}</div>
-    <div class="space-y-2">${prizeList}</div>`;
+    <div class="mb-6 space-y-2">${prizeList}</div>
+    <div id="me-fixtures"></div>`;
+  renderMeFixtures();
+}
+
+// ---------- My teams · games ----------
+function renderMeFixtures() {
+  const p = data.people.find((x: any) => x.name === me) ?? data.people[0];
+  const g1 = p.group1, g2 = p.group2;
+  const idSet = new Set(meTeam === 'both' ? [g1.fifaId, g2.fifaId] : [meTeam]);
+  const list = data.fixtures.filter((f: any) => {
+    const involved = (f.home && idSet.has(f.home.fifaId)) || (f.away && idSet.has(f.away.fifaId));
+    return involved && !(meTime === 'upcoming' && f.played);
+  });
+
+  const pill = (active: boolean) =>
+    `shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold transition ${
+      active ? 'border-amber-500 bg-amber-500 text-white shadow' : 'border-slate-200 text-slate-600 dark:border-slate-700 dark:text-slate-300'
+    }`;
+  const timeRow = [
+    { key: 'all', label: 'All games' },
+    { key: 'upcoming', label: 'Upcoming' },
+  ].map((b) => `<button data-metime="${b.key}" class="${pill(meTime === b.key)}">${b.label}</button>`).join('');
+  const teamRow = [
+    { key: 'both', label: 'Both teams' },
+    { key: g1.fifaId, label: g1.name },
+    { key: g2.fifaId, label: g2.name },
+  ].map((b) => `<button data-meteam="${esc(b.key)}" class="${pill(meTeam === b.key)}">${esc(b.label)}</button>`).join('');
+
+  const body = list.length
+    ? daysHtml(groupByDay(list), null)
+    : `<p class="rounded-2xl border border-slate-200 bg-white p-4 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">No ${meTime === 'upcoming' ? 'upcoming ' : ''}games to show.</p>`;
+
+  $('#me-fixtures').innerHTML = `
+    <h2 class="mb-3 text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">Games</h2>
+    <div class="mb-2 flex gap-2 overflow-x-auto no-scrollbar">${timeRow}</div>
+    <div class="mb-4 flex gap-2 overflow-x-auto no-scrollbar">${teamRow}</div>
+    ${body}`;
+
+  $('#me-fixtures').querySelectorAll('[data-metime]').forEach((b) =>
+    b.addEventListener('click', () => { meTime = (b as HTMLElement).dataset.metime!; renderMeFixtures(); }));
+  $('#me-fixtures').querySelectorAll('[data-meteam]').forEach((b) =>
+    b.addEventListener('click', () => { meTeam = (b as HTMLElement).dataset.meteam!; renderMeFixtures(); }));
 }
 
 // ---------- Players grid ----------
@@ -335,7 +381,7 @@ function renderTeams() {
         </div>
         ${tierBadge(t.tier)}
       </div>
-      <div class="mb-3 text-xs text-slate-500 dark:text-slate-400">${t.champion ? 'World champions 🏆' : t.eliminated ? `Out · ${esc(t.furthestLabel)}` : `In the ${esc(t.furthestLabel)}`}</div>
+      <div class="mb-3 text-xs text-slate-500 dark:text-slate-400">${t.group ? 'Group ' + esc(t.group) + ' · ' : ''}${t.champion ? 'World champions 🏆' : t.eliminated ? `out in ${esc(t.furthestLabel)}` : `In the ${esc(t.furthestLabel)}`}</div>
       ${prizeChips(t.status)}
     </div>`).join('');
   document.querySelectorAll('[data-teamfilter]').forEach((b) =>
@@ -360,11 +406,73 @@ function fixtureSide(team: any, ph: string, side: 'home' | 'away') {
 }
 
 function fixtureCentre(f: any) {
+  if (f.live) {
+    return `<div class="px-2 text-center">
+      <div class="text-lg font-extrabold tabular-nums">${f.homeScore ?? 0}–${f.awayScore ?? 0}</div>
+      <div class="flex items-center justify-center gap-1 text-[10px] font-bold text-rose-500">
+        <span class="inline-block h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse"></span>LIVE${f.matchTime ? ' ' + esc(f.matchTime) : ''}
+      </div>
+    </div>`;
+  }
   if (f.played) {
-    const pens = f.homePen != null ? `<div class="text-[10px] text-slate-400">pens ${f.homePen}–${f.awayPen}</div>` : '';
-    return `<div class="px-2 text-center"><div class="text-lg font-extrabold tabular-nums">${f.homeScore}–${f.awayScore}</div>${pens}</div>`;
+    const note = f.homePen != null
+      ? `<div class="text-[10px] text-slate-400">pens ${f.homePen}–${f.awayPen}</div>`
+      : f.result
+      ? `<div class="text-[10px] text-slate-400">${esc(f.result)}</div>`
+      : '';
+    return `<div class="px-2 text-center"><div class="text-lg font-extrabold tabular-nums">${f.homeScore}–${f.awayScore}</div>${note}</div>`;
   }
   return `<div class="px-2 text-center"><div class="text-sm font-bold tabular-nums text-slate-500 dark:text-slate-400">${timeLabel(f.date)}</div><div class="text-[10px] text-slate-400">BST</div></div>`;
+}
+
+// A single fixture card. `isFocus` marks the game we scroll to (live game, else next up);
+// a live game always gets the rose ring + LIVE label regardless of focus.
+function fixtureCard(f: any, isFocus = false) {
+  const attrs = isFocus ? ' id="focus-fixture" style="scroll-margin-top:5.5rem"' : '';
+  const ring = f.live ? ' ring-2 ring-rose-500' : isFocus ? ' ring-2 ring-amber-400' : '';
+  const venue = f.venue?.name
+    ? `<div class="mt-1.5 text-center text-[10px] text-slate-400">${esc(f.venue.name)}${f.venue.city ? ' · ' + esc(f.venue.city) : ''}</div>`
+    : '';
+  return `<div${attrs} class="rounded-xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800${ring}">
+    <div class="mb-1.5 flex items-center justify-between text-[11px] font-medium text-slate-400">
+      <span>${f.date ? timeLabel(f.date) + ' BST' : ''}</span>
+      <span class="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-700/60">${esc(f.group ? 'Group ' + f.group : f.stage)}</span>
+    </div>
+    <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-1">
+      ${fixtureSide(f.home, f.homePlaceholder, 'home')}
+      ${fixtureCentre(f)}
+      ${fixtureSide(f.away, f.awayPlaceholder, 'away')}
+    </div>
+    ${venue}
+  </div>`;
+}
+
+// Group an ordered fixture list into London-day buckets, preserving chronological order.
+function groupByDay(list: any[]) {
+  const days: { key: string; items: any[] }[] = [];
+  for (const f of list) {
+    const key = f.date ? dayLabel(f.date) : 'TBD';
+    let bucket = days[days.length - 1];
+    if (!bucket || bucket.key !== key) { bucket = { key, items: [] }; days.push(bucket); }
+    bucket.items.push(f);
+  }
+  return days;
+}
+
+// Render day-grouped fixtures; the card whose matchId === focusId gets the focus treatment.
+function daysHtml(days: { key: string; items: any[] }[], focusId: string | null) {
+  return days.map((day) => `
+    <div class="mb-5">
+      <h3 class="sticky top-[57px] z-10 mb-2 bg-slate-100/90 py-1 text-sm font-bold text-slate-500 backdrop-blur dark:bg-slate-950/90 dark:text-slate-400">${esc(day.key)}</h3>
+      <div class="space-y-2">${day.items.map((f: any) => fixtureCard(f, f.matchId === focusId)).join('')}</div>
+    </div>`).join('');
+}
+
+// The fixture to focus/scroll to: a live game if one is in progress, otherwise the next
+// unplayed game (the schedule is already in chronological order).
+function focusFixtureId(): string | null {
+  const f = data.fixtures.find((x: any) => x.live) ?? data.fixtures.find((x: any) => !x.played);
+  return f ? f.matchId : null;
 }
 
 function renderFixtures() {
@@ -383,33 +491,11 @@ function renderFixtures() {
   const list = data.fixtures.filter((f: any) =>
     fixtureFilter === 'all' || (fixtureFilter === 'group' ? f.depth === 0 : f.depth >= 1));
 
-  // group by London day, preserving chronological order
-  const days: { key: string; items: any[] }[] = [];
-  for (const f of list) {
-    const key = f.date ? dayLabel(f.date) : 'TBD';
-    let bucket = days[days.length - 1];
-    if (!bucket || bucket.key !== key) { bucket = { key, items: [] }; days.push(bucket); }
-    bucket.items.push(f);
-  }
+  $('#fixtures-body').innerHTML = daysHtml(groupByDay(list), focusFixtureId());
 
-  $('#fixtures-body').innerHTML = days.map((day) => `
-    <div class="mb-5">
-      <h3 class="sticky top-[57px] z-10 mb-2 bg-slate-100/90 py-1 text-sm font-bold text-slate-500 backdrop-blur dark:bg-slate-950/90 dark:text-slate-400">${esc(day.key)}</h3>
-      <div class="space-y-2">
-        ${day.items.map((f: any) => `
-          <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-            <div class="mb-1.5 flex items-center justify-between text-[11px] font-medium text-slate-400">
-              <span>${f.date ? timeLabel(f.date) + ' BST' : ''}</span>
-              <span class="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-700/60">${esc(f.stage)}</span>
-            </div>
-            <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-1">
-              ${fixtureSide(f.home, f.homePlaceholder, 'home')}
-              ${fixtureCentre(f)}
-              ${fixtureSide(f.away, f.awayPlaceholder, 'away')}
-            </div>
-          </div>`).join('')}
-      </div>
-    </div>`).join('');
+  // Button reflects whether there's a game on right now.
+  const jump = document.getElementById('jump-next');
+  if (jump) jump.textContent = data.fixtures.some((f: any) => f.live) ? '🔴 Live now' : '⏭️ Next game';
 
   document.querySelectorAll('[data-fixfilter]').forEach((b) =>
     b.addEventListener('click', () => { fixtureFilter = (b as HTMLElement).dataset.fixfilter!; renderFixtures(); }));
@@ -453,6 +539,13 @@ function showView(v: string) {
   renderCurrent();
 }
 
+// Bring the focus game (live, else next up) to the top of the screen (button + fresh-load).
+function jumpToFocus(smooth: boolean) {
+  if (fixtureFilter !== 'all') { fixtureFilter = 'all'; renderFixtures(); }
+  const el = document.getElementById('focus-fixture');
+  if (el) el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+}
+
 function applyData(d: any) {
   data = d;
   // populate player selector once
@@ -491,7 +584,13 @@ export function init() {
     }));
 
   applyData(data);
-  showView(['prizes', 'fixtures', 'me', 'players', 'teams'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'prizes');
+
+  // View: honour the URL hash; a fresh browser (no hash) lands on Fixtures at the next game.
+  const hashView = location.hash.slice(1);
+  const validView = ['prizes', 'fixtures', 'me', 'players', 'teams'].includes(hashView);
+  showView(validView ? hashView : 'fixtures');
+  document.getElementById('jump-next')?.addEventListener('click', () => jumpToFocus(true));
+  if (!validView) requestAnimationFrame(() => jumpToFocus(false));
 
   // In production, pull fresh data and re-render if it changed. In dev we keep the
   // baked seed so `yarn snapshot <name>` previews work without the CDN overriding them.
