@@ -41,7 +41,7 @@ const SUBTABS = [
           <p class="truncate text-xs text-slate-500 dark:text-slate-400">2026 World Cup sweepstake</p>
         </div>
         <!-- Desktop top tabs -->
-        <nav class="hidden gap-1 md:flex" aria-label="Views">
+        <nav class="hidden gap-1 md:flex" aria-label="Views" data-navbar="top">
           {NAV.map((n) => (
             <button
               data-nav={n.view}
@@ -108,11 +108,12 @@ const SUBTABS = [
       class="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden dark:border-slate-800 dark:bg-slate-900/95"
       style="padding-bottom: env(safe-area-inset-bottom);"
       aria-label="Views"
+      data-navbar="bottom"
     >
       {NAV.map((n) => (
-        <button data-nav={n.view} class="flex flex-col items-center gap-0.5 py-2 text-slate-500 dark:text-slate-400">
-          <span class="text-xl leading-none">{n.icon}</span>
-          <span class="text-[11px] font-semibold">{n.label}</span>
+        <button data-nav={n.view} class="flex flex-col items-center gap-1 py-1.5">
+          <span data-navpill class="flex h-8 w-14 items-center justify-center rounded-full text-xl leading-none transition">{n.icon}</span>
+          <span data-navlabel class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">{n.label}</span>
         </button>
       ))}
     </nav>

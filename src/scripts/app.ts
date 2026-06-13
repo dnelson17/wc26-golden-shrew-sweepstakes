@@ -428,10 +428,26 @@ function showView(v: string) {
   view = v;
   document.querySelectorAll('[data-section]').forEach((s) =>
     s.classList.toggle('is-active', (s as HTMLElement).dataset.section === v));
-  document.querySelectorAll('[data-nav]').forEach((b) => {
+  // Desktop top tabs: active = filled amber pill (matches the sub-tabs/filters).
+  document.querySelectorAll('[data-navbar="top"] [data-nav]').forEach((b) => {
     const active = (b as HTMLElement).dataset.nav === v;
-    b.classList.toggle('text-amber-500', active);
-    b.classList.toggle('font-extrabold', active);
+    b.className = `rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+      active
+        ? 'bg-amber-500 text-white shadow'
+        : 'text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
+    }`;
+  });
+  // Mobile bottom bar: active = amber pill behind the icon + amber bold label.
+  document.querySelectorAll('[data-navbar="bottom"] [data-nav]').forEach((b) => {
+    const active = (b as HTMLElement).dataset.nav === v;
+    const pill = b.querySelector('[data-navpill]') as HTMLElement;
+    const label = b.querySelector('[data-navlabel]') as HTMLElement;
+    pill.className = `flex h-8 w-14 items-center justify-center rounded-full text-xl leading-none transition ${
+      active ? 'bg-amber-500/20 dark:bg-amber-400/20' : ''
+    }`;
+    label.className = `text-[11px] font-semibold transition ${
+      active ? 'text-amber-600 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'
+    }`;
   });
   if (location.hash.slice(1) !== v) history.replaceState(null, '', `#${v}`);
   renderCurrent();
