@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-13T22:08:11.046Z",
+    "updatedAt": "2026-06-13T22:46:40.459Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -665,7 +665,7 @@
       "date": "2026-06-13T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "3'",
+      "matchTime": "42'",
       "group": "C",
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -734,8 +734,8 @@
       },
       "homePlaceholder": "C1",
       "awayPlaceholder": "C2",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
