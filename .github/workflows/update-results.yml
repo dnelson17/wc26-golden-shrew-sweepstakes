@@ -33,14 +33,16 @@ jobs:
 
       - name: Commit results if changed
         run: |
-          if git diff --quiet -- data/results.json; then
-            echo "No change in results.json"
+          # Every league's results file (golden-shrew + nelson + any future ones).
+          files=$(git ls-files 'data/results*.json')
+          if git diff --quiet -- $files; then
+            echo "No change in results files"
             exit 0
           fi
           git config user.name "results-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/results.json
+          git add $files
           # [skip ci] stops Cloudflare Pages rebuilding on every data commit — the site
-          # fetches results.json from the CDN at runtime, so no rebuild is needed.
+          # fetches the results files from the CDN at runtime, so no rebuild is needed.
           git commit -m "data: update results $(date -u +'%Y-%m-%dT%H:%MZ') [skip ci]"
           git push

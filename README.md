@@ -1,33 +1,47 @@
-# 🪵 Golden Shrew Sweepstake 🏆
+# 🪵 World Cup Sweepstakes 🏆
 
-Live prize tracker for a 2026 World Cup sweepstake. Each player holds one strong
-("group 1") team and one weak ("group 2") team, competing for four prizes:
+Live prize trackers for 2026 World Cup sweepstakes — multiple leagues overlaid on
+the same tournament. The root path (`/`) is a league picker; each league has its own
+page and re-fetches its own live data.
 
-| Prize             | Emoji | Amount | Won by                                                |
-| ----------------- | :---: | -----: | ----------------------------------------------------- |
-| Winner            |  🏆   |   £120 | The tournament champions                              |
-| 3rd place         |  🥉   |    £40 | Winner of the 3rd-place play-off                      |
-| Best group-2 side |  🪖   |    £40 | The group-2 team that goes furthest (then most goals) |
-| Wooden shrew      |  🪵   |    £40 | The worst team overall (fewest pts, worst GD, …)      |
+## Leagues
+
+| Slug           | Path            | Players | Ownership                               | Prizes                           |
+| -------------- | --------------- | ------- | --------------------------------------- | -------------------------------- |
+| `golden-shrew` | `/golden-shrew` | 24      | one strong + one weak team each         | Winner, 3rd, best group-2, shrew |
+| `nelson`       | `/nelson`       | 12      | a whole FIFA group (A–L) each, ~4 teams | Winner, 3rd, shrew               |
+
+Leagues are configured in **`src/leagues.ts`** (branding, prize set, ownership mode,
+CDN URL). The prizes:
+
+| Prize             | Emoji | Amount | Won by                                                              |
+| ----------------- | :---: | -----: | ------------------------------------------------------------------- |
+| Winner            |  🏆   |   £120 | The tournament champions                                            |
+| 3rd place         |  🥉   |    £40 | Winner of the 3rd-place play-off                                    |
+| Best group-2 side |  🪖   |    £40 | The group-2 team that goes furthest, then most goals (Golden Shrew) |
+| Wooden shrew      |  🪵   |    £40 | The worst team overall (fewest pts, worst GD, …)                    |
 
 ## How it works
 
 ```
-GitHub Actions (hourly) ──► scripts/fetch.mjs ──► data/results.json ──► git commit [skip ci]
-        cron                  (FIFA API + compute)                              │
-                                                                                ▼
+GitHub Actions (hourly) ──► scripts/fetch.mjs ──► data/results*.json ──► git commit [skip ci]
+        cron                  (FIFA API + compute)                               │
+                                                                                 ▼
                                           Cloudflare Pages site ◄── fetch() at runtime
 ```
 
-- **`data/draw_results.json`** — the sweepstake draw (who owns which team), enriched
-  with FIFA team IDs + ISO flag codes.
-- **`scripts/fetch.mjs`** — pulls all 104 matches from the FIFA calendar API, runs the
-  prize logic, and writes `data/results.json` (only when something changed).
+- **`data/draw_results*.json`** — each league's draw (who owns which team), enriched
+  with FIFA team IDs + ISO flag codes. `draw_results.json` is Golden Shrew (tiered-pair);
+  `draw_results.nelson.json` is Nelson (full-group, with a group→owner map).
+- **`scripts/fetch.mjs`** — pulls all 104 matches from the FIFA calendar API **once**, then
+  runs the prize logic for every league, writing each `data/results*.json` (only when
+  something changed).
 - **`scripts/compute.mjs`** — pure prize logic (standings, knockout bracket, per-team &
-  per-player prize statuses, league table, fixtures). Unit-tested.
-- **The site** is static (Astro + Tailwind). It bakes the latest `results.json` as a seed
-  for instant first paint, then **fetches the live `results.json` from the CDN at runtime**
-  and re-renders. So data updates never require a rebuild.
+  per-player prize statuses, league table, fixtures). Supports both ownership modes
+  (tiered-pair, full-group). Unit-tested for each.
+- **The site** is static (Astro + Tailwind). Each league page (`/[league]`) bakes its
+  latest results as a seed for instant first paint, then **fetches its live results file
+  from the CDN at runtime** and re-renders. So data updates never require a rebuild.
 
 Flags render from `https://flagcdn.com/<iso2>.svg` (works for England/Scotland too).
 
@@ -45,14 +59,16 @@ Flags render from `https://flagcdn.com/<iso2>.svg` (works for England/Scotland t
 ### Previewing different stages
 
 The whole tournament is simulated from betting odds so the dashboard can be previewed at
-any point. Snapshots live in `data/snapshots/`:
+any point. Snapshots live in `data/snapshots/` (currently Golden Shrew only — they write
+`data/results.json`):
 
 ```bash
 npm run snapshot 02-group-complete   # 00-start · 01-group-md1 · 02-group-complete · 03-r16-half · 04-finished
 npm run dev                          # dev keeps the seed, so the snapshot shows as-is
 ```
 
-Deep links: `?me=Josh#me`, `?prize=shrew#prizes`.
+Deep links live under a league path, e.g. `/golden-shrew?me=Josh#me`,
+`/golden-shrew?prize=shrew#prizes`.
 
 ## Deployment — Cloudflare Pages (free)
 
@@ -72,7 +88,7 @@ builds/month** limit:
 | Production branch      | `main`                |
 | Environment variable   | `NODE_VERSION` = `22` |
 
-If you ever rename the repo, update `RESULTS_URL` in `src/scripts/app.ts`.
+If you ever rename the repo, update each league's `resultsUrl` in `src/leagues.ts`.
 
 ### Iterating without burning deploys
 

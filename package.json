@@ -18,7 +18,7 @@
     "fetch": "node scripts/fetch.mjs",
     "simulate": "node scripts/simulate.mjs",
     "snapshot": "node scripts/use-snapshot.mjs",
-    "test:compute": "node scripts/test-compute.mjs",
+    "test:compute": "node scripts/test-compute.mjs && node scripts/test-compute-nelson.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
