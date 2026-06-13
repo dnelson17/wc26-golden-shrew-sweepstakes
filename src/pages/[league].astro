@@ -36,7 +36,6 @@ const NAV: NavItem[] = [
   { view: 'fixtures', icon: '📅', label: 'Fixtures' },
   { view: 'me', icon: '👤', label: 'My teams' },
   { view: 'players', icon: '👥', label: 'Players' },
-  { view: 'teams', icon: '🌍', label: 'Teams' },
 ];
 ---
 
@@ -149,12 +148,6 @@ const NAV: NavItem[] = [
       <!-- ===== Players ===== -->
       <section data-section="players">
         <div id="players-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
-      </section>
-
-      <!-- ===== Teams ===== -->
-      <section data-section="teams">
-        <div class="no-scrollbar mb-4 flex gap-2 overflow-x-auto" id="teams-filter"></div>
-        <div id="teams-body" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
       </section>
 
       <p id="updated" class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500"></p>

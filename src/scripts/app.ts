@@ -30,7 +30,6 @@ let data!: Results;
 let view = 'prizes';
 let subtab = 'winner';
 let me: string | null = null;
-let teamFilter = 'all';
 let fixtureFilter = 'all';
 let meTime = 'all'; // My-teams games: 'all' | 'upcoming'
 let meTeam = 'both'; // My-teams games: 'both' | a team's fifaId
@@ -442,56 +441,6 @@ function renderPlayers(): void {
     .join('');
 }
 
-// ---------- Teams grid ----------
-function renderTeams(): void {
-  // The Group 1/2 split only exists in tiered leagues; full-group leagues just show All.
-  const tiered = data.teams.some((t) => t.tier != null);
-  const filters = tiered
-    ? [
-        { key: 'all', label: 'All' },
-        { key: '1', label: 'Group 1' },
-        { key: '2', label: 'Group 2' },
-      ]
-    : [{ key: 'all', label: 'All' }];
-  $('#teams-filter').innerHTML = filters
-    .map((f) => {
-      const active = teamFilter === f.key;
-      return `<button data-teamfilter="${f.key}" class="shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold transition ${
-        active
-          ? 'border-amber-500 bg-amber-500 text-white shadow'
-          : 'border-slate-200 text-slate-600 dark:border-slate-700 dark:text-slate-300'
-      }">${f.label}</button>`;
-    })
-    .join('');
-  const list = data.teams.filter((t) => teamFilter === 'all' || String(t.tier) === teamFilter);
-  $('#teams-body').innerHTML = list
-    .map(
-      (t) => `
-    <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-      <div class="mb-2 flex items-center gap-2">
-        ${flagImg(t, 'h-7 w-10')}
-        <div class="min-w-0 flex-1">
-          <div class="truncate font-bold">${esc(t.name)}</div>
-          <div class="truncate text-[11px] text-slate-400">${esc(t.owner)}</div>
-        </div>
-        ${tierBadge(t.tier)}
-      </div>
-      <div class="mb-3 text-xs text-slate-500 dark:text-slate-400">${t.group ? 'Group ' + esc(t.group) + ' · ' : ''}${t.champion ? 'World champions 🏆' : t.eliminated ? `out in ${esc(t.furthestLabel)}` : `In the ${esc(t.furthestLabel)}`}</div>
-      ${prizeChips(t.status)}
-    </div>`,
-    )
-    .join('');
-  document.querySelectorAll<HTMLElement>('[data-teamfilter]').forEach((b) => {
-    b.addEventListener('click', () => {
-      const v = b.dataset['teamfilter'];
-      if (v) {
-        teamFilter = v;
-        renderTeams();
-      }
-    });
-  });
-}
-
 // ---------- Fixtures (schedule) ----------
 const LONDON = 'Europe/London';
 const dayLabel = (iso: string | null): string =>
@@ -647,7 +596,6 @@ function renderCurrent(): void {
   else if (view === 'fixtures') renderFixtures();
   else if (view === 'me') renderMe();
   else if (view === 'players') renderPlayers();
-  else if (view === 'teams') renderTeams();
 }
 
 function showView(v: string): void {
