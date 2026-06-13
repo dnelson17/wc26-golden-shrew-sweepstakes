@@ -5,9 +5,11 @@ import { LEAGUES, type LeagueConfig } from '../leagues';
 // imported statically and selected by slug; the client then re-fetches live
 // data from the league's CDN URL.
 import goldenShrewSeed from '../../data/results.json';
+import nelsonSeed from '../../data/results.nelson.json';
 
 const SEEDS: Record<string, unknown> = {
   'golden-shrew': goldenShrewSeed,
+  nelson: nelsonSeed,
 };
 
 export function getStaticPaths() {

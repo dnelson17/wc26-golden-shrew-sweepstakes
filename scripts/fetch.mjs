@@ -1,5 +1,5 @@
-// Fetch 2026 World Cup matches from FIFA, compute prize standings, write results.json.
-// Run: node scripts/fetch.mjs
+// Fetch 2026 World Cup matches from FIFA once, then compute each league's prize
+// standings (every league overlays the same tournament). Run: node scripts/fetch.mjs
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -14,8 +14,17 @@ import { compute } from './compute.mjs';
  */
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DRAW_PATH = join(ROOT, 'data', 'draw_results.json');
-const OUT_PATH = join(ROOT, 'data', 'results.json');
+/** @param {string} file */
+const dataPath = (file) => join(ROOT, 'data', file);
+
+// Each sweepstake league: its draw file and the results file we write.
+// golden-shrew keeps the canonical results.json (its public CDN URL); other
+// leagues are suffixed. All share one FIFA fetch.
+/** @type {{ slug: string, draw: string, out: string }[]} */
+const LEAGUES = [
+  { slug: 'golden-shrew', draw: 'draw_results.json', out: 'results.json' },
+  { slug: 'nelson', draw: 'draw_results.nelson.json', out: 'results.nelson.json' },
+];
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
@@ -55,8 +64,12 @@ async function main() {
     );
     return;
   }
-  const draw = /** @type {Draw} */ (JSON.parse(await readFile(DRAW_PATH, 'utf8')));
-  let { idCompetition, idSeason } = draw.meta ?? {};
+  // Pinned FIFA identifiers come from the first league's draw — all leagues
+  // share the same tournament, so one fetch feeds them all.
+  const first = LEAGUES[0];
+  if (!first) return;
+  const firstDraw = /** @type {Draw} */ (JSON.parse(await readFile(dataPath(first.draw), 'utf8')));
+  let { idCompetition, idSeason } = firstDraw.meta ?? {};
 
   let data = await fifa({ idCompetition, idSeason, count: '500', language: 'en' });
   if (!data.Results || data.Results.length < 100) {
@@ -64,33 +77,37 @@ async function main() {
     ({ idCompetition, idSeason } = await discoverSeason());
     data = await fifa({ idCompetition, idSeason, count: '500', language: 'en' });
   }
-
+  const matches = /** @type {RawMatch[]} */ (data.Results);
   const nowIso = new Date().toISOString();
-  const results = compute(draw, /** @type {RawMatch[]} */ (data.Results), nowIso);
-  console.log(
-    `Computed: ${results.meta.playedMatches}/${results.meta.totalMatches} played, ` +
-      `groupComplete=${results.meta.groupComplete}, over=${results.meta.tournamentOver}`,
-  );
 
   // Stable output (drop the timestamp) so unchanged data produces an identical
   // file — lets the workflow skip empty commits.
   /** @param {import('../src/types').Results} obj */
   const stable = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, updatedAt: null } });
-  let prevStable = null;
-  try {
-    prevStable = stable(
-      /** @type {import('../src/types').Results} */ (JSON.parse(await readFile(OUT_PATH, 'utf8'))),
-    );
-  } catch {
-    // No previous results.json yet — treat the new output as changed.
-  }
-  if (stable(results) === prevStable) {
-    console.log('No change since last run — leaving results.json untouched.');
-    return;
-  }
 
-  await writeFile(OUT_PATH, JSON.stringify(results, null, 2) + '\n');
-  console.log(`Wrote ${OUT_PATH}`);
+  for (const league of LEAGUES) {
+    const draw = /** @type {Draw} */ (JSON.parse(await readFile(dataPath(league.draw), 'utf8')));
+    const results = compute(draw, matches, nowIso);
+    console.log(
+      `[${league.slug}] ${results.meta.playedMatches}/${results.meta.totalMatches} played, ` +
+        `groupComplete=${results.meta.groupComplete}, over=${results.meta.tournamentOver}`,
+    );
+    const outPath = dataPath(league.out);
+    let prevStable = null;
+    try {
+      prevStable = stable(
+        /** @type {import('../src/types').Results} */ (JSON.parse(await readFile(outPath, 'utf8'))),
+      );
+    } catch {
+      // No previous file yet — treat the new output as changed.
+    }
+    if (stable(results) === prevStable) {
+      console.log(`[${league.slug}] no change — left ${league.out} untouched.`);
+      continue;
+    }
+    await writeFile(outPath, JSON.stringify(results, null, 2) + '\n');
+    console.log(`[${league.slug}] wrote ${league.out}`);
+  }
 }
 
 main().catch((/** @type {unknown} */ e) => {

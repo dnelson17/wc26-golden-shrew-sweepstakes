@@ -109,37 +109,31 @@ function ownerOf(t: TeamRef | undefined): string {
 }
 
 function prizeBanner(): string {
-  if (subtab === 'winner') {
-    const w = data.prizes.first.winner;
-    return w
-      ? banner('🏆', 'Winner · £120', `${esc(w.name)} — ${ownerOf(w)}`, true)
-      : banner('🏆', 'Winner · £120', 'Still up for grabs', false);
+  const def = prizes.find((p) => p.key === subtab);
+  if (!def) return '';
+  const title = `${def.label} · ${def.amount}`;
+  // Capstone prizes (champion / 3rd place): show the decided winner or a pending note.
+  if (def.slot === 'first' || def.slot === 'second') {
+    const cap = def.slot === 'first' ? data.prizes.first : data.prizes.second;
+    if (cap.winner)
+      return banner(def.emoji, title, `${esc(cap.winner.name)} — ${ownerOf(cap.winner)}`, true);
+    const pending =
+      def.slot === 'first' ? 'Still up for grabs' : 'Decided after the 3rd-place play-off';
+    return banner(def.emoji, title, pending, false);
   }
-  if (subtab === 'third') {
-    const w = data.prizes.second.winner;
-    return w
-      ? banner('🥉', '3rd place · £40', `${esc(w.name)} — ${ownerOf(w)}`, true)
-      : banner('🥉', '3rd place · £40', 'Decided after the 3rd-place play-off', false);
-  }
-  if (subtab === 'bestGroup2') {
-    const p = data.prizes.third;
-    const names = p.leaders.map((t) => `${esc(t.name)} (${esc(t.owner)})`).join(', ');
+  // Ranked prizes (best group-2 / wooden shrew): show current leaders.
+  const ranked = def.slot === 'third' ? data.prizes.third : data.prizes.fourth;
+  const names = ranked.leaders.map((t) => `${esc(t.name)} (${esc(t.owner)})`).join(', ');
+  const decided = ranked.status === 'decided';
+  if (def.slot === 'third') {
     return banner(
-      '🪖',
-      'Best group-2 side · £40',
-      p.status === 'decided' ? `${names} — winner!` : `Leading: ${names || '—'}`,
-      p.status === 'decided',
+      def.emoji,
+      title,
+      decided ? `${names} — winner!` : `Leading: ${names || '—'}`,
+      decided,
     );
   }
-  // shrew
-  const p = data.prizes.fourth;
-  const names = p.leaders.map((t) => `${esc(t.name)} (${esc(t.owner)})`).join(', ');
-  return banner(
-    '🪵',
-    'Wooden shrew · £40',
-    p.status === 'decided' ? names : `Currently worst: ${names || '—'}`,
-    p.status === 'decided',
-  );
+  return banner(def.emoji, title, decided ? names : `Currently worst: ${names || '—'}`, decided);
 }
 
 // ---------- bracket (winner / third / best-group-2 tabs) ----------
@@ -450,11 +444,15 @@ function renderPlayers(): void {
 
 // ---------- Teams grid ----------
 function renderTeams(): void {
-  const filters = [
-    { key: 'all', label: 'All' },
-    { key: '1', label: 'Group 1' },
-    { key: '2', label: 'Group 2' },
-  ];
+  // The Group 1/2 split only exists in tiered leagues; full-group leagues just show All.
+  const tiered = data.teams.some((t) => t.tier != null);
+  const filters = tiered
+    ? [
+        { key: 'all', label: 'All' },
+        { key: '1', label: 'Group 1' },
+        { key: '2', label: 'Group 2' },
+      ]
+    : [{ key: 'all', label: 'All' }];
   $('#teams-filter').innerHTML = filters
     .map((f) => {
       const active = teamFilter === f.key;

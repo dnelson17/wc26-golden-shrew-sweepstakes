@@ -58,6 +58,23 @@ export const LEAGUES: Record<string, LeagueConfig> = {
       { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
     ],
   },
+  // 12-person draw: each player owns a whole FIFA group (A–L). No tiered teams,
+  // so there's no "best group-2" prize — three prizes instead of four.
+  // TODO: confirm display name + prize amounts with the group.
+  nelson: {
+    slug: 'nelson',
+    name: 'Nelson Sweepstake',
+    tagline: '2026 World Cup sweepstake',
+    headerEmojis: ['🪵', '🏆'],
+    themeColor: '#f59e0b',
+    ownershipMode: 'full-group',
+    resultsUrl: `${RAW_BASE}/results.nelson.json`,
+    prizes: [
+      { key: 'winner', slot: 'first', emoji: '🏆', label: 'Winner', amount: '£120' },
+      { key: 'third', slot: 'second', emoji: '🥉', label: '3rd place', amount: '£40' },
+      { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
+    ],
+  },
 };
 
 /** League the picker redirect / bare links fall back to. */

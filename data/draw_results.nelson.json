@@ -1,0 +1,360 @@
+{
+  "ownershipMode": "full-group",
+  "groupOwners": {
+    "A": "David",
+    "B": "Martin",
+    "C": "Paul",
+    "D": "Wee Matt",
+    "E": "John Nelson Jr",
+    "F": "Joe",
+    "G": "Malachy",
+    "H": "Ann",
+    "I": "John Nelson Sr",
+    "J": "John McCourt",
+    "K": "Edward",
+    "L": "Michael"
+  },
+  "teams": [
+    {
+      "name": "Algeria",
+      "fifaName": "Algeria",
+      "fifaId": "43843",
+      "idCountry": "ALG",
+      "iso2": "dz"
+    },
+    {
+      "name": "Argentina",
+      "fifaName": "Argentina",
+      "fifaId": "43922",
+      "idCountry": "ARG",
+      "iso2": "ar"
+    },
+    {
+      "name": "Australia",
+      "fifaName": "Australia",
+      "fifaId": "43976",
+      "idCountry": "AUS",
+      "iso2": "au"
+    },
+    {
+      "name": "Austria",
+      "fifaName": "Austria",
+      "fifaId": "43934",
+      "idCountry": "AUT",
+      "iso2": "at"
+    },
+    {
+      "name": "Belgium",
+      "fifaName": "Belgium",
+      "fifaId": "43935",
+      "idCountry": "BEL",
+      "iso2": "be"
+    },
+    {
+      "name": "Bosnia & Herzegovina",
+      "fifaName": "Bosnia and Herzegovina",
+      "fifaId": "44037",
+      "idCountry": "BIH",
+      "iso2": "ba"
+    },
+    {
+      "name": "Brazil",
+      "fifaName": "Brazil",
+      "fifaId": "43924",
+      "idCountry": "BRA",
+      "iso2": "br"
+    },
+    {
+      "name": "Canada",
+      "fifaName": "Canada",
+      "fifaId": "43899",
+      "idCountry": "CAN",
+      "iso2": "ca"
+    },
+    {
+      "name": "Cape Verde",
+      "fifaName": "Cabo Verde",
+      "fifaId": "43850",
+      "idCountry": "CPV",
+      "iso2": "cv"
+    },
+    {
+      "name": "Colombia",
+      "fifaName": "Colombia",
+      "fifaId": "43926",
+      "idCountry": "COL",
+      "iso2": "co"
+    },
+    {
+      "name": "Croatia",
+      "fifaName": "Croatia",
+      "fifaId": "43938",
+      "idCountry": "CRO",
+      "iso2": "hr"
+    },
+    {
+      "name": "Curaçao",
+      "fifaName": "Curaçao",
+      "fifaId": "1895293",
+      "idCountry": "CUW",
+      "iso2": "cw"
+    },
+    {
+      "name": "Czechia",
+      "fifaName": "Czechia",
+      "fifaId": "43995",
+      "idCountry": "CZE",
+      "iso2": "cz"
+    },
+    {
+      "name": "DR Congo",
+      "fifaName": "Congo DR",
+      "fifaId": "20014",
+      "idCountry": "COD",
+      "iso2": "cd"
+    },
+    {
+      "name": "Ecuador",
+      "fifaName": "Ecuador",
+      "fifaId": "43927",
+      "idCountry": "ECU",
+      "iso2": "ec"
+    },
+    {
+      "name": "Egypt",
+      "fifaName": "Egypt",
+      "fifaId": "43855",
+      "idCountry": "EGY",
+      "iso2": "eg"
+    },
+    {
+      "name": "England",
+      "fifaName": "England",
+      "fifaId": "43942",
+      "idCountry": "ENG",
+      "iso2": "gb-eng"
+    },
+    {
+      "name": "France",
+      "fifaName": "France",
+      "fifaId": "43946",
+      "idCountry": "FRA",
+      "iso2": "fr"
+    },
+    {
+      "name": "Germany",
+      "fifaName": "Germany",
+      "fifaId": "43948",
+      "idCountry": "GER",
+      "iso2": "de"
+    },
+    {
+      "name": "Ghana",
+      "fifaName": "Ghana",
+      "fifaId": "43860",
+      "idCountry": "GHA",
+      "iso2": "gh"
+    },
+    {
+      "name": "Haiti",
+      "fifaName": "Haiti",
+      "fifaId": "43908",
+      "idCountry": "HAI",
+      "iso2": "ht"
+    },
+    {
+      "name": "Iran",
+      "fifaName": "IR Iran",
+      "fifaId": "43817",
+      "idCountry": "IRN",
+      "iso2": "ir"
+    },
+    {
+      "name": "Iraq",
+      "fifaName": "Iraq",
+      "fifaId": "43818",
+      "idCountry": "IRQ",
+      "iso2": "iq"
+    },
+    {
+      "name": "Ivory Coast",
+      "fifaName": "Côte d'Ivoire",
+      "fifaId": "43854",
+      "idCountry": "CIV",
+      "iso2": "ci"
+    },
+    {
+      "name": "Japan",
+      "fifaName": "Japan",
+      "fifaId": "43819",
+      "idCountry": "JPN",
+      "iso2": "jp"
+    },
+    {
+      "name": "Jordan",
+      "fifaName": "Jordan",
+      "fifaId": "43820",
+      "idCountry": "JOR",
+      "iso2": "jo"
+    },
+    {
+      "name": "Mexico",
+      "fifaName": "Mexico",
+      "fifaId": "43911",
+      "idCountry": "MEX",
+      "iso2": "mx"
+    },
+    {
+      "name": "Morocco",
+      "fifaName": "Morocco",
+      "fifaId": "43872",
+      "idCountry": "MAR",
+      "iso2": "ma"
+    },
+    {
+      "name": "Netherlands",
+      "fifaName": "Netherlands",
+      "fifaId": "43960",
+      "idCountry": "NED",
+      "iso2": "nl"
+    },
+    {
+      "name": "New Zealand",
+      "fifaName": "New Zealand",
+      "fifaId": "43978",
+      "idCountry": "NZL",
+      "iso2": "nz"
+    },
+    {
+      "name": "Norway",
+      "fifaName": "Norway",
+      "fifaId": "43961",
+      "idCountry": "NOR",
+      "iso2": "no"
+    },
+    {
+      "name": "Panama",
+      "fifaName": "Panama",
+      "fifaId": "43914",
+      "idCountry": "PAN",
+      "iso2": "pa"
+    },
+    {
+      "name": "Paraguay",
+      "fifaName": "Paraguay",
+      "fifaId": "43928",
+      "idCountry": "PAR",
+      "iso2": "py"
+    },
+    {
+      "name": "Portugal",
+      "fifaName": "Portugal",
+      "fifaId": "43963",
+      "idCountry": "POR",
+      "iso2": "pt"
+    },
+    {
+      "name": "Qatar",
+      "fifaName": "Qatar",
+      "fifaId": "43834",
+      "idCountry": "QAT",
+      "iso2": "qa"
+    },
+    {
+      "name": "Saudi Arabia",
+      "fifaName": "Saudi Arabia",
+      "fifaId": "43835",
+      "idCountry": "KSA",
+      "iso2": "sa"
+    },
+    {
+      "name": "Scotland",
+      "fifaName": "Scotland",
+      "fifaId": "43967",
+      "idCountry": "SCO",
+      "iso2": "gb-sct"
+    },
+    {
+      "name": "Senegal",
+      "fifaName": "Senegal",
+      "fifaId": "43879",
+      "idCountry": "SEN",
+      "iso2": "sn"
+    },
+    {
+      "name": "South Africa",
+      "fifaName": "South Africa",
+      "fifaId": "43883",
+      "idCountry": "RSA",
+      "iso2": "za"
+    },
+    {
+      "name": "South Korea",
+      "fifaName": "Korea Republic",
+      "fifaId": "43822",
+      "idCountry": "KOR",
+      "iso2": "kr"
+    },
+    {
+      "name": "Spain",
+      "fifaName": "Spain",
+      "fifaId": "43969",
+      "idCountry": "ESP",
+      "iso2": "es"
+    },
+    {
+      "name": "Sweden",
+      "fifaName": "Sweden",
+      "fifaId": "43970",
+      "idCountry": "SWE",
+      "iso2": "se"
+    },
+    {
+      "name": "Switzerland",
+      "fifaName": "Switzerland",
+      "fifaId": "43971",
+      "idCountry": "SUI",
+      "iso2": "ch"
+    },
+    {
+      "name": "Tunisia",
+      "fifaName": "Tunisia",
+      "fifaId": "43888",
+      "idCountry": "TUN",
+      "iso2": "tn"
+    },
+    {
+      "name": "Türkiye",
+      "fifaName": "Türkiye",
+      "fifaId": "43972",
+      "idCountry": "TUR",
+      "iso2": "tr"
+    },
+    {
+      "name": "Uruguay",
+      "fifaName": "Uruguay",
+      "fifaId": "43930",
+      "idCountry": "URU",
+      "iso2": "uy"
+    },
+    {
+      "name": "USA",
+      "fifaName": "USA",
+      "fifaId": "43921",
+      "idCountry": "USA",
+      "iso2": "us"
+    },
+    {
+      "name": "Uzbekistan",
+      "fifaName": "Uzbekistan",
+      "fifaId": "44005",
+      "idCountry": "UZB",
+      "iso2": "uz"
+    }
+  ],
+  "meta": {
+    "idCompetition": "17",
+    "idSeason": "285023",
+    "source": "https://api.fifa.com/api/v3/calendar/matches"
+  }
+}
