@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T20:35:33.315Z",
+    "updatedAt": "2026-06-14T21:33:35.811Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -993,7 +993,7 @@
       "date": "2026-06-14T20:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "35'",
+      "matchTime": "74'",
       "group": "F",
       "venue": {
         "name": "Dallas Stadium",
@@ -1062,8 +1062,8 @@
       },
       "homePlaceholder": "F1",
       "awayPlaceholder": "F2",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 2,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
