@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T22:31:42.319Z",
+    "updatedAt": "2026-06-14T23:33:20.919Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -1074,8 +1074,8 @@
       "stage": "Group stage",
       "date": "2026-06-14T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "30'",
       "group": "E",
       "venue": {
         "name": "Philadelphia Stadium",
@@ -1144,8 +1144,8 @@
       },
       "homePlaceholder": "E3",
       "awayPlaceholder": "E4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
