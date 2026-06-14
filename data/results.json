@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updatedAt": "2026-06-14T05:42:47.472Z",
+    "updatedAt": "2026-06-14T07:46:52.422Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
-    "playedMatches": 7,
+    "playedMatches": 8,
     "groupComplete": false,
     "tournamentOver": false,
     "source": "https://api.fifa.com/api/v3/calendar/matches"
@@ -26,12 +26,12 @@
       "status": "leading",
       "leaders": [
         {
-          "fifaId": "43822",
-          "name": "South Korea",
-          "owner": "Suzoveld",
+          "fifaId": "43976",
+          "name": "Australia",
+          "owner": "Cousin David",
           "tier": 2,
-          "group": "A",
-          "iso2": "kr",
+          "group": "D",
+          "iso2": "au",
           "furthestDepth": 0,
           "furthestLabel": "Group stage",
           "pts": 3,
@@ -39,10 +39,10 @@
           "d": 0,
           "l": 0,
           "gf": 2,
-          "ga": 1,
-          "gd": 1,
+          "ga": 0,
+          "gd": 2,
           "ogf": 2,
-          "oga": 1,
+          "oga": 0,
           "eliminated": false,
           "qualified": false,
           "champion": false,
@@ -57,6 +57,36 @@
         }
       ],
       "standings": [
+        {
+          "fifaId": "43976",
+          "name": "Australia",
+          "owner": "Cousin David",
+          "tier": 2,
+          "group": "D",
+          "iso2": "au",
+          "furthestDepth": 0,
+          "furthestLabel": "Group stage",
+          "pts": 3,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 2,
+          "ga": 0,
+          "gd": 2,
+          "ogf": 2,
+          "oga": 0,
+          "eliminated": false,
+          "qualified": false,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "ongoing",
+            "third": "ongoing",
+            "bestGroup2": "ongoing",
+            "shrew": "ongoing"
+          }
+        },
         {
           "fifaId": "43822",
           "name": "South Korea",
@@ -274,36 +304,6 @@
           "tier": 2,
           "group": "G",
           "iso2": "eg",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "ogf": 0,
-          "oga": 0,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing"
-          }
-        },
-        {
-          "fifaId": "43976",
-          "name": "Australia",
-          "owner": "Cousin David",
-          "tier": 2,
-          "group": "D",
-          "iso2": "au",
           "furthestDepth": 0,
           "furthestLabel": "Group stage",
           "pts": 0,
@@ -847,6 +847,36 @@
           }
         },
         {
+          "fifaId": "43972",
+          "name": "Türkiye",
+          "owner": "Amy Healy",
+          "tier": 1,
+          "group": "D",
+          "iso2": "tr",
+          "furthestDepth": 0,
+          "furthestLabel": "Group stage",
+          "pts": 0,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 2,
+          "gd": -2,
+          "ogf": 0,
+          "oga": 2,
+          "eliminated": false,
+          "qualified": false,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "ongoing",
+            "third": "ongoing",
+            "bestGroup2": "na",
+            "shrew": "ongoing"
+          }
+        },
+        {
           "fifaId": "43883",
           "name": "South Africa",
           "owner": "Sarah Healy",
@@ -943,36 +973,6 @@
           "tier": 1,
           "group": "E",
           "iso2": "ci",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "ogf": 0,
-          "oga": 0,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "na",
-            "shrew": "ongoing"
-          }
-        },
-        {
-          "fifaId": "43972",
-          "name": "Türkiye",
-          "owner": "Amy Healy",
-          "tier": 1,
-          "group": "D",
-          "iso2": "tr",
           "furthestDepth": 0,
           "furthestLabel": "Group stage",
           "pts": 0,
@@ -1579,9 +1579,9 @@
       "depth": 0,
       "stage": "Group stage",
       "date": "2026-06-14T04:00:00Z",
-      "played": false,
-      "live": true,
-      "matchTime": "82'",
+      "played": true,
+      "live": false,
+      "matchTime": null,
       "group": "D",
       "venue": {
         "name": "BC Place Vancouver",
@@ -1597,14 +1597,14 @@
         "iso2": "au",
         "furthestDepth": 0,
         "furthestLabel": "Group stage",
-        "pts": 0,
-        "w": 0,
+        "pts": 3,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
+        "gf": 2,
         "ga": 0,
-        "gd": 0,
-        "ogf": 0,
+        "gd": 2,
+        "ogf": 2,
         "oga": 0,
         "eliminated": false,
         "qualified": false,
@@ -1630,12 +1630,12 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 2,
+        "gd": -2,
         "ogf": 0,
-        "oga": 0,
+        "oga": 2,
         "eliminated": false,
         "qualified": false,
         "champion": false,
@@ -1654,7 +1654,7 @@
       "awayScore": 0,
       "homePen": null,
       "awayPen": null,
-      "winnerId": null
+      "winnerId": "43976"
     },
     {
       "matchId": "400021464",
@@ -3349,14 +3349,14 @@
         "iso2": "au",
         "furthestDepth": 0,
         "furthestLabel": "Group stage",
-        "pts": 0,
-        "w": 0,
+        "pts": 3,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
+        "gf": 2,
         "ga": 0,
-        "gd": 0,
-        "ogf": 0,
+        "gd": 2,
+        "ogf": 2,
         "oga": 0,
         "eliminated": false,
         "qualified": false,
@@ -3568,12 +3568,12 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 2,
+        "gd": -2,
         "ogf": 0,
-        "oga": 0,
+        "oga": 2,
         "eliminated": false,
         "qualified": false,
         "champion": false,
@@ -5809,14 +5809,14 @@
         "iso2": "au",
         "furthestDepth": 0,
         "furthestLabel": "Group stage",
-        "pts": 0,
-        "w": 0,
+        "pts": 3,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
+        "gf": 2,
         "ga": 0,
-        "gd": 0,
-        "ogf": 0,
+        "gd": 2,
+        "ogf": 2,
         "oga": 0,
         "eliminated": false,
         "qualified": false,
@@ -5864,12 +5864,12 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 2,
+        "gd": -2,
         "ogf": 0,
-        "oga": 0,
+        "oga": 2,
         "eliminated": false,
         "qualified": false,
         "champion": false,
@@ -8477,6 +8477,37 @@
     },
     {
       "rank": 2,
+      "fifaId": "43972",
+      "name": "Türkiye",
+      "owner": "Amy Healy",
+      "tier": 1,
+      "group": "D",
+      "iso2": "tr",
+      "furthestDepth": 0,
+      "furthestLabel": "Group stage",
+      "pts": 0,
+      "w": 0,
+      "d": 0,
+      "l": 1,
+      "gf": 0,
+      "ga": 2,
+      "gd": -2,
+      "ogf": 0,
+      "oga": 2,
+      "eliminated": false,
+      "qualified": false,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "ongoing",
+        "third": "ongoing",
+        "bestGroup2": "na",
+        "shrew": "ongoing"
+      }
+    },
+    {
+      "rank": 3,
       "fifaId": "43883",
       "name": "South Africa",
       "owner": "Sarah Healy",
@@ -8507,7 +8538,7 @@
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
       "fifaId": "43995",
       "name": "Czechia",
       "owner": "Rónán",
@@ -8538,7 +8569,7 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "fifaId": "43908",
       "name": "Haiti",
       "owner": "Matthew Sloan",
@@ -8569,44 +8600,13 @@
       }
     },
     {
-      "rank": 5,
+      "rank": 6,
       "fifaId": "43854",
       "name": "Ivory Coast",
       "owner": "Aaron Healy",
       "tier": 1,
       "group": "E",
       "iso2": "ci",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "ogf": 0,
-      "oga": 0,
-      "eliminated": false,
-      "qualified": false,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "na",
-        "shrew": "ongoing"
-      }
-    },
-    {
-      "rank": 6,
-      "fifaId": "43972",
-      "name": "Türkiye",
-      "owner": "Amy Healy",
-      "tier": 1,
-      "group": "D",
-      "iso2": "tr",
       "furthestDepth": 0,
       "furthestLabel": "Group stage",
       "pts": 0,
@@ -8694,37 +8694,6 @@
     },
     {
       "rank": 9,
-      "fifaId": "43976",
-      "name": "Australia",
-      "owner": "Cousin David",
-      "tier": 2,
-      "group": "D",
-      "iso2": "au",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "ogf": 0,
-      "oga": 0,
-      "eliminated": false,
-      "qualified": false,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing"
-      }
-    },
-    {
-      "rank": 10,
       "fifaId": "43930",
       "name": "Uruguay",
       "owner": "Deirdre",
@@ -8755,7 +8724,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 10,
       "fifaId": "43888",
       "name": "Tunisia",
       "owner": "Deirdre",
@@ -8786,7 +8755,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 11,
       "fifaId": "43819",
       "name": "Japan",
       "owner": "Enda",
@@ -8817,7 +8786,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 12,
       "fifaId": "44005",
       "name": "Uzbekistan",
       "owner": "Enda",
@@ -8848,7 +8817,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 13,
       "fifaId": "20014",
       "name": "DR Congo",
       "owner": "Eoin",
@@ -8879,7 +8848,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 14,
       "fifaId": "43978",
       "name": "New Zealand",
       "owner": "Gareth",
@@ -8910,7 +8879,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 15,
       "fifaId": "43948",
       "name": "Germany",
       "owner": "Hannah",
@@ -8941,7 +8910,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 16,
       "fifaId": "43969",
       "name": "Spain",
       "owner": "Josh",
@@ -8972,7 +8941,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 17,
       "fifaId": "1895293",
       "name": "Curaçao",
       "owner": "Josh",
@@ -9003,7 +8972,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 18,
       "fifaId": "43938",
       "name": "Croatia",
       "owner": "Rónán",
@@ -9034,7 +9003,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 19,
       "fifaId": "43946",
       "name": "France",
       "owner": "Maeve",
@@ -9065,7 +9034,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 20,
       "fifaId": "43820",
       "name": "Jordan",
       "owner": "Maeve",
@@ -9096,7 +9065,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 21,
       "fifaId": "43935",
       "name": "Belgium",
       "owner": "Matthew Healy",
@@ -9127,7 +9096,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 22,
       "fifaId": "43835",
       "name": "Saudi Arabia",
       "owner": "Matthew Healy",
@@ -9158,7 +9127,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 23,
       "fifaId": "43934",
       "name": "Austria",
       "owner": "Matthew Sloan",
@@ -9189,7 +9158,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 24,
       "fifaId": "43922",
       "name": "Argentina",
       "owner": "Niamh",
@@ -9220,7 +9189,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 25,
       "fifaId": "43818",
       "name": "Iraq",
       "owner": "Niamh",
@@ -9251,7 +9220,7 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 26,
       "fifaId": "43960",
       "name": "Netherlands",
       "owner": "Rakelle",
@@ -9282,7 +9251,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 27,
       "fifaId": "43914",
       "name": "Panama",
       "owner": "Rakelle",
@@ -9313,7 +9282,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 28,
       "fifaId": "43927",
       "name": "Ecuador",
       "owner": "Rory",
@@ -9344,7 +9313,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 29,
       "fifaId": "43860",
       "name": "Ghana",
       "owner": "Rory",
@@ -9375,7 +9344,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 30,
       "fifaId": "43963",
       "name": "Portugal",
       "owner": "Sarah Healy",
@@ -9406,7 +9375,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 31,
       "fifaId": "43961",
       "name": "Norway",
       "owner": "Suzoveld",
@@ -9437,7 +9406,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 32,
       "fifaId": "43970",
       "name": "Sweden",
       "owner": "Teresa",
@@ -9468,7 +9437,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 33,
       "fifaId": "43817",
       "name": "Iran",
       "owner": "Teresa",
@@ -9499,7 +9468,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 34,
       "fifaId": "43879",
       "name": "Senegal",
       "owner": "Thomas McQuitty",
@@ -9530,7 +9499,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 35,
       "fifaId": "43850",
       "name": "Cape Verde",
       "owner": "Thomas Sloan",
@@ -9561,7 +9530,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 36,
       "fifaId": "43942",
       "name": "England",
       "owner": "Wendy Johnson",
@@ -9592,7 +9561,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 37,
       "fifaId": "43843",
       "name": "Algeria",
       "owner": "Wendy Johnson",
@@ -9623,7 +9592,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 38,
       "fifaId": "43834",
       "name": "Qatar",
       "owner": "Aaron Healy",
@@ -9654,7 +9623,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 39,
       "fifaId": "43924",
       "name": "Brazil",
       "owner": "Cousin David",
@@ -9685,7 +9654,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 40,
       "fifaId": "43872",
       "name": "Morocco",
       "owner": "Gareth",
@@ -9716,7 +9685,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "fifaId": "44037",
       "name": "Bosnia & Herzegovina",
       "owner": "Maria",
@@ -9747,7 +9716,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 42,
       "fifaId": "43899",
       "name": "Canada",
       "owner": "Thomas McQuitty",
@@ -9778,7 +9747,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 43,
       "fifaId": "43971",
       "name": "Switzerland",
       "owner": "Thomas Sloan",
@@ -9809,7 +9778,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 44,
       "fifaId": "43822",
       "name": "South Korea",
       "owner": "Suzoveld",
@@ -9840,7 +9809,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 45,
       "fifaId": "43967",
       "name": "Scotland",
       "owner": "Hannah",
@@ -9857,6 +9826,37 @@
       "ga": 0,
       "gd": 1,
       "ogf": 1,
+      "oga": 0,
+      "eliminated": false,
+      "qualified": false,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "ongoing",
+        "third": "ongoing",
+        "bestGroup2": "ongoing",
+        "shrew": "ongoing"
+      }
+    },
+    {
+      "rank": 46,
+      "fifaId": "43976",
+      "name": "Australia",
+      "owner": "Cousin David",
+      "tier": 2,
+      "group": "D",
+      "iso2": "au",
+      "furthestDepth": 0,
+      "furthestLabel": "Group stage",
+      "pts": 3,
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "gf": 2,
+      "ga": 0,
+      "gd": 2,
+      "ogf": 2,
       "oga": 0,
       "eliminated": false,
       "qualified": false,
@@ -9976,12 +9976,12 @@
       "pts": 0,
       "w": 0,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "gf": 0,
-      "ga": 0,
-      "gd": 0,
+      "ga": 2,
+      "gd": -2,
       "ogf": 0,
-      "oga": 0,
+      "oga": 2,
       "eliminated": false,
       "qualified": false,
       "champion": false,
@@ -10753,14 +10753,14 @@
       "iso2": "au",
       "furthestDepth": 0,
       "furthestLabel": "Group stage",
-      "pts": 0,
-      "w": 0,
+      "pts": 3,
+      "w": 1,
       "d": 0,
       "l": 0,
-      "gf": 0,
+      "gf": 2,
       "ga": 0,
-      "gd": 0,
-      "ogf": 0,
+      "gd": 2,
+      "ogf": 2,
       "oga": 0,
       "eliminated": false,
       "qualified": false,
@@ -11462,12 +11462,12 @@
           "pts": 0,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 2,
+          "gd": -2,
           "ogf": 0,
-          "oga": 0,
+          "oga": 2,
           "eliminated": false,
           "qualified": false,
           "champion": false,
@@ -11631,14 +11631,14 @@
           "iso2": "au",
           "furthestDepth": 0,
           "furthestLabel": "Group stage",
-          "pts": 0,
-          "w": 0,
+          "pts": 3,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 2,
           "ga": 0,
-          "gd": 0,
-          "ogf": 0,
+          "gd": 2,
+          "ogf": 2,
           "oga": 0,
           "eliminated": false,
           "qualified": false,
