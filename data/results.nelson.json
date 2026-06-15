@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-15T22:48:21.093Z",
+    "updatedAt": "2026-06-15T23:39:33.509Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -1403,7 +1403,7 @@
       "date": "2026-06-15T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "44'",
+      "matchTime": "73'",
       "group": "H",
       "venue": {
         "name": "Miami Stadium",
