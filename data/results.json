@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-16T22:43:02.166Z",
+    "updatedAt": "2026-06-16T23:36:44.762Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -2401,7 +2401,7 @@
       "date": "2026-06-16T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "42'",
+      "matchTime": "73'",
       "group": "I",
       "venue": {
         "name": "Boston Stadium",
@@ -2471,7 +2471,7 @@
       "homePlaceholder": "I3",
       "awayPlaceholder": "I4",
       "homeScore": 1,
-      "awayScore": 1,
+      "awayScore": 2,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
