@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-17T20:50:04.770Z",
+    "updatedAt": "2026-06-17T21:43:33.222Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -1977,7 +1977,7 @@
       "date": "2026-06-17T20:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "45'+5'",
+      "matchTime": "79'",
       "group": "L",
       "venue": {
         "name": "Dallas Stadium",
@@ -2046,8 +2046,8 @@
       },
       "homePlaceholder": "L1",
       "awayPlaceholder": "L2",
-      "homeScore": 2,
-      "awayScore": 1,
+      "homeScore": 3,
+      "awayScore": 2,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
