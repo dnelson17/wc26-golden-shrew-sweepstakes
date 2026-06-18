@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-18T21:47:27.472Z",
+    "updatedAt": "2026-06-18T22:44:49.536Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -3138,8 +3138,8 @@
       "stage": "Group stage",
       "date": "2026-06-18T22:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "44'",
       "group": "B",
       "venue": {
         "name": "BC Place Vancouver",
@@ -3208,8 +3208,8 @@
       },
       "homePlaceholder": "B1",
       "awayPlaceholder": "B3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
