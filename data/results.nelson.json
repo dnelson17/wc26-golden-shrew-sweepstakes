@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-18T01:13:08.674Z",
+    "updatedAt": "2026-06-18T03:18:22.121Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -2140,8 +2140,8 @@
       "stage": "Group stage",
       "date": "2026-06-18T02:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "57'",
       "group": "K",
       "venue": {
         "name": "Mexico City Stadium",
@@ -2210,8 +2210,8 @@
       },
       "homePlaceholder": "K3",
       "awayPlaceholder": "K4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
