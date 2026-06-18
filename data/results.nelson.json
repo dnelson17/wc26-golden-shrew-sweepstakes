@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-18T18:56:57.506Z",
+    "updatedAt": "2026-06-18T19:49:21.108Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -2304,8 +2304,8 @@
       "stage": "Group stage",
       "date": "2026-06-18T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": "B",
       "venue": {
         "name": "Los Angeles Stadium",
@@ -2374,8 +2374,8 @@
       },
       "homePlaceholder": "B4",
       "awayPlaceholder": "B2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
