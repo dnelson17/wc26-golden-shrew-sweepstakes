@@ -6,20 +6,21 @@ page and re-fetches its own live data.
 
 ## Leagues
 
-| Slug           | Path            | Players | Ownership                               | Prizes                           |
-| -------------- | --------------- | ------- | --------------------------------------- | -------------------------------- |
-| `golden-shrew` | `/golden-shrew` | 24      | one strong + one weak team each         | Winner, 3rd, best group-2, shrew |
-| `nelson`       | `/nelson`       | 12      | a whole FIFA group (A–L) each, ~4 teams | Winner, 3rd, shrew               |
+| Slug           | Path            | Players | Ownership                               | Prizes                                              |
+| -------------- | --------------- | ------- | --------------------------------------- | --------------------------------------------------- |
+| `golden-shrew` | `/golden-shrew` | 24      | one strong + one weak team each         | Winner, 3rd, best group-2, shrew, worst group-1 hat |
+| `nelson`       | `/nelson`       | 12      | a whole FIFA group (A–L) each, ~4 teams | Winner, 3rd, shrew                                  |
 
 Leagues are configured in **`src/leagues.ts`** (branding, prize set, ownership mode,
 CDN URL). The prizes:
 
-| Prize             | Emoji | Amount | Won by                                                              |
-| ----------------- | :---: | -----: | ------------------------------------------------------------------- |
-| Winner            |  🏆   |   £120 | The tournament champions                                            |
-| 3rd place         |  🥉   |    £40 | Winner of the 3rd-place play-off                                    |
-| Best group-2 side |  🪖   |    £40 | The group-2 team that goes furthest, then most goals (Golden Shrew) |
-| Wooden shrew      |  🪵   |    £40 | The worst team overall (fewest pts, worst GD, …)                    |
+| Prize             | Emoji |     Amount | Won by                                                                                                     |
+| ----------------- | :---: | ---------: | ---------------------------------------------------------------------------------------------------------- |
+| Winner            |  🏆   |       £120 | The tournament champions                                                                                   |
+| 3rd place         |  🥉   |        £40 | Winner of the 3rd-place play-off                                                                           |
+| Best group-2 side |  🪖   |        £40 | The group-2 team that goes furthest, then most goals (Golden Shrew)                                        |
+| Wooden shrew      |  🪵   |        £40 | The worst team overall (fewest pts, worst GD, …)                                                           |
+| Worst group-1     |  🧢   | Bucket hat | The worst of the strong group-1 sides — fewest pts, most conceded, fewest scored (Golden Shrew spot prize) |
 
 ## How it works
 

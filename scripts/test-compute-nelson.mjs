@@ -90,6 +90,14 @@ assert.equal(byName('Spain').status.bestGroup2, 'na');
 assert.equal(alice.status.bestGroup2, 'na');
 assert.equal(r.prizes.third.leaders.length, 0);
 
+// No worst-group-1 prize either — full-group teams aren't tiered
+assert.equal(byName('Spain').status.worstGroup1, 'na');
+assert.equal(alice.status.worstGroup1, 'na');
+const fifth = r.prizes.fifth;
+assert.ok(fifth);
+assert.equal(fifth.leaders.length, 0);
+assert.equal(fifth.standings.length, 0);
+
 // Champion + rollup
 const champ = /** @type {import('../src/types').TeamRef} */ (r.prizes.first.winner);
 assert.equal(champ.name, 'Spain');

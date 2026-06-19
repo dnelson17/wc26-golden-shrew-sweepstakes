@@ -60,11 +60,12 @@ function ringFor(status: Status): string {
         : 'ring-slate-300 dark:ring-slate-600';
 }
 
-// Row of the four prize emojis, ringed by status. Used on player + team cards.
+// Row of the league's prize emojis, ringed by status. Used on player + team cards.
 function prizeChips(st: PrizeStatus): string {
   return `<div class="flex gap-1.5">${prizes
     .map((p) => {
-      const status = st[p.key];
+      // A prize key may be absent from a payload that predates it → treat as N/A.
+      const status = st[p.key] ?? 'na';
       return `<span title="${p.label}: ${STATUS_WORD[status]}" class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 text-lg ring-2 ${ringFor(status)} dark:bg-slate-800">${p.emoji}</span>`;
     })
     .join('')}</div>`;
@@ -120,8 +121,16 @@ function prizeBanner(): string {
       def.slot === 'first' ? 'Still up for grabs' : 'Decided after the 3rd-place play-off';
     return banner(def.emoji, title, pending, false);
   }
-  // Ranked prizes (best group-2 / wooden shrew): show current leaders.
-  const ranked = def.slot === 'third' ? data.prizes.third : data.prizes.fourth;
+  // Ranked prizes (best group-2 / wooden shrew / worst group-1): show leaders.
+  const ranked =
+    def.slot === 'third'
+      ? data.prizes.third
+      : def.slot === 'fourth'
+        ? data.prizes.fourth
+        : data.prizes.fifth;
+  // `fifth` is absent from results files written before the bucket-hat prize
+  // existed; fall back to a pending banner until fresh data carries it.
+  if (!ranked) return banner(def.emoji, title, 'Not decided yet', false);
   const names = ranked.leaders.map((t) => `${esc(t.name)} (${esc(t.owner)})`).join(', ');
   const decided = ranked.status === 'decided';
   if (def.slot === 'third') {
@@ -129,6 +138,14 @@ function prizeBanner(): string {
       def.emoji,
       title,
       decided ? `${names} — winner!` : `Leading: ${names || '—'}`,
+      decided,
+    );
+  }
+  if (def.slot === 'fifth') {
+    return banner(
+      def.emoji,
+      title,
+      decided ? `${names} — wins the bucket hat! 🧢` : `Currently worst: ${names || '—'}`,
       decided,
     );
   }
@@ -249,14 +266,61 @@ function renderShrew(): string {
   </div>`;
 }
 
+// ---------- worst group-1 table (bucket-hat spot prize) ----------
+// The strong (tier-1) sides ranked worst-first; the bottom one wins the hat.
+function renderWorstG1(): string {
+  const ranked = data.prizes.fifth;
+  if (!ranked?.standings.length) {
+    return `<p class="rounded-2xl border border-slate-200 bg-white p-4 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">Worst group-1 standings aren't available yet — check back once results come in.</p>`;
+  }
+  const decided = ranked.status === 'decided';
+  const leaderIds = new Set(ranked.leaders.map((t) => t.fifaId));
+  const heading = decided
+    ? 'The strong (group-1) sides, worst first — the bottom one wins the bucket hat 🧢'
+    : 'The strong (group-1) sides, worst first (least pts, then most conceded, then fewest scored)';
+  const body = ranked.standings
+    .map((t, i) => {
+      const isWorst = leaderIds.has(t.fifaId);
+      const hl = isWorst ? 'bg-rose-500/10 ring-1 ring-rose-400/40' : '';
+      return `<tr class="${hl}">
+      <td class="px-2 py-2 text-center text-sm font-bold tabular-nums text-slate-400">${i + 1}</td>
+      <td class="px-2 py-2">
+        <div class="flex items-center gap-2">
+          ${flagImg(t)}
+          <div class="min-w-0">
+            <div class="truncate text-sm font-semibold">${esc(t.name)}${isWorst ? ' 🧢' : ''}</div>
+            <div class="truncate text-[11px] text-slate-400">${esc(t.owner)}</div>
+          </div>
+        </div>
+      </td>
+      <td class="px-2 py-2 text-center text-sm tabular-nums">${t.w + t.d + t.l}</td>
+      <td class="px-2 py-2 text-center text-sm tabular-nums">${t.gf}</td>
+      <td class="px-2 py-2 text-center text-sm tabular-nums">${t.ga}</td>
+      <td class="px-2 py-2 text-center text-sm font-bold tabular-nums">${t.pts}</td>
+    </tr>`;
+    })
+    .join('');
+  return `<p class="mb-3 text-sm text-slate-500 dark:text-slate-400">${heading}</p>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+    <table class="w-full">
+      <thead class="bg-slate-50 text-[11px] uppercase tracking-wide text-slate-400 dark:bg-slate-900/40">
+        <tr><th class="px-2 py-2">#</th><th class="px-2 py-2 text-left">Team</th><th class="px-2 py-2">P</th><th class="px-2 py-2">GF</th><th class="px-2 py-2">GA</th><th class="px-2 py-2">Pts</th></tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">${body}</tbody>
+    </table>
+  </div>`;
+}
+
 function renderPrizes(): void {
   $('#prize-banner').innerHTML = prizeBanner();
   $('#prize-body').innerHTML =
     subtab === 'shrew'
       ? renderShrew()
-      : subtab === 'bestGroup2'
-        ? renderBracket(true, null)
-        : renderBracket(false, subtab === 'third' ? 'third' : 'winner');
+      : subtab === 'worstGroup1'
+        ? renderWorstG1()
+        : subtab === 'bestGroup2'
+          ? renderBracket(true, null)
+          : renderBracket(false, subtab === 'third' ? 'third' : 'winner');
   document.querySelectorAll<HTMLElement>('[data-subtab]').forEach((b) => {
     const active = b.dataset['subtab'] === subtab;
     b.className = `flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-semibold transition ${
@@ -270,8 +334,8 @@ function renderPrizes(): void {
 // ---------- My teams ----------
 const RANK: Record<Status, number> = { won: 3, ongoing: 2, lost: 1, na: 0 };
 function bestTeam(teams: TeamRef[], key: PrizeKey): TeamRef | undefined {
-  const cands = teams.filter((t) => t.status[key] !== 'na');
-  return cands.sort((a, b) => RANK[b.status[key]] - RANK[a.status[key]])[0];
+  const cands = teams.filter((t) => (t.status[key] ?? 'na') !== 'na');
+  return cands.sort((a, b) => RANK[b.status[key] ?? 'na'] - RANK[a.status[key] ?? 'na'])[0];
 }
 
 function myPrizeLine(p: Person, key: PrizeKey, status: Status): string {
@@ -285,6 +349,17 @@ function myPrizeLine(p: Person, key: PrizeKey, status: Status): string {
         : `${esc(g2.name)} still in contention`;
     }
     return `${esc(g2.name)} can't win this one`;
+  }
+  if (key === 'worstGroup1') {
+    const g1 = p.teams.find((t) => t.status.worstGroup1 != null && t.status.worstGroup1 !== 'na');
+    if (!g1) return '';
+    if (status === 'won') return `${esc(g1.name)} is the worst group-1 side — bucket hat! 🧢`;
+    if (status === 'ongoing') {
+      return data.prizes.fifth?.leaders.some((x) => x.fifaId === g1.fifaId)
+        ? `${esc(g1.name)} is currently the worst group-1 side`
+        : `${esc(g1.name)} could still finish worst of the group-1 sides`;
+    }
+    return `${esc(g1.name)} is safe from the bucket hat`;
   }
   const t = bestTeam(p.teams, key);
   const name = esc(t?.name);
@@ -337,7 +412,7 @@ function renderMe(): void {
     : '';
   const prizeList = prizes
     .map((pr) => {
-      const status = p.status[pr.key];
+      const status = p.status[pr.key] ?? 'na';
       return `<div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-700 dark:bg-slate-800">
       <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-slate-50 text-2xl ring-2 ${ringFor(status)} dark:bg-slate-900">${pr.emoji}</span>
       <div class="min-w-0 flex-1">

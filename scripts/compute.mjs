@@ -473,12 +473,25 @@ export function compute(draw, rawMatches, nowIso) {
     (t) => t.pts === worst.pts && t.gd === worst.gd && t.ga === worst.ga && t.gf === worst.gf,
   );
 
+  // Prize 5: worst group-1 side (bucket-hat spot prize). The weakest of the
+  // strong (tier-1) teams by group-stage record: least pts, then most conceded,
+  // then fewest scored. Leagues without tiered teams (full-group) have no tier-1
+  // pool, so this is empty and reads 'na' for every team.
+  const group1 = teams
+    .filter((t) => t.tier === 1)
+    .sort((x, y) => x.pts - y.pts || y.ga - x.ga || x.gf - y.gf);
+  const worstG1 = group1[0]; // undefined when a league doesn't tier teams
+  const t5Shared = worstG1
+    ? group1.filter((t) => t.pts === worstG1.pts && t.ga === worstG1.ga && t.gf === worstG1.gf)
+    : [];
+
   const playedCount = matches.filter((m) => m.played).length;
   const tournamentOver = !!champion;
 
   // --- Per-team prize status: won | lost | ongoing | na ---
   const tier2Leaders = new Set(t3Shared.map((t) => t.fifaId));
   const shrewLeaders = new Set(t4Shared.map((t) => t.fifaId));
+  const worstG1Leaders = new Set(t5Shared.map((t) => t.fifaId));
   const thirdLoserId = thirdM?.played
     ? [thirdM.home?.id, thirdM.away?.id].find((id) => id && id !== third)
     : null;
@@ -515,17 +528,23 @@ export function compute(draw, rawMatches, nowIso) {
     // 🪵 Wooden shrew (decided once the group stage is complete)
     /** @type {import('../src/types').Status} */
     const shrew = groupComplete ? (shrewLeaders.has(t.fifaId) ? 'won' : 'lost') : 'ongoing';
-    return { winner, third: third_, bestGroup2, shrew };
+    // 🧢 Worst group-1 (only group-1 teams eligible; 'na' otherwise). Like the
+    // shrew, decided once the group stage is complete.
+    /** @type {import('../src/types').Status} */
+    let worstGroup1;
+    if (t.tier !== 1) worstGroup1 = 'na';
+    else worstGroup1 = groupComplete ? (worstG1Leaders.has(t.fifaId) ? 'won' : 'lost') : 'ongoing';
+    return { winner, third: third_, bestGroup2, shrew, worstGroup1 };
   };
   for (const t of teams) t.status = statusFor(t);
 
-  // won beats ongoing beats lost; 'na' ignored. Used to roll a player's two teams up.
+  // won beats ongoing beats lost; 'na'/absent ignored. Rolls a player's teams up.
   /**
-   * @param {import('../src/types').Status[]} ss
+   * @param {(import('../src/types').Status | undefined)[]} ss
    * @returns {import('../src/types').Status}
    */
   const combine = (...ss) => {
-    const f = ss.filter((s) => s !== 'na');
+    const f = ss.filter((s) => s != null && s !== 'na');
     if (!f.length) return 'na';
     if (f.includes('won')) return 'won';
     if (f.includes('ongoing')) return 'ongoing';
@@ -652,6 +671,7 @@ export function compute(draw, rawMatches, nowIso) {
         third: combine(...ss.map((s) => s.third)),
         bestGroup2: combine(...ss.map((s) => s.bestGroup2)),
         shrew: combine(...ss.map((s) => s.shrew)),
+        worstGroup1: combine(...ss.map((s) => s.worstGroup1)),
       },
     };
   });
@@ -693,6 +713,13 @@ export function compute(draw, rawMatches, nowIso) {
         status: groupComplete ? 'decided' : 'leading',
         leaders: /** @type {import('../src/types').TeamRef[]} */ (t4Shared.map(ref)),
         standings: /** @type {import('../src/types').TeamRef[]} */ (spoon.slice(0, 6).map(ref)),
+      },
+      fifth: {
+        label: 'Worst group-1 side — bucket hat',
+        emoji: '🧢',
+        status: groupComplete ? 'decided' : 'leading',
+        leaders: /** @type {import('../src/types').TeamRef[]} */ (t5Shared.map(ref)),
+        standings: /** @type {import('../src/types').TeamRef[]} */ (group1.map(ref)),
       },
     },
     fixtures,

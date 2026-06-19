@@ -85,6 +85,8 @@ const matches = [
   // Brazil + Australia (tier2) results — Australia scores some goals for prize-3 tiebreak
   grp('Brazil', 2, 'Australia', 2),
   grp('Australia', 3, 'Ghana', 1),
+  // Türkiye (tier1) shipped 4 without scoring → clear worst of the strong sides (prize 5)
+  grp('Paraguay', 4, 'Türkiye', 0),
 ];
 
 // --- Knockouts: Curaçao (tier2) goes deep; champion path via Spain ---
@@ -119,6 +121,44 @@ assert.equal(r.prizes.third.leaders[0].furthestLabel, 'Round of 16');
 assert.equal(r.prizes.fourth.leaders[0]?.name, 'Qatar');
 assert.equal(byName('Qatar').pts, 0);
 assert.equal(byName('Qatar').gd, -4);
+
+// Prize 5: worst group-1 (bucket hat) = Türkiye (0 pts, conceded 4, scored 0)
+const fifth = r.prizes.fifth;
+assert.ok(fifth, 'tiered-pair leagues should carry a worst-group-1 prize');
+assert.equal(fifth.leaders.length, 1);
+assert.equal(fifth.leaders[0]?.name, 'Türkiye');
+assert.equal(byName('Türkiye').tier, 1);
+assert.equal(byName('Türkiye').status.worstGroup1, 'won');
+assert.equal(byName('Spain').status.worstGroup1, 'lost'); // group-1 but not the worst
+assert.equal(byName('Qatar').status.worstGroup1, 'na'); // tier-2 ineligible
+// Standings list only the strong (group-1) sides
+assert.ok(fifth.standings.every((t) => t.tier === 1));
+assert.equal(fifth.standings.length, 24);
+// Person rollup: Amy Healy owns Türkiye → wins the bucket hat
+const amy = r.people.find((p) => p.name === 'Amy Healy');
+assert.equal(amy?.status.worstGroup1, 'won');
+
+// Provisional state: with the group stage still in progress the bucket hat is only
+// "leading" and its current worst group-1 side reads "ongoing" (not yet decided).
+const earlyMatches = [
+  grp('Paraguay', 4, 'Türkiye', 0), // Türkiye (tier1) already shipping goals
+  {
+    // an unplayed group fixture keeps groupComplete false
+    IdMatch: 'gOpen',
+    IdStage: '289273',
+    StageName: [{ Description: 'First Stage' }],
+    Date: '2026-06-13T19:00:00Z',
+    Home: { IdTeam: tid('Brazil'), TeamName: [{ Description: 'Brazil' }] },
+    Away: { IdTeam: tid('Australia'), TeamName: [{ Description: 'Australia' }] },
+  },
+];
+const provisional = compute(draw, earlyMatches, '2026-06-13T22:00:00Z');
+const provisionalFifth = provisional.prizes.fifth;
+assert.ok(provisionalFifth);
+assert.equal(provisional.meta.groupComplete, false);
+assert.equal(provisionalFifth.status, 'leading');
+assert.equal(provisionalFifth.leaders[0]?.name, 'Türkiye');
+assert.equal(provisional.teams.find((t) => t.name === 'Türkiye')?.status.worstGroup1, 'ongoing');
 
 // Group table sanity: Spain 4 pts (W + D), Curaçao 4 pts, Qatar 0
 assert.equal(byName('Spain').pts, 4);
@@ -170,4 +210,8 @@ console.log(
 console.log(
   '  wooden shrew:',
   r.prizes.fourth.leaders.map((t) => `${t.name} ${t.pts}pts ${t.gd}gd`).join(', '),
+);
+console.log(
+  '  worst group-1:',
+  fifth.leaders.map((t) => `${t.name} ${t.pts}pts ${t.ga}ga`).join(', '),
 );

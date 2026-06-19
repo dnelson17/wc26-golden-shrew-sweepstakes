@@ -18,7 +18,7 @@ export type OwnershipMode =
  */
 export interface PrizeDef {
   key: PrizeKey;
-  slot: 'first' | 'second' | 'third' | 'fourth';
+  slot: 'first' | 'second' | 'third' | 'fourth' | 'fifth';
   emoji: string;
   label: string;
   amount: string;
@@ -56,6 +56,15 @@ export const LEAGUES: Record<string, LeagueConfig> = {
       { key: 'third', slot: 'second', emoji: '🥉', label: '3rd place', amount: '£40' },
       { key: 'bestGroup2', slot: 'third', emoji: '🪖', label: 'Best group-2', amount: '£40' },
       { key: 'shrew', slot: 'fourth', emoji: '🪵', label: 'Wooden shrew', amount: '£40' },
+      // Spot prize: a World Cup bucket hat for the worst of the strong (group-1)
+      // sides. Golden Shrew only — full-group leagues have no tiers.
+      {
+        key: 'worstGroup1',
+        slot: 'fifth',
+        emoji: '🧢',
+        label: 'Worst group-1',
+        amount: 'Bucket hat',
+      },
     ],
   },
   // 12-person draw (£10 each → £120 pot): each player owns a whole FIFA group

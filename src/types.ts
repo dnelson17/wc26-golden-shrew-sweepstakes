@@ -6,15 +6,22 @@
 /** Per-prize state for a single team or player. */
 export type Status = 'won' | 'lost' | 'ongoing' | 'na';
 
-/** The four sweepstake prizes, keyed by their stable identifiers. */
+/** The sweepstake prizes, keyed by their stable identifiers. */
 export interface PrizeStatus {
   winner: Status;
   third: Status;
   bestGroup2: Status;
   shrew: Status;
+  /**
+   * Worst group-1 (tier-1) side — the Golden Shrew bucket-hat spot prize.
+   * Optional for the same reason as {@link Prizes.fifth}: payloads written
+   * before this prize existed don't carry it, so consumers must treat its
+   * absence as 'na'.
+   */
+  worstGroup1?: Status;
 }
 
-/** One of the four prize keys. */
+/** One of the prize keys. */
 export type PrizeKey = keyof PrizeStatus;
 
 /**
@@ -113,6 +120,12 @@ export interface Prizes {
   second: CapstonePrize;
   third: RankedPrize;
   fourth: RankedPrize;
+  /**
+   * Worst group-1 side (Golden Shrew bucket-hat spot prize). Optional: live
+   * payloads written before this prize existed don't carry it, so the client
+   * must tolerate its absence until the bot regenerates results.json.
+   */
+  fifth?: RankedPrize;
 }
 
 export interface Meta {
