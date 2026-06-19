@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-19T19:38:14.014Z",
+    "updatedAt": "2026-06-19T20:37:37.990Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -4175,7 +4175,7 @@
       "date": "2026-06-19T19:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "38'",
+      "matchTime": "72'",
       "group": "D",
       "venue": {
         "name": "Seattle Stadium",
@@ -4246,7 +4246,7 @@
       },
       "homePlaceholder": "D1",
       "awayPlaceholder": "D3",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
       "homePen": null,
       "awayPen": null,
