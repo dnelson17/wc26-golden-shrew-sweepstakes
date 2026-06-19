@@ -271,7 +271,7 @@ function renderShrew(): string {
 function renderWorstG1(): string {
   const ranked = data.prizes.fifth;
   if (!ranked?.standings.length) {
-    return `<p class="rounded-2xl border border-slate-200 bg-white p-4 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">Worst group-1 standings aren't available yet — check back once results come in.</p>`;
+    return `<p class="rounded-2xl border border-slate-200 bg-white p-4 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">Worst group-1 standings aren't available yet.</p>`;
   }
   const decided = ranked.status === 'decided';
   const leaderIds = new Set(ranked.leaders.map((t) => t.fifaId));
