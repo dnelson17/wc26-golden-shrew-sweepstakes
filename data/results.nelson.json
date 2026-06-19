@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-19T22:25:34.130Z",
+    "updatedAt": "2026-06-19T23:29:24.049Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -2705,7 +2705,7 @@
       "date": "2026-06-19T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "24'",
+      "matchTime": "67'",
       "group": "C",
       "venue": {
         "name": "Boston Stadium",
