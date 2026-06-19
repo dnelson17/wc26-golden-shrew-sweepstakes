@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-19T21:31:22.544Z",
+    "updatedAt": "2026-06-19T22:25:34.130Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -2704,8 +2704,8 @@
       "stage": "Group stage",
       "date": "2026-06-19T22:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "24'",
       "group": "C",
       "venue": {
         "name": "Boston Stadium",
@@ -2776,8 +2776,8 @@
       },
       "homePlaceholder": "C4",
       "awayPlaceholder": "C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
