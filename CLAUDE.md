@@ -34,6 +34,8 @@ Commits (plus a `data:` type).
 
 ## Conventions
 
+- **Never push to origin without explicit user approval.** Cloudflare Pages builds are
+  rate-limited and every push consumes one. Commit freely; push only when asked.
 - **Don't hand-edit or commit `data/results*.json`** — the bot regenerates them hourly
   (`[skip ci]`). Keep live-data churn out of code commits.
 - **`scripts/*.mjs` are typed**, not loose JS (JSDoc + `checkJs`; verify with `npm run check`).
