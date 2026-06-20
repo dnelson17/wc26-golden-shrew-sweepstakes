@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-20T20:34:50.430Z",
+    "updatedAt": "2026-06-20T21:34:15.811Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -4595,7 +4595,7 @@
       "date": "2026-06-20T20:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "34'",
+      "matchTime": "71'",
       "group": "E",
       "venue": {
         "name": "Toronto Stadium",
@@ -4666,7 +4666,7 @@
       },
       "homePlaceholder": "E1",
       "awayPlaceholder": "E3",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
       "homePen": null,
       "awayPen": null,
