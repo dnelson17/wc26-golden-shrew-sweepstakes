@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-20T22:32:03.735Z",
+    "updatedAt": "2026-06-21T01:16:37.330Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -4678,8 +4678,8 @@
       "stage": "Group stage",
       "date": "2026-06-21T00:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "57'",
       "group": "E",
       "venue": {
         "name": "Kansas City Stadium",
@@ -4750,8 +4750,8 @@
       },
       "homePlaceholder": "E4",
       "awayPlaceholder": "E2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
