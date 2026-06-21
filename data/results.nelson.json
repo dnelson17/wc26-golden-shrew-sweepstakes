@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-21T16:40:08.350Z",
+    "updatedAt": "2026-06-21T17:36:56.282Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -3293,7 +3293,7 @@
       "date": "2026-06-21T16:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "39'",
+      "matchTime": "74'",
       "group": "H",
       "venue": {
         "name": "Atlanta Stadium",
@@ -3364,7 +3364,7 @@
       },
       "homePlaceholder": "H1",
       "awayPlaceholder": "H3",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 0,
       "homePen": null,
       "awayPen": null,
