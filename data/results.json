@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-22T03:20:55.826Z",
+    "updatedAt": "2026-06-22T18:26:20.502Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -5182,8 +5182,8 @@
       "stage": "Group stage",
       "date": "2026-06-22T17:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "62'",
       "group": "J",
       "venue": {
         "name": "Dallas Stadium",
@@ -5254,8 +5254,8 @@
       },
       "homePlaceholder": "J1",
       "awayPlaceholder": "J3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
