@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-23T22:33:35.182Z",
+    "updatedAt": "2026-06-23T23:29:12.534Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -4132,8 +4132,8 @@
       "stage": "Group stage",
       "date": "2026-06-23T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "29'",
       "group": "L",
       "venue": {
         "name": "Toronto Stadium",
@@ -4204,8 +4204,8 @@
       },
       "homePlaceholder": "L4",
       "awayPlaceholder": "L2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
