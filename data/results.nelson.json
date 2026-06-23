@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-23T05:29:00.300Z",
+    "updatedAt": "2026-06-23T17:41:06.110Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -3964,8 +3964,8 @@
       "stage": "Group stage",
       "date": "2026-06-23T17:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "40'",
       "group": "K",
       "venue": {
         "name": "Houston Stadium",
@@ -4036,8 +4036,8 @@
       },
       "homePlaceholder": "K1",
       "awayPlaceholder": "K3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
