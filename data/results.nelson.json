@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-24T05:27:18.076Z",
+    "updatedAt": "2026-06-24T19:37:09.850Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -4300,8 +4300,8 @@
       "stage": "Group stage",
       "date": "2026-06-24T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "36'",
       "group": "B",
       "venue": {
         "name": "Seattle Stadium",
@@ -4372,8 +4372,8 @@
       },
       "homePlaceholder": "B2",
       "awayPlaceholder": "B3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -4384,8 +4384,8 @@
       "stage": "Group stage",
       "date": "2026-06-24T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "37'",
       "group": "B",
       "venue": {
         "name": "BC Place Vancouver",
@@ -4456,8 +4456,8 @@
       },
       "homePlaceholder": "B4",
       "awayPlaceholder": "B1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
