@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-25T22:36:31.303Z",
+    "updatedAt": "2026-06-25T23:34:33.307Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6526,8 +6526,8 @@
       "stage": "Group stage",
       "date": "2026-06-25T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "35'",
       "group": "F",
       "venue": {
         "name": "Kansas City Stadium",
@@ -6598,8 +6598,8 @@
       },
       "homePlaceholder": "F4",
       "awayPlaceholder": "F1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -6610,8 +6610,8 @@
       "stage": "Group stage",
       "date": "2026-06-25T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "34'",
       "group": "F",
       "venue": {
         "name": "Dallas Stadium",
@@ -6682,8 +6682,8 @@
       },
       "homePlaceholder": "F2",
       "awayPlaceholder": "F3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
