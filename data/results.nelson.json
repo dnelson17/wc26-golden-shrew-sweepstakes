@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-26T19:37:39.097Z",
+    "updatedAt": "2026-06-26T20:40:24.139Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -5309,7 +5309,7 @@
       "date": "2026-06-26T19:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "35'",
+      "matchTime": "72'",
       "group": "I",
       "venue": {
         "name": "Toronto Stadium",
@@ -5380,7 +5380,7 @@
       },
       "homePlaceholder": "I2",
       "awayPlaceholder": "I3",
-      "homeScore": 1,
+      "homeScore": 4,
       "awayScore": 0,
       "homePen": null,
       "awayPen": null,
@@ -5393,7 +5393,7 @@
       "date": "2026-06-26T19:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "36'",
+      "matchTime": "76'",
       "group": "I",
       "venue": {
         "name": "Boston Stadium",
