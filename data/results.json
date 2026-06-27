@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-27T05:24:31.202Z",
+    "updatedAt": "2026-06-27T21:28:57.516Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7366,8 +7366,8 @@
       "stage": "Group stage",
       "date": "2026-06-27T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "28'",
       "group": "L",
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -7438,8 +7438,8 @@
       },
       "homePlaceholder": "L4",
       "awayPlaceholder": "L1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -7450,8 +7450,8 @@
       "stage": "Group stage",
       "date": "2026-06-27T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "25'",
       "group": "L",
       "venue": {
         "name": "Philadelphia Stadium",
@@ -7522,8 +7522,8 @@
       },
       "homePlaceholder": "L2",
       "awayPlaceholder": "L3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
