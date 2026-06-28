@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-27T23:27:47.914Z",
+    "updatedAt": "2026-06-28T01:09:17.487Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7534,8 +7534,8 @@
       "stage": "Group stage",
       "date": "2026-06-27T23:30:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "75'",
       "group": "K",
       "venue": {
         "name": "Atlanta Stadium",
@@ -7606,8 +7606,8 @@
       },
       "homePlaceholder": "K2",
       "awayPlaceholder": "K3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -7618,8 +7618,8 @@
       "stage": "Group stage",
       "date": "2026-06-27T23:30:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "77'",
       "group": "K",
       "venue": {
         "name": "Miami Stadium",
@@ -7690,8 +7690,8 @@
       },
       "homePlaceholder": "K4",
       "awayPlaceholder": "K1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
