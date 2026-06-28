@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-28T19:35:01.395Z",
+    "updatedAt": "2026-06-28T20:32:53.144Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6317,7 +6317,7 @@
       "date": "2026-06-28T19:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "35'",
+      "matchTime": "72'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
@@ -8047,7 +8047,7 @@
       "date": "2026-06-28T19:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "35'",
+      "matchTime": "72'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
