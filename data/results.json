@@ -1,11 +1,11 @@
 {
   "meta": {
-    "updatedAt": "2026-06-28T03:18:15.963Z",
+    "updatedAt": "2026-06-28T05:37:53.853Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
-    "playedMatches": 70,
-    "groupComplete": false,
+    "playedMatches": 72,
+    "groupComplete": true,
     "tournamentOver": false,
     "source": "https://api.fifa.com/api/v3/calendar/matches"
   },
@@ -52,7 +52,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -85,7 +85,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -116,7 +116,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -147,7 +147,38 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
+            "worstGroup1": "na"
+          }
+        },
+        {
+          "fifaId": "43843",
+          "name": "Algeria",
+          "owner": "Wendy Johnson",
+          "tier": 2,
+          "group": "J",
+          "iso2": "dz",
+          "furthestDepth": 1,
+          "furthestLabel": "Round of 32",
+          "pts": 4,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 7,
+          "gd": -2,
+          "ogf": 5,
+          "oga": 7,
+          "eliminated": false,
+          "qualified": true,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "ongoing",
+            "third": "ongoing",
+            "bestGroup2": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -178,7 +209,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -209,7 +240,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -240,7 +271,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -271,7 +302,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -302,7 +333,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -333,7 +364,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -355,16 +386,16 @@
           "gd": -6,
           "ogf": 4,
           "oga": 10,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -386,16 +417,47 @@
           "gd": 0,
           "ogf": 3,
           "oga": 3,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
+            "worstGroup1": "na"
+          }
+        },
+        {
+          "fifaId": "43820",
+          "name": "Jordan",
+          "owner": "Maeve",
+          "tier": 2,
+          "group": "J",
+          "iso2": "jo",
+          "furthestDepth": 0,
+          "furthestLabel": "Group stage",
+          "pts": 0,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "gd": -5,
+          "ogf": 3,
+          "oga": 8,
+          "eliminated": true,
+          "qualified": false,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -417,78 +479,16 @@
           "gd": -1,
           "ogf": 2,
           "oga": 3,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
-            "worstGroup1": "na"
-          }
-        },
-        {
-          "fifaId": "43843",
-          "name": "Algeria",
-          "owner": "Wendy Johnson",
-          "tier": 2,
-          "group": "J",
-          "iso2": "dz",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 3,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2,
-          "ogf": 2,
-          "oga": 4,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
-            "worstGroup1": "na"
-          }
-        },
-        {
-          "fifaId": "43820",
-          "name": "Jordan",
-          "owner": "Maeve",
-          "tier": 2,
-          "group": "J",
-          "iso2": "jo",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 0,
-          "w": 0,
-          "d": 0,
-          "l": 2,
-          "gf": 2,
-          "ga": 5,
-          "gd": -3,
-          "ogf": 2,
-          "oga": 5,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -510,16 +510,16 @@
           "gd": -4,
           "ogf": 2,
           "oga": 6,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -541,16 +541,16 @@
           "gd": -6,
           "ogf": 2,
           "oga": 8,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -572,16 +572,16 @@
           "gd": -8,
           "ogf": 2,
           "oga": 10,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -603,16 +603,16 @@
           "gd": -9,
           "ogf": 2,
           "oga": 11,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -634,16 +634,16 @@
           "gd": -10,
           "ogf": 2,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -665,16 +665,16 @@
           "gd": -3,
           "ogf": 1,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -696,16 +696,16 @@
           "gd": -4,
           "ogf": 1,
           "oga": 5,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -727,16 +727,16 @@
           "gd": -8,
           "ogf": 1,
           "oga": 9,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -758,16 +758,16 @@
           "gd": -11,
           "ogf": 1,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "won",
             "worstGroup1": "na"
           }
         },
@@ -789,16 +789,16 @@
           "gd": -4,
           "ogf": 0,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -807,7 +807,7 @@
     "fourth": {
       "label": "Wooden shrew — £40",
       "emoji": "🪵",
-      "status": "leading",
+      "status": "decided",
       "leaders": [
         {
           "fifaId": "43818",
@@ -827,16 +827,16 @@
           "gd": -11,
           "ogf": 1,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "won",
             "worstGroup1": "na"
           }
         }
@@ -860,16 +860,16 @@
           "gd": -11,
           "ogf": 1,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "won",
             "worstGroup1": "na"
           }
         },
@@ -891,16 +891,16 @@
           "gd": -10,
           "ogf": 2,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -922,16 +922,16 @@
           "gd": -9,
           "ogf": 2,
           "oga": 11,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -953,16 +953,47 @@
           "gd": -6,
           "ogf": 2,
           "oga": 8,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
+            "worstGroup1": "na"
+          }
+        },
+        {
+          "fifaId": "43820",
+          "name": "Jordan",
+          "owner": "Maeve",
+          "tier": 2,
+          "group": "J",
+          "iso2": "jo",
+          "furthestDepth": 0,
+          "furthestLabel": "Group stage",
+          "pts": 0,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "gd": -5,
+          "ogf": 3,
+          "oga": 8,
+          "eliminated": true,
+          "qualified": false,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         },
@@ -984,47 +1015,16 @@
           "gd": -4,
           "ogf": 0,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
-            "worstGroup1": "na"
-          }
-        },
-        {
-          "fifaId": "43820",
-          "name": "Jordan",
-          "owner": "Maeve",
-          "tier": 2,
-          "group": "J",
-          "iso2": "jo",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 0,
-          "w": 0,
-          "d": 0,
-          "l": 2,
-          "gf": 2,
-          "ga": 5,
-          "gd": -3,
-          "ogf": 2,
-          "oga": 5,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -1033,7 +1033,7 @@
     "fifth": {
       "label": "Worst group-1 side — bucket hat",
       "emoji": "🧢",
-      "status": "leading",
+      "status": "decided",
       "leaders": [
         {
           "fifaId": "43930",
@@ -1053,17 +1053,17 @@
           "gd": -1,
           "ogf": 3,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
+            "winner": "lost",
+            "third": "lost",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "won"
           }
         }
       ],
@@ -1086,17 +1086,17 @@
           "gd": -1,
           "ogf": 3,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
+            "winner": "lost",
+            "third": "lost",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "won"
           }
         },
         {
@@ -1126,8 +1126,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1148,48 +1148,17 @@
           "gd": -2,
           "ogf": 3,
           "oga": 5,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
+            "winner": "lost",
+            "third": "lost",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
-          }
-        },
-        {
-          "fifaId": "43934",
-          "name": "Austria",
-          "owner": "Matthew Sloan",
-          "tier": 1,
-          "group": "J",
-          "iso2": "at",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 3,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 3,
-          "ga": 3,
-          "gd": 0,
-          "ogf": 3,
-          "oga": 3,
-          "eliminated": false,
-          "qualified": false,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1219,8 +1188,39 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
+          }
+        },
+        {
+          "fifaId": "43934",
+          "name": "Austria",
+          "owner": "Matthew Sloan",
+          "tier": 1,
+          "group": "J",
+          "iso2": "at",
+          "furthestDepth": 1,
+          "furthestLabel": "Round of 32",
+          "pts": 4,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 6,
+          "gd": 0,
+          "ogf": 6,
+          "oga": 6,
+          "eliminated": false,
+          "qualified": true,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "ongoing",
+            "third": "ongoing",
+            "bestGroup2": "na",
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1250,8 +1250,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1281,8 +1281,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1312,8 +1312,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1343,8 +1343,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1374,8 +1374,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1405,8 +1405,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1436,8 +1436,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1467,8 +1467,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1498,39 +1498,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
-          }
-        },
-        {
-          "fifaId": "43922",
-          "name": "Argentina",
-          "owner": "Niamh",
-          "tier": 1,
-          "group": "J",
-          "iso2": "ar",
-          "furthestDepth": 1,
-          "furthestLabel": "Round of 32",
-          "pts": 6,
-          "w": 2,
-          "d": 0,
-          "l": 0,
-          "gf": 5,
-          "ga": 0,
-          "gd": 5,
-          "ogf": 5,
-          "oga": 0,
-          "eliminated": false,
-          "qualified": true,
-          "champion": false,
-          "runnerUp": false,
-          "thirdPlace": false,
-          "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1560,8 +1529,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1591,8 +1560,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1622,8 +1591,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1653,8 +1622,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1684,8 +1653,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1715,8 +1684,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1746,8 +1715,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1777,8 +1746,39 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
+          }
+        },
+        {
+          "fifaId": "43922",
+          "name": "Argentina",
+          "owner": "Niamh",
+          "tier": 1,
+          "group": "J",
+          "iso2": "ar",
+          "furthestDepth": 1,
+          "furthestLabel": "Round of 32",
+          "pts": 9,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "gd": 7,
+          "ogf": 8,
+          "oga": 1,
+          "eliminated": false,
+          "qualified": true,
+          "champion": false,
+          "runnerUp": false,
+          "thirdPlace": false,
+          "status": {
+            "winner": "ongoing",
+            "third": "ongoing",
+            "bestGroup2": "na",
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -1808,8 +1808,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         }
       ]
@@ -1857,8 +1857,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -1888,7 +1888,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -1932,16 +1932,16 @@
         "gd": -1,
         "ogf": 2,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -1963,16 +1963,16 @@
         "gd": -4,
         "ogf": 2,
         "oga": 6,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2025,7 +2025,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2056,7 +2056,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2109,8 +2109,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2140,7 +2140,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2184,16 +2184,16 @@
         "gd": -8,
         "ogf": 2,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2224,8 +2224,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "B3",
@@ -2277,8 +2277,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2308,8 +2308,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "C1",
@@ -2352,16 +2352,16 @@
         "gd": -6,
         "ogf": 2,
         "oga": 8,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2383,16 +2383,16 @@
         "gd": -3,
         "ogf": 1,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2445,7 +2445,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2467,17 +2467,17 @@
         "gd": -2,
         "ogf": 3,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "D3",
@@ -2529,8 +2529,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2551,16 +2551,16 @@
         "gd": -8,
         "ogf": 1,
         "oga": 9,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2613,8 +2613,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2644,8 +2644,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "F1",
@@ -2697,8 +2697,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2728,8 +2728,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "E3",
@@ -2781,8 +2781,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2803,16 +2803,16 @@
         "gd": -10,
         "ogf": 2,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2865,8 +2865,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2896,7 +2896,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -2949,8 +2949,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -2980,7 +2980,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3024,16 +3024,16 @@
         "gd": -4,
         "ogf": 1,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3055,17 +3055,17 @@
         "gd": -1,
         "ogf": 3,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "won"
         }
       },
       "homePlaceholder": "H3",
@@ -3108,16 +3108,16 @@
         "gd": 0,
         "ogf": 3,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3139,16 +3139,16 @@
         "gd": -6,
         "ogf": 4,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3201,8 +3201,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3232,8 +3232,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "I1",
@@ -3276,16 +3276,16 @@
         "gd": -11,
         "ogf": 1,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "won",
           "worstGroup1": "na"
         }
       },
@@ -3316,8 +3316,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "I3",
@@ -3351,15 +3351,15 @@
         "iso2": "ar",
         "furthestDepth": 1,
         "furthestLabel": "Round of 32",
-        "pts": 6,
-        "w": 2,
+        "pts": 9,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "ogf": 5,
-        "oga": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "ogf": 8,
+        "oga": 1,
         "eliminated": false,
         "qualified": true,
         "champion": false,
@@ -3369,8 +3369,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3380,19 +3380,19 @@
         "tier": 2,
         "group": "J",
         "iso2": "dz",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 2,
-        "ga": 4,
+        "gf": 5,
+        "ga": 7,
         "gd": -2,
-        "ogf": 2,
-        "oga": 4,
+        "ogf": 5,
+        "oga": 7,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -3400,7 +3400,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3433,19 +3433,19 @@
         "tier": 1,
         "group": "J",
         "iso2": "at",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 3,
-        "ga": 3,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "ogf": 3,
-        "oga": 3,
+        "ogf": 6,
+        "oga": 6,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -3453,8 +3453,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3469,22 +3469,22 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
-        "ogf": 2,
-        "oga": 5,
-        "eliminated": false,
+        "l": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
+        "ogf": 3,
+        "oga": 8,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3537,8 +3537,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3568,7 +3568,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3621,8 +3621,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3652,8 +3652,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "L1",
@@ -3705,7 +3705,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3727,16 +3727,16 @@
         "gd": -4,
         "ogf": 0,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3780,16 +3780,16 @@
         "gd": -9,
         "ogf": 2,
         "oga": 11,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3820,8 +3820,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "K3",
@@ -3864,16 +3864,16 @@
         "gd": -4,
         "ogf": 2,
         "oga": 6,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3904,7 +3904,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -3957,8 +3957,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -3988,7 +3988,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4041,7 +4041,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4063,16 +4063,16 @@
         "gd": -8,
         "ogf": 2,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4125,8 +4125,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4147,16 +4147,16 @@
         "gd": -1,
         "ogf": 2,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4209,8 +4209,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4240,7 +4240,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4284,16 +4284,16 @@
         "gd": -3,
         "ogf": 1,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4324,8 +4324,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "C4",
@@ -4377,8 +4377,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4399,16 +4399,16 @@
         "gd": -6,
         "ogf": 2,
         "oga": 8,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4452,17 +4452,17 @@
         "gd": -2,
         "ogf": 3,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4492,7 +4492,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4545,8 +4545,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4576,8 +4576,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "F1",
@@ -4629,8 +4629,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4660,8 +4660,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "E1",
@@ -4713,8 +4713,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4735,16 +4735,16 @@
         "gd": -8,
         "ogf": 1,
         "oga": 9,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4788,16 +4788,16 @@
         "gd": -10,
         "ogf": 2,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4828,8 +4828,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "F4",
@@ -4881,8 +4881,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4903,16 +4903,16 @@
         "gd": -4,
         "ogf": 1,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -4965,8 +4965,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -4987,16 +4987,16 @@
         "gd": 0,
         "ogf": 3,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5040,17 +5040,17 @@
         "gd": -1,
         "ogf": 3,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "won"
         }
       },
       "away": {
@@ -5080,7 +5080,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5124,16 +5124,16 @@
         "gd": -6,
         "ogf": 4,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5164,7 +5164,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5199,15 +5199,15 @@
         "iso2": "ar",
         "furthestDepth": 1,
         "furthestLabel": "Round of 32",
-        "pts": 6,
-        "w": 2,
+        "pts": 9,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "ogf": 5,
-        "oga": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "ogf": 8,
+        "oga": 1,
         "eliminated": false,
         "qualified": true,
         "champion": false,
@@ -5217,8 +5217,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5228,19 +5228,19 @@
         "tier": 1,
         "group": "J",
         "iso2": "at",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 3,
-        "ga": 3,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "ogf": 3,
-        "oga": 3,
+        "ogf": 6,
+        "oga": 6,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -5248,8 +5248,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "J1",
@@ -5301,8 +5301,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5323,16 +5323,16 @@
         "gd": -11,
         "ogf": 1,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "won",
           "worstGroup1": "na"
         }
       },
@@ -5385,8 +5385,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5416,8 +5416,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "I4",
@@ -5454,22 +5454,22 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
-        "ogf": 2,
-        "oga": 5,
-        "eliminated": false,
+        "l": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
+        "ogf": 3,
+        "oga": 8,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5480,19 +5480,19 @@
         "tier": 2,
         "group": "J",
         "iso2": "dz",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 2,
-        "ga": 4,
+        "gf": 5,
+        "ga": 7,
         "gd": -2,
-        "ogf": 2,
-        "oga": 4,
+        "ogf": 5,
+        "oga": 7,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -5500,7 +5500,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5553,8 +5553,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5575,16 +5575,16 @@
         "gd": -9,
         "ogf": 2,
         "oga": 11,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5637,8 +5637,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5668,7 +5668,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5712,16 +5712,16 @@
         "gd": -4,
         "ogf": 0,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5752,8 +5752,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "L4",
@@ -5805,8 +5805,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -5836,7 +5836,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5889,7 +5889,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5911,16 +5911,16 @@
         "gd": -8,
         "ogf": 2,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -5973,8 +5973,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6004,7 +6004,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6057,8 +6057,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6079,16 +6079,16 @@
         "gd": -6,
         "ogf": 2,
         "oga": 8,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6132,16 +6132,16 @@
         "gd": -3,
         "ogf": 1,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6172,8 +6172,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "C4",
@@ -6225,7 +6225,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6247,16 +6247,16 @@
         "gd": -1,
         "ogf": 2,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6300,16 +6300,16 @@
         "gd": -4,
         "ogf": 2,
         "oga": 6,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6340,8 +6340,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "A4",
@@ -6384,16 +6384,16 @@
         "gd": -8,
         "ogf": 1,
         "oga": 9,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6424,8 +6424,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "E2",
@@ -6477,8 +6477,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6508,8 +6508,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "E4",
@@ -6552,16 +6552,16 @@
         "gd": -10,
         "ogf": 2,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6592,8 +6592,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "F4",
@@ -6645,8 +6645,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6676,8 +6676,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "F2",
@@ -6729,7 +6729,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6760,7 +6760,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -6804,17 +6804,17 @@
         "gd": -2,
         "ogf": 3,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6844,8 +6844,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "D4",
@@ -6897,8 +6897,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -6919,16 +6919,16 @@
         "gd": -11,
         "ogf": 1,
         "oga": 12,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "won",
           "worstGroup1": "na"
         }
       },
@@ -6981,8 +6981,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -7012,8 +7012,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "I4",
@@ -7056,17 +7056,17 @@
         "gd": -1,
         "ogf": 3,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
+          "winner": "lost",
+          "third": "lost",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "won"
         }
       },
       "away": {
@@ -7096,8 +7096,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "H4",
@@ -7149,7 +7149,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7171,16 +7171,16 @@
         "gd": -4,
         "ogf": 1,
         "oga": 5,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7224,16 +7224,16 @@
         "gd": -6,
         "ogf": 4,
         "oga": 10,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7264,8 +7264,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "G4",
@@ -7317,7 +7317,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7339,16 +7339,16 @@
         "gd": 0,
         "ogf": 3,
         "oga": 3,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7392,16 +7392,16 @@
         "gd": -4,
         "ogf": 0,
         "oga": 4,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7432,8 +7432,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "L4",
@@ -7485,8 +7485,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -7516,7 +7516,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7569,7 +7569,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7591,16 +7591,16 @@
         "gd": -9,
         "ogf": 2,
         "oga": 11,
-        "eliminated": false,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7653,8 +7653,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -7684,8 +7684,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "K4",
@@ -7701,9 +7701,9 @@
       "depth": 0,
       "stage": "Group stage",
       "date": "2026-06-28T02:00:00Z",
-      "played": false,
-      "live": true,
-      "matchTime": "55'",
+      "played": true,
+      "live": false,
+      "matchTime": null,
       "group": "J",
       "venue": {
         "name": "Kansas City Stadium",
@@ -7717,19 +7717,19 @@
         "tier": 2,
         "group": "J",
         "iso2": "dz",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 2,
-        "ga": 4,
+        "gf": 5,
+        "ga": 7,
         "gd": -2,
-        "ogf": 2,
-        "oga": 4,
+        "ogf": 5,
+        "oga": 7,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -7737,7 +7737,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7748,19 +7748,19 @@
         "tier": 1,
         "group": "J",
         "iso2": "at",
-        "furthestDepth": 0,
-        "furthestLabel": "Group stage",
-        "pts": 3,
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 3,
-        "ga": 3,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "ogf": 3,
-        "oga": 3,
+        "ogf": 6,
+        "oga": 6,
         "eliminated": false,
-        "qualified": false,
+        "qualified": true,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
@@ -7768,14 +7768,14 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "J2",
       "awayPlaceholder": "J3",
-      "homeScore": 1,
-      "awayScore": 2,
+      "homeScore": 3,
+      "awayScore": 3,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -7785,9 +7785,9 @@
       "depth": 0,
       "stage": "Group stage",
       "date": "2026-06-28T02:00:00Z",
-      "played": false,
-      "live": true,
-      "matchTime": "56'",
+      "played": true,
+      "live": false,
+      "matchTime": null,
       "group": "J",
       "venue": {
         "name": "Dallas Stadium",
@@ -7806,22 +7806,22 @@
         "pts": 0,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
-        "ogf": 2,
-        "oga": 5,
-        "eliminated": false,
+        "l": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
+        "ogf": 3,
+        "oga": 8,
+        "eliminated": true,
         "qualified": false,
         "champion": false,
         "runnerUp": false,
         "thirdPlace": false,
         "status": {
-          "winner": "ongoing",
-          "third": "ongoing",
-          "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "winner": "lost",
+          "third": "lost",
+          "bestGroup2": "lost",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7834,15 +7834,15 @@
         "iso2": "ar",
         "furthestDepth": 1,
         "furthestLabel": "Round of 32",
-        "pts": 6,
-        "w": 2,
+        "pts": 9,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "ogf": 5,
-        "oga": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "ogf": 8,
+        "oga": 1,
         "eliminated": false,
         "qualified": true,
         "champion": false,
@@ -7852,17 +7852,17 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "J4",
       "awayPlaceholder": "J1",
       "homeScore": 1,
-      "awayScore": 2,
+      "awayScore": 3,
       "homePen": null,
       "awayPen": null,
-      "winnerId": null
+      "winnerId": "43922"
     },
     {
       "matchId": "400021518",
@@ -7905,7 +7905,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7936,7 +7936,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -7989,8 +7989,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8020,8 +8020,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1C",
@@ -8073,8 +8073,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8104,7 +8104,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -8157,8 +8157,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8188,8 +8188,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1F",
@@ -8241,8 +8241,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8272,8 +8272,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "2E",
@@ -8325,8 +8325,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8356,8 +8356,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1I",
@@ -8409,8 +8409,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8440,8 +8440,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1A",
@@ -8493,8 +8493,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8524,7 +8524,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -8577,8 +8577,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8608,8 +8608,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1G",
@@ -8661,8 +8661,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8692,7 +8692,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -8745,11 +8745,41 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
-      "away": null,
+      "away": {
+        "fifaId": "43934",
+        "name": "Austria",
+        "owner": "Matthew Sloan",
+        "tier": 1,
+        "group": "J",
+        "iso2": "at",
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 6,
+        "ga": 6,
+        "gd": 0,
+        "ogf": 6,
+        "oga": 6,
+        "eliminated": false,
+        "qualified": true,
+        "champion": false,
+        "runnerUp": false,
+        "thirdPlace": false,
+        "status": {
+          "winner": "ongoing",
+          "third": "ongoing",
+          "bestGroup2": "na",
+          "shrew": "lost",
+          "worstGroup1": "lost"
+        }
+      },
       "homePlaceholder": "1H",
       "awayPlaceholder": "2J",
       "homeScore": null,
@@ -8799,8 +8829,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -8830,8 +8860,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "2K",
@@ -8883,11 +8913,41 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
-      "away": null,
+      "away": {
+        "fifaId": "43843",
+        "name": "Algeria",
+        "owner": "Wendy Johnson",
+        "tier": 2,
+        "group": "J",
+        "iso2": "dz",
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 5,
+        "ga": 7,
+        "gd": -2,
+        "ogf": 5,
+        "oga": 7,
+        "eliminated": false,
+        "qualified": true,
+        "champion": false,
+        "runnerUp": false,
+        "thirdPlace": false,
+        "status": {
+          "winner": "ongoing",
+          "third": "ongoing",
+          "bestGroup2": "ongoing",
+          "shrew": "lost",
+          "worstGroup1": "na"
+        }
+      },
       "homePlaceholder": "1B",
       "awayPlaceholder": "3EFGIJ",
       "homeScore": null,
@@ -8937,7 +8997,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -8968,7 +9028,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9003,15 +9063,15 @@
         "iso2": "ar",
         "furthestDepth": 1,
         "furthestLabel": "Round of 32",
-        "pts": 6,
-        "w": 2,
+        "pts": 9,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "ogf": 5,
-        "oga": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "ogf": 8,
+        "oga": 1,
         "eliminated": false,
         "qualified": true,
         "champion": false,
@@ -9021,8 +9081,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9052,7 +9112,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9105,8 +9165,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9136,7 +9196,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9575,7 +9635,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9606,7 +9666,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9659,8 +9719,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9690,8 +9750,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1C",
@@ -9743,8 +9803,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9774,7 +9834,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -9827,8 +9887,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9858,8 +9918,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1F",
@@ -9911,8 +9971,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -9942,8 +10002,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "2E",
@@ -9995,8 +10055,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10026,8 +10086,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1I",
@@ -10079,8 +10139,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10110,8 +10170,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1A",
@@ -10163,8 +10223,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10194,7 +10254,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -10247,8 +10307,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10278,8 +10338,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "1G",
@@ -10331,8 +10391,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10362,7 +10422,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -10415,11 +10475,41 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
-      "away": null,
+      "away": {
+        "fifaId": "43934",
+        "name": "Austria",
+        "owner": "Matthew Sloan",
+        "tier": 1,
+        "group": "J",
+        "iso2": "at",
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 6,
+        "ga": 6,
+        "gd": 0,
+        "ogf": 6,
+        "oga": 6,
+        "eliminated": false,
+        "qualified": true,
+        "champion": false,
+        "runnerUp": false,
+        "thirdPlace": false,
+        "status": {
+          "winner": "ongoing",
+          "third": "ongoing",
+          "bestGroup2": "na",
+          "shrew": "lost",
+          "worstGroup1": "lost"
+        }
+      },
       "homePlaceholder": "1H",
       "awayPlaceholder": "2J",
       "homeScore": null,
@@ -10469,8 +10559,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10500,8 +10590,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "homePlaceholder": "2K",
@@ -10553,11 +10643,41 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
-      "away": null,
+      "away": {
+        "fifaId": "43843",
+        "name": "Algeria",
+        "owner": "Wendy Johnson",
+        "tier": 2,
+        "group": "J",
+        "iso2": "dz",
+        "furthestDepth": 1,
+        "furthestLabel": "Round of 32",
+        "pts": 4,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 5,
+        "ga": 7,
+        "gd": -2,
+        "ogf": 5,
+        "oga": 7,
+        "eliminated": false,
+        "qualified": true,
+        "champion": false,
+        "runnerUp": false,
+        "thirdPlace": false,
+        "status": {
+          "winner": "ongoing",
+          "third": "ongoing",
+          "bestGroup2": "ongoing",
+          "shrew": "lost",
+          "worstGroup1": "na"
+        }
+      },
       "homePlaceholder": "1B",
       "awayPlaceholder": "3EFGIJ",
       "homeScore": null,
@@ -10607,7 +10727,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -10638,7 +10758,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -10673,15 +10793,15 @@
         "iso2": "ar",
         "furthestDepth": 1,
         "furthestLabel": "Round of 32",
-        "pts": 6,
-        "w": 2,
+        "pts": 9,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "ogf": 5,
-        "oga": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "ogf": 8,
+        "oga": 1,
         "eliminated": false,
         "qualified": true,
         "champion": false,
@@ -10691,8 +10811,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10722,7 +10842,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -10775,8 +10895,8 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "na",
-          "shrew": "ongoing",
-          "worstGroup1": "ongoing"
+          "shrew": "lost",
+          "worstGroup1": "lost"
         }
       },
       "away": {
@@ -10806,7 +10926,7 @@
           "winner": "ongoing",
           "third": "ongoing",
           "bestGroup2": "ongoing",
-          "shrew": "ongoing",
+          "shrew": "lost",
           "worstGroup1": "na"
         }
       },
@@ -11223,16 +11343,16 @@
       "gd": -11,
       "ogf": 1,
       "oga": 12,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "won",
         "worstGroup1": "na"
       }
     },
@@ -11255,16 +11375,16 @@
       "gd": -10,
       "ogf": 2,
       "oga": 12,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11287,16 +11407,16 @@
       "gd": -9,
       "ogf": 2,
       "oga": 11,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11319,21 +11439,53 @@
       "gd": -6,
       "ogf": 2,
       "oga": 8,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
       "rank": 5,
+      "fifaId": "43820",
+      "name": "Jordan",
+      "owner": "Maeve",
+      "tier": 2,
+      "group": "J",
+      "iso2": "jo",
+      "furthestDepth": 0,
+      "furthestLabel": "Group stage",
+      "pts": 0,
+      "w": 0,
+      "d": 0,
+      "l": 3,
+      "gf": 3,
+      "ga": 8,
+      "gd": -5,
+      "ogf": 3,
+      "oga": 8,
+      "eliminated": true,
+      "qualified": false,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "na"
+      }
+    },
+    {
+      "rank": 6,
       "fifaId": "43914",
       "name": "Panama",
       "owner": "Rakelle",
@@ -11351,48 +11503,16 @@
       "gd": -4,
       "ogf": 0,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "na"
-      }
-    },
-    {
-      "rank": 6,
-      "fifaId": "43820",
-      "name": "Jordan",
-      "owner": "Maeve",
-      "tier": 2,
-      "group": "J",
-      "iso2": "jo",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 0,
-      "w": 0,
-      "d": 0,
-      "l": 2,
-      "gf": 2,
-      "ga": 5,
-      "gd": -3,
-      "ogf": 2,
-      "oga": 5,
-      "eliminated": false,
-      "qualified": false,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11415,16 +11535,16 @@
       "gd": -8,
       "ogf": 2,
       "oga": 10,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11447,16 +11567,16 @@
       "gd": -8,
       "ogf": 1,
       "oga": 9,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11479,16 +11599,16 @@
       "gd": -6,
       "ogf": 4,
       "oga": 10,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11511,16 +11631,16 @@
       "gd": -4,
       "ogf": 2,
       "oga": 6,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11543,16 +11663,16 @@
       "gd": -4,
       "ogf": 1,
       "oga": 5,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11575,17 +11695,17 @@
       "gd": -1,
       "ogf": 3,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
+        "winner": "lost",
+        "third": "lost",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "won"
       }
     },
     {
@@ -11607,16 +11727,16 @@
       "gd": -3,
       "ogf": 1,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -11639,53 +11759,21 @@
       "gd": -2,
       "ogf": 3,
       "oga": 5,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
+        "winner": "lost",
+        "third": "lost",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
       "rank": 15,
-      "fifaId": "43843",
-      "name": "Algeria",
-      "owner": "Wendy Johnson",
-      "tier": 2,
-      "group": "J",
-      "iso2": "dz",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 3,
-      "w": 1,
-      "d": 0,
-      "l": 1,
-      "gf": 2,
-      "ga": 4,
-      "gd": -2,
-      "ogf": 2,
-      "oga": 4,
-      "eliminated": false,
-      "qualified": false,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "na"
-      }
-    },
-    {
-      "rank": 16,
       "fifaId": "43822",
       "name": "South Korea",
       "owner": "Suzoveld",
@@ -11703,53 +11791,21 @@
       "gd": -1,
       "ogf": 2,
       "oga": 3,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 17,
-      "fifaId": "43934",
-      "name": "Austria",
-      "owner": "Matthew Sloan",
-      "tier": 1,
-      "group": "J",
-      "iso2": "at",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 3,
-      "w": 1,
-      "d": 0,
-      "l": 1,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
-      "ogf": 3,
-      "oga": 3,
-      "eliminated": false,
-      "qualified": false,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
-      }
-    },
-    {
-      "rank": 18,
+      "rank": 16,
       "fifaId": "43817",
       "name": "Iran",
       "owner": "Teresa",
@@ -11767,21 +11823,21 @@
       "gd": 0,
       "ogf": 3,
       "oga": 3,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 19,
+      "rank": 17,
       "fifaId": "43850",
       "name": "Cape Verde",
       "owner": "Thomas Sloan",
@@ -11808,12 +11864,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 20,
+      "rank": 18,
       "fifaId": "43879",
       "name": "Senegal",
       "owner": "Thomas McQuitty",
@@ -11840,12 +11896,44 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 21,
+      "rank": 19,
+      "fifaId": "43843",
+      "name": "Algeria",
+      "owner": "Wendy Johnson",
+      "tier": 2,
+      "group": "J",
+      "iso2": "dz",
+      "furthestDepth": 1,
+      "furthestLabel": "Round of 32",
+      "pts": 4,
+      "w": 1,
+      "d": 1,
+      "l": 1,
+      "gf": 5,
+      "ga": 7,
+      "gd": -2,
+      "ogf": 5,
+      "oga": 7,
+      "eliminated": false,
+      "qualified": true,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "ongoing",
+        "third": "ongoing",
+        "bestGroup2": "ongoing",
+        "shrew": "lost",
+        "worstGroup1": "na"
+      }
+    },
+    {
+      "rank": 20,
       "fifaId": "43928",
       "name": "Paraguay",
       "owner": "Amy Healy",
@@ -11872,12 +11960,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 22,
+      "rank": 21,
       "fifaId": "44037",
       "name": "Bosnia & Herzegovina",
       "owner": "Maria",
@@ -11904,12 +11992,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 23,
+      "rank": 22,
       "fifaId": "43883",
       "name": "South Africa",
       "owner": "Sarah Healy",
@@ -11936,12 +12024,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
     {
-      "rank": 24,
+      "rank": 23,
       "fifaId": "43970",
       "name": "Sweden",
       "owner": "Teresa",
@@ -11968,8 +12056,40 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
+      }
+    },
+    {
+      "rank": 24,
+      "fifaId": "43934",
+      "name": "Austria",
+      "owner": "Matthew Sloan",
+      "tier": 1,
+      "group": "J",
+      "iso2": "at",
+      "furthestDepth": 1,
+      "furthestLabel": "Round of 32",
+      "pts": 4,
+      "w": 1,
+      "d": 1,
+      "l": 1,
+      "gf": 6,
+      "ga": 6,
+      "gd": 0,
+      "ogf": 6,
+      "oga": 6,
+      "eliminated": false,
+      "qualified": true,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "ongoing",
+        "third": "ongoing",
+        "bestGroup2": "na",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12000,7 +12120,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -12032,8 +12152,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12064,7 +12184,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -12096,7 +12216,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -12128,7 +12248,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -12160,7 +12280,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -12192,8 +12312,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12224,8 +12344,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12256,8 +12376,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12288,8 +12408,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12320,8 +12440,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12352,8 +12472,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12384,44 +12504,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
       "rank": 38,
-      "fifaId": "43922",
-      "name": "Argentina",
-      "owner": "Niamh",
-      "tier": 1,
-      "group": "J",
-      "iso2": "ar",
-      "furthestDepth": 1,
-      "furthestLabel": "Round of 32",
-      "pts": 6,
-      "w": 2,
-      "d": 0,
-      "l": 0,
-      "gf": 5,
-      "ga": 0,
-      "gd": 5,
-      "ogf": 5,
-      "oga": 0,
-      "eliminated": false,
-      "qualified": true,
-      "champion": false,
-      "runnerUp": false,
-      "thirdPlace": false,
-      "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
-      }
-    },
-    {
-      "rank": 39,
       "fifaId": "43948",
       "name": "Germany",
       "owner": "Hannah",
@@ -12448,12 +12536,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 40,
+      "rank": 39,
       "fifaId": "43872",
       "name": "Morocco",
       "owner": "Gareth",
@@ -12480,12 +12568,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 41,
+      "rank": 40,
       "fifaId": "43926",
       "name": "Colombia",
       "owner": "Christobel Johnson",
@@ -12512,12 +12600,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "fifaId": "43971",
       "name": "Switzerland",
       "owner": "Thomas Sloan",
@@ -12544,12 +12632,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 43,
+      "rank": 42,
       "fifaId": "43942",
       "name": "England",
       "owner": "Wendy Johnson",
@@ -12576,12 +12664,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 44,
+      "rank": 43,
       "fifaId": "43969",
       "name": "Spain",
       "owner": "Josh",
@@ -12608,12 +12696,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 45,
+      "rank": 44,
       "fifaId": "43960",
       "name": "Netherlands",
       "owner": "Rakelle",
@@ -12640,12 +12728,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 46,
+      "rank": 45,
       "fifaId": "43924",
       "name": "Brazil",
       "owner": "Cousin David",
@@ -12672,12 +12760,12 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
-      "rank": 47,
+      "rank": 46,
       "fifaId": "43911",
       "name": "Mexico",
       "owner": "Eoin",
@@ -12704,8 +12792,40 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
+      }
+    },
+    {
+      "rank": 47,
+      "fifaId": "43922",
+      "name": "Argentina",
+      "owner": "Niamh",
+      "tier": 1,
+      "group": "J",
+      "iso2": "ar",
+      "furthestDepth": 1,
+      "furthestLabel": "Round of 32",
+      "pts": 9,
+      "w": 3,
+      "d": 0,
+      "l": 0,
+      "gf": 8,
+      "ga": 1,
+      "gd": 7,
+      "ogf": 8,
+      "oga": 1,
+      "eliminated": false,
+      "qualified": true,
+      "champion": false,
+      "runnerUp": false,
+      "thirdPlace": false,
+      "status": {
+        "winner": "ongoing",
+        "third": "ongoing",
+        "bestGroup2": "na",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12736,8 +12856,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     }
   ],
@@ -12769,8 +12889,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12791,17 +12911,17 @@
       "gd": -2,
       "ogf": 3,
       "oga": 5,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
+        "winner": "lost",
+        "third": "lost",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12831,8 +12951,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12862,8 +12982,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12884,17 +13004,17 @@
       "gd": -1,
       "ogf": 3,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
+        "winner": "lost",
+        "third": "lost",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "won"
       }
     },
     {
@@ -12924,8 +13044,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12955,8 +13075,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -12986,8 +13106,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13017,8 +13137,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13048,8 +13168,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13079,8 +13199,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13110,8 +13230,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13141,8 +13261,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13152,19 +13272,19 @@
       "tier": 1,
       "group": "J",
       "iso2": "at",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 3,
+      "furthestDepth": 1,
+      "furthestLabel": "Round of 32",
+      "pts": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 3,
-      "ga": 3,
+      "gf": 6,
+      "ga": 6,
       "gd": 0,
-      "ogf": 3,
-      "oga": 3,
+      "ogf": 6,
+      "oga": 6,
       "eliminated": false,
-      "qualified": false,
+      "qualified": true,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
@@ -13172,8 +13292,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13185,15 +13305,15 @@
       "iso2": "ar",
       "furthestDepth": 1,
       "furthestLabel": "Round of 32",
-      "pts": 6,
-      "w": 2,
+      "pts": 9,
+      "w": 3,
       "d": 0,
       "l": 0,
-      "gf": 5,
-      "ga": 0,
-      "gd": 5,
-      "ogf": 5,
-      "oga": 0,
+      "gf": 8,
+      "ga": 1,
+      "gd": 7,
+      "ogf": 8,
+      "oga": 1,
       "eliminated": false,
       "qualified": true,
       "champion": false,
@@ -13203,8 +13323,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13234,8 +13354,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13265,8 +13385,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13296,8 +13416,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13327,8 +13447,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13358,8 +13478,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13389,8 +13509,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13420,8 +13540,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13451,8 +13571,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13482,8 +13602,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "na",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -13504,16 +13624,16 @@
       "gd": -8,
       "ogf": 2,
       "oga": 10,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13544,7 +13664,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13575,7 +13695,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13606,7 +13726,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13628,16 +13748,16 @@
       "gd": -10,
       "ogf": 2,
       "oga": 12,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13659,16 +13779,16 @@
       "gd": -9,
       "ogf": 2,
       "oga": 11,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13699,7 +13819,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13721,16 +13841,16 @@
       "gd": -6,
       "ogf": 4,
       "oga": 10,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13752,16 +13872,16 @@
       "gd": -3,
       "ogf": 1,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13783,16 +13903,16 @@
       "gd": -8,
       "ogf": 1,
       "oga": 9,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13808,22 +13928,22 @@
       "pts": 0,
       "w": 0,
       "d": 0,
-      "l": 2,
-      "gf": 2,
-      "ga": 5,
-      "gd": -3,
-      "ogf": 2,
-      "oga": 5,
-      "eliminated": false,
+      "l": 3,
+      "gf": 3,
+      "ga": 8,
+      "gd": -5,
+      "ogf": 3,
+      "oga": 8,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13854,7 +13974,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13876,16 +13996,16 @@
       "gd": -4,
       "ogf": 1,
       "oga": 5,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13907,16 +14027,16 @@
       "gd": -6,
       "ogf": 2,
       "oga": 8,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -13938,16 +14058,16 @@
       "gd": -11,
       "ogf": 1,
       "oga": 12,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "won",
         "worstGroup1": "na"
       }
     },
@@ -13969,16 +14089,16 @@
       "gd": -4,
       "ogf": 0,
       "oga": 4,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14000,16 +14120,16 @@
       "gd": -4,
       "ogf": 2,
       "oga": 6,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14040,7 +14160,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14071,7 +14191,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14093,16 +14213,16 @@
       "gd": -1,
       "ogf": 2,
       "oga": 3,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14124,16 +14244,16 @@
       "gd": 0,
       "ogf": 3,
       "oga": 3,
-      "eliminated": false,
+      "eliminated": true,
       "qualified": false,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14164,7 +14284,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14195,7 +14315,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     },
@@ -14206,19 +14326,19 @@
       "tier": 2,
       "group": "J",
       "iso2": "dz",
-      "furthestDepth": 0,
-      "furthestLabel": "Group stage",
-      "pts": 3,
+      "furthestDepth": 1,
+      "furthestLabel": "Round of 32",
+      "pts": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 2,
-      "ga": 4,
+      "gf": 5,
+      "ga": 7,
       "gd": -2,
-      "ogf": 2,
-      "oga": 4,
+      "ogf": 5,
+      "oga": 7,
       "eliminated": false,
-      "qualified": false,
+      "qualified": true,
       "champion": false,
       "runnerUp": false,
       "thirdPlace": false,
@@ -14226,7 +14346,7 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
+        "shrew": "lost",
         "worstGroup1": "na"
       }
     }
@@ -14262,8 +14382,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14284,16 +14404,16 @@
           "gd": -8,
           "ogf": 2,
           "oga": 10,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14301,9 +14421,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14327,17 +14447,17 @@
           "gd": -2,
           "ogf": 3,
           "oga": 5,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
+            "winner": "lost",
+            "third": "lost",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14367,7 +14487,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14376,8 +14496,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14410,8 +14530,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14441,7 +14561,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14450,8 +14570,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14484,8 +14604,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14515,7 +14635,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14524,8 +14644,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14549,17 +14669,17 @@
           "gd": -1,
           "ogf": 3,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
+            "winner": "lost",
+            "third": "lost",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "won"
           }
         },
         {
@@ -14580,26 +14700,26 @@
           "gd": -10,
           "ogf": 2,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
       ],
       "status": {
-        "winner": "ongoing",
-        "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "winner": "lost",
+        "third": "lost",
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "won"
       }
     },
     {
@@ -14632,8 +14752,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14654,16 +14774,16 @@
           "gd": -9,
           "ogf": 2,
           "oga": 11,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14671,9 +14791,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14706,8 +14826,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14737,7 +14857,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14746,8 +14866,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14780,8 +14900,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14802,16 +14922,16 @@
           "gd": -6,
           "ogf": 4,
           "oga": 10,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14819,9 +14939,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14854,8 +14974,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14876,16 +14996,16 @@
           "gd": -3,
           "ogf": 1,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14893,9 +15013,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -14928,8 +15048,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -14950,16 +15070,16 @@
           "gd": -8,
           "ogf": 1,
           "oga": 9,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -14967,9 +15087,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15002,8 +15122,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15024,16 +15144,16 @@
           "gd": -4,
           "ogf": 2,
           "oga": 6,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15041,9 +15161,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15076,8 +15196,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15092,22 +15212,22 @@
           "pts": 0,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 2,
-          "ga": 5,
-          "gd": -3,
-          "ogf": 2,
-          "oga": 5,
-          "eliminated": false,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "gd": -5,
+          "ogf": 3,
+          "oga": 8,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15115,9 +15235,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15150,8 +15270,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15181,7 +15301,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15190,8 +15310,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15224,8 +15344,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15246,16 +15366,16 @@
           "gd": -4,
           "ogf": 1,
           "oga": 5,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15263,9 +15383,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15278,19 +15398,19 @@
           "tier": 1,
           "group": "J",
           "iso2": "at",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 3,
+          "furthestDepth": 1,
+          "furthestLabel": "Round of 32",
+          "pts": 4,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 3,
-          "ga": 3,
+          "gf": 6,
+          "ga": 6,
           "gd": 0,
-          "ogf": 3,
-          "oga": 3,
+          "ogf": 6,
+          "oga": 6,
           "eliminated": false,
-          "qualified": false,
+          "qualified": true,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
@@ -15298,8 +15418,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15320,16 +15440,16 @@
           "gd": -6,
           "ogf": 2,
           "oga": 8,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15337,9 +15457,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15354,15 +15474,15 @@
           "iso2": "ar",
           "furthestDepth": 1,
           "furthestLabel": "Round of 32",
-          "pts": 6,
-          "w": 2,
+          "pts": 9,
+          "w": 3,
           "d": 0,
           "l": 0,
-          "gf": 5,
-          "ga": 0,
-          "gd": 5,
-          "ogf": 5,
-          "oga": 0,
+          "gf": 8,
+          "ga": 1,
+          "gd": 7,
+          "ogf": 8,
+          "oga": 1,
           "eliminated": false,
           "qualified": true,
           "champion": false,
@@ -15372,8 +15492,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15394,16 +15514,16 @@
           "gd": -11,
           "ogf": 1,
           "oga": 12,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "won",
             "worstGroup1": "na"
           }
         }
@@ -15411,9 +15531,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "won",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15446,8 +15566,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15468,16 +15588,16 @@
           "gd": -4,
           "ogf": 0,
           "oga": 4,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15485,9 +15605,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15520,8 +15640,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15551,7 +15671,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15560,8 +15680,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15594,8 +15714,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15625,7 +15745,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15634,8 +15754,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15668,8 +15788,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15690,16 +15810,16 @@
           "gd": -1,
           "ogf": 2,
           "oga": 3,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15707,9 +15827,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15742,8 +15862,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15764,16 +15884,16 @@
           "gd": 0,
           "ogf": 3,
           "oga": 3,
-          "eliminated": false,
+          "eliminated": true,
           "qualified": false,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
           "status": {
-            "winner": "ongoing",
-            "third": "ongoing",
-            "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "winner": "lost",
+            "third": "lost",
+            "bestGroup2": "lost",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15781,9 +15901,9 @@
       "status": {
         "winner": "ongoing",
         "third": "ongoing",
-        "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "bestGroup2": "lost",
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15816,8 +15936,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15847,7 +15967,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15856,8 +15976,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15890,8 +16010,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15921,7 +16041,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -15930,8 +16050,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     },
     {
@@ -15964,8 +16084,8 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "na",
-            "shrew": "ongoing",
-            "worstGroup1": "ongoing"
+            "shrew": "lost",
+            "worstGroup1": "lost"
           }
         },
         {
@@ -15975,19 +16095,19 @@
           "tier": 2,
           "group": "J",
           "iso2": "dz",
-          "furthestDepth": 0,
-          "furthestLabel": "Group stage",
-          "pts": 3,
+          "furthestDepth": 1,
+          "furthestLabel": "Round of 32",
+          "pts": 4,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 2,
-          "ga": 4,
+          "gf": 5,
+          "ga": 7,
           "gd": -2,
-          "ogf": 2,
-          "oga": 4,
+          "ogf": 5,
+          "oga": 7,
           "eliminated": false,
-          "qualified": false,
+          "qualified": true,
           "champion": false,
           "runnerUp": false,
           "thirdPlace": false,
@@ -15995,7 +16115,7 @@
             "winner": "ongoing",
             "third": "ongoing",
             "bestGroup2": "ongoing",
-            "shrew": "ongoing",
+            "shrew": "lost",
             "worstGroup1": "na"
           }
         }
@@ -16004,8 +16124,8 @@
         "winner": "ongoing",
         "third": "ongoing",
         "bestGroup2": "ongoing",
-        "shrew": "ongoing",
-        "worstGroup1": "ongoing"
+        "shrew": "lost",
+        "worstGroup1": "lost"
       }
     }
   ]
