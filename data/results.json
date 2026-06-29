@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-29T22:28:50.936Z",
+    "updatedAt": "2026-06-29T23:27:10.549Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8112,8 +8112,8 @@
       "awayPlaceholder": "3ABCDF",
       "homeScore": 1,
       "awayScore": 1,
-      "homePen": null,
-      "awayPen": null,
+      "homePen": 3,
+      "awayPen": 3,
       "winnerId": null
     },
     {
@@ -9902,8 +9902,8 @@
       "awayPlaceholder": "3ABCDF",
       "homeScore": 1,
       "awayScore": 1,
-      "homePen": null,
-      "awayPen": null,
+      "homePen": 3,
+      "awayPen": 3,
       "winnerId": null
     },
     {
