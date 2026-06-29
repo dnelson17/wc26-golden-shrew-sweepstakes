@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-29T19:38:23.665Z",
+    "updatedAt": "2026-06-29T20:42:22.092Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8038,8 +8038,8 @@
       "stage": "Round of 32",
       "date": "2026-06-29T20:30:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "12'",
       "group": null,
       "venue": {
         "name": "Boston Stadium",
@@ -8110,8 +8110,8 @@
       },
       "homePlaceholder": "1E",
       "awayPlaceholder": "3ABCDF",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -9828,8 +9828,8 @@
       "stage": "Round of 32",
       "date": "2026-06-29T20:30:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "12'",
       "group": null,
       "venue": {
         "name": "Boston Stadium",
@@ -9900,8 +9900,8 @@
       },
       "homePlaceholder": "1E",
       "awayPlaceholder": "3ABCDF",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
