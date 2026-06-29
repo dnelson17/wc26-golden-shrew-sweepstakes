@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-28T21:28:48.365Z",
+    "updatedAt": "2026-06-29T17:07:52.138Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7954,8 +7954,8 @@
       "stage": "Round of 32",
       "date": "2026-06-29T17:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "7'",
       "group": null,
       "venue": {
         "name": "Houston Stadium",
@@ -8026,8 +8026,8 @@
       },
       "homePlaceholder": "1C",
       "awayPlaceholder": "2F",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -9714,8 +9714,8 @@
       "stage": "Round of 32",
       "date": "2026-06-29T17:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "7'",
       "group": null,
       "venue": {
         "name": "Houston Stadium",
@@ -9786,8 +9786,8 @@
       },
       "homePlaceholder": "1C",
       "awayPlaceholder": "2F",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
