@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T01:05:11.462Z",
+    "updatedAt": "2026-06-30T03:17:16.366Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6569,7 +6569,7 @@
       "date": "2026-06-30T01:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "5'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "Monterrey Stadium",
@@ -6640,8 +6640,8 @@
       },
       "homePlaceholder": "1F",
       "awayPlaceholder": "2C",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -8389,7 +8389,7 @@
       "date": "2026-06-30T01:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "5'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "Monterrey Stadium",
@@ -8460,8 +8460,8 @@
       },
       "homePlaceholder": "1F",
       "awayPlaceholder": "2C",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
