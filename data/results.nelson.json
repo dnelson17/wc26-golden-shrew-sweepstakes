@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-06-30T19:41:43.492Z",
+    "updatedAt": "2026-06-30T21:37:30.360Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6736,8 +6736,8 @@
       "stage": "Round of 32",
       "date": "2026-06-30T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "37'",
       "group": null,
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -6808,8 +6808,8 @@
       },
       "homePlaceholder": "1I",
       "awayPlaceholder": "3CDFGH",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -8616,8 +8616,8 @@
       "stage": "Round of 32",
       "date": "2026-06-30T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "37'",
       "group": null,
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -8688,8 +8688,8 @@
       },
       "homePlaceholder": "1I",
       "awayPlaceholder": "3CDFGH",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
