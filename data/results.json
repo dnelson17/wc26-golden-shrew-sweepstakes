@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T01:10:12.398Z",
+    "updatedAt": "2026-07-01T03:18:17.818Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8374,8 +8374,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T02:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "56'",
       "group": null,
       "venue": {
         "name": "Mexico City Stadium",
@@ -8446,8 +8446,8 @@
       },
       "homePlaceholder": "1A",
       "awayPlaceholder": "3CEFHI",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -10284,8 +10284,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T02:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "56'",
       "group": null,
       "venue": {
         "name": "Mexico City Stadium",
@@ -10356,8 +10356,8 @@
       },
       "homePlaceholder": "1A",
       "awayPlaceholder": "3CEFHI",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
