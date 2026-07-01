@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T18:47:39.875Z",
+    "updatedAt": "2026-07-01T20:40:49.314Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6988,8 +6988,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T20:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "40'",
       "group": null,
       "venue": {
         "name": "Seattle Stadium",
@@ -7060,8 +7060,8 @@
       },
       "homePlaceholder": "1G",
       "awayPlaceholder": "3AEHIJ",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -8958,8 +8958,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T20:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "40'",
       "group": null,
       "venue": {
         "name": "Seattle Stadium",
@@ -9030,8 +9030,8 @@
       },
       "homePlaceholder": "1G",
       "awayPlaceholder": "3AEHIJ",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
