@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T05:41:02.262Z",
+    "updatedAt": "2026-07-01T16:52:53.062Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -6904,8 +6904,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T16:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Atlanta Stadium",
@@ -6976,8 +6976,8 @@
       },
       "homePlaceholder": "1L",
       "awayPlaceholder": "3EHIJK",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -8844,8 +8844,8 @@
       "stage": "Round of 32",
       "date": "2026-07-01T16:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Atlanta Stadium",
@@ -8916,8 +8916,8 @@
       },
       "homePlaceholder": "1L",
       "awayPlaceholder": "3EHIJK",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
