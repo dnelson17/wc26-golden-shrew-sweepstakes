@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T03:15:17.112Z",
+    "updatedAt": "2026-07-02T20:21:46.786Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7156,8 +7156,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "60'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
@@ -7228,8 +7228,8 @@
       },
       "homePlaceholder": "1H",
       "awayPlaceholder": "2J",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -9186,8 +9186,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "60'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
@@ -9258,8 +9258,8 @@
       },
       "homePlaceholder": "1H",
       "awayPlaceholder": "2J",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
