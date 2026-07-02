@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-01T23:35:05.310Z",
+    "updatedAt": "2026-07-02T01:05:53.074Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8626,8 +8626,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T00:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "San Francisco Bay Area Stadium",
@@ -8698,8 +8698,8 @@
       },
       "homePlaceholder": "1D",
       "awayPlaceholder": "3BEFIJ",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -10626,8 +10626,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T00:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "San Francisco Bay Area Stadium",
@@ -10698,8 +10698,8 @@
       },
       "homePlaceholder": "1D",
       "awayPlaceholder": "3BEFIJ",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
