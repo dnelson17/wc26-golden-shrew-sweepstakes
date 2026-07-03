@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-03T18:15:50.523Z",
+    "updatedAt": "2026-07-03T20:17:37.812Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8963,7 +8963,7 @@
       "date": "2026-07-03T18:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "16'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -9034,7 +9034,7 @@
       },
       "homePlaceholder": "2D",
       "awayPlaceholder": "2G",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
       "homePen": null,
       "awayPen": null,
@@ -11083,7 +11083,7 @@
       "date": "2026-07-03T18:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "16'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -11154,7 +11154,7 @@
       },
       "homePlaceholder": "2D",
       "awayPlaceholder": "2G",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
       "homePen": null,
       "awayPen": null,
