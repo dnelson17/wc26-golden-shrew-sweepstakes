@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-02T22:11:24.071Z",
+    "updatedAt": "2026-07-03T00:10:47.227Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8794,8 +8794,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "51'",
       "group": null,
       "venue": {
         "name": "Toronto Stadium",
@@ -8866,8 +8866,8 @@
       },
       "homePlaceholder": "2K",
       "awayPlaceholder": "2L",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -10854,8 +10854,8 @@
       "stage": "Round of 32",
       "date": "2026-07-02T23:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "51'",
       "group": null,
       "venue": {
         "name": "Toronto Stadium",
@@ -10926,8 +10926,8 @@
       },
       "homePlaceholder": "2K",
       "awayPlaceholder": "2L",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
