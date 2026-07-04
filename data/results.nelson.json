@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-03T22:08:54.024Z",
+    "updatedAt": "2026-07-04T00:09:52.815Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7493,7 +7493,7 @@
       "date": "2026-07-03T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "8'",
+      "matchTime": "95'",
       "group": null,
       "venue": {
         "name": "Miami Stadium",
@@ -7564,8 +7564,8 @@
       },
       "homePlaceholder": "1J",
       "awayPlaceholder": "2H",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 2,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -9643,7 +9643,7 @@
       "date": "2026-07-03T22:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "8'",
+      "matchTime": "95'",
       "group": null,
       "venue": {
         "name": "Miami Stadium",
@@ -9714,8 +9714,8 @@
       },
       "homePlaceholder": "1J",
       "awayPlaceholder": "2H",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 2,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
