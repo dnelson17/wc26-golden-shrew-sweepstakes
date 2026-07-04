@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-04T20:11:43.189Z",
+    "updatedAt": "2026-07-04T22:02:14.468Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -9298,8 +9298,8 @@
       "stage": "Round of 16",
       "date": "2026-07-04T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Philadelphia Stadium",
@@ -9370,8 +9370,8 @@
       },
       "homePlaceholder": "W74",
       "awayPlaceholder": "W77",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -11538,8 +11538,8 @@
       "stage": "Round of 16",
       "date": "2026-07-04T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Philadelphia Stadium",
@@ -11610,8 +11610,8 @@
       },
       "homePlaceholder": "W74",
       "awayPlaceholder": "W77",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
