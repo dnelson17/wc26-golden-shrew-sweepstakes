@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T04:01:58.563Z",
+    "updatedAt": "2026-07-06T20:57:30.756Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -7996,8 +7996,8 @@
       "stage": "Round of 16",
       "date": "2026-07-06T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "90'+5'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -8068,8 +8068,8 @@
       },
       "homePlaceholder": "W83",
       "awayPlaceholder": "W84",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -10326,8 +10326,8 @@
       "stage": "Round of 16",
       "date": "2026-07-06T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "90'+5'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -10398,8 +10398,8 @@
       },
       "homePlaceholder": "W83",
       "awayPlaceholder": "W84",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
