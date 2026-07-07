@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T20:02:57.574Z",
+    "updatedAt": "2026-07-07T22:14:12.196Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8249,7 +8249,7 @@
       "date": "2026-07-07T20:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "3'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "BC Place Vancouver",
@@ -10669,7 +10669,7 @@
       "date": "2026-07-07T20:00:00Z",
       "played": false,
       "live": true,
-      "matchTime": "3'",
+      "matchTime": "104'",
       "group": null,
       "venue": {
         "name": "BC Place Vancouver",
