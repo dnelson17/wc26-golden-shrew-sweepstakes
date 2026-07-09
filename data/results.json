@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-08T00:01:42.109Z",
+    "updatedAt": "2026-07-09T20:49:57.194Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -9886,8 +9886,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-09T20:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "45'+4'",
       "group": null,
       "venue": {
         "name": "Boston Stadium",
@@ -9958,8 +9958,8 @@
       },
       "homePlaceholder": "W89",
       "awayPlaceholder": "W90",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -12336,8 +12336,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-09T20:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "45'+4'",
       "group": null,
       "venue": {
         "name": "Boston Stadium",
@@ -12408,8 +12408,8 @@
       },
       "homePlaceholder": "W89",
       "awayPlaceholder": "W90",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
