@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-09T22:26:12.598Z",
+    "updatedAt": "2026-07-10T20:27:13.074Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8416,8 +8416,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-10T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "65'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
@@ -8488,8 +8488,8 @@
       },
       "homePlaceholder": "W93",
       "awayPlaceholder": "W94",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -10896,8 +10896,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-10T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "65'",
       "group": null,
       "venue": {
         "name": "Los Angeles Stadium",
@@ -10968,8 +10968,8 @@
       },
       "homePlaceholder": "W93",
       "awayPlaceholder": "W94",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
