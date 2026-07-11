@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-10T22:09:49.129Z",
+    "updatedAt": "2026-07-11T21:56:07.151Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -10054,8 +10054,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-11T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Miami Stadium",
@@ -10126,8 +10126,8 @@
       },
       "homePlaceholder": "W91",
       "awayPlaceholder": "W92",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -12564,8 +12564,8 @@
       "stage": "Quarter-final",
       "date": "2026-07-11T21:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "",
       "group": null,
       "venue": {
         "name": "Miami Stadium",
@@ -12636,8 +12636,8 @@
       },
       "homePlaceholder": "W91",
       "awayPlaceholder": "W92",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
