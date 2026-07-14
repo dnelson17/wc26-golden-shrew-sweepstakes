@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-12T04:27:21.083Z",
+    "updatedAt": "2026-07-14T20:16:03.837Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8668,8 +8668,8 @@
       "stage": "Semi-final",
       "date": "2026-07-14T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "54'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -8740,8 +8740,8 @@
       },
       "homePlaceholder": "W97",
       "awayPlaceholder": "W98",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -11238,8 +11238,8 @@
       "stage": "Semi-final",
       "date": "2026-07-14T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "54'",
       "group": null,
       "venue": {
         "name": "Dallas Stadium",
@@ -11310,8 +11310,8 @@
       },
       "homePlaceholder": "W97",
       "awayPlaceholder": "W98",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
