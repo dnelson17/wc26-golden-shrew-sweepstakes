@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T22:02:25.366Z",
+    "updatedAt": "2026-07-15T19:18:38.727Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -8752,8 +8752,8 @@
       "stage": "Semi-final",
       "date": "2026-07-15T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "18'",
       "group": null,
       "venue": {
         "name": "Atlanta Stadium",
@@ -8824,8 +8824,8 @@
       },
       "homePlaceholder": "W99",
       "awayPlaceholder": "W100",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -11382,8 +11382,8 @@
       "stage": "Semi-final",
       "date": "2026-07-15T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "18'",
       "group": null,
       "venue": {
         "name": "Atlanta Stadium",
@@ -11454,8 +11454,8 @@
       },
       "homePlaceholder": "W99",
       "awayPlaceholder": "W100",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
