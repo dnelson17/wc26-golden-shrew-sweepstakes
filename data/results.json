@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-18T23:59:52.423Z",
+    "updatedAt": "2026-07-19T19:12:26.576Z",
     "idCompetition": "17",
     "idSeason": "285023",
     "totalMatches": 104,
@@ -10505,8 +10505,8 @@
       "stage": "Final",
       "date": "2026-07-19T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "6'",
       "group": null,
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -10577,8 +10577,8 @@
       },
       "homePlaceholder": "W101",
       "awayPlaceholder": "W102",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
@@ -13195,8 +13195,8 @@
       "stage": "Final",
       "date": "2026-07-19T19:00:00Z",
       "played": false,
-      "live": false,
-      "matchTime": null,
+      "live": true,
+      "matchTime": "6'",
       "group": null,
       "venue": {
         "name": "New York/New Jersey Stadium",
@@ -13267,8 +13267,8 @@
       },
       "homePlaceholder": "W101",
       "awayPlaceholder": "W102",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homePen": null,
       "awayPen": null,
       "winnerId": null
